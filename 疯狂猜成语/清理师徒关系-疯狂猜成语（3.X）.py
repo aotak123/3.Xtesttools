@@ -1,10 +1,8 @@
 # coding=utf-8
 import urllib.request
 import ssl
-####################——————tak制作  vol.605——————####################
+                    ####################——————tak制作  vol.605——————####################
 
-#http://10.10.44.27:8020/testcleantools/cleanimei?apptypeid=100012&imei=test20200227   需要vpn
-#106.75.6.212:8020
 
 while True:
     a = input("\n 请输入获取的类型：\n 1：测试环境清除\n ***正式环境 请去Ocelot平台***\n ")
@@ -56,3 +54,5 @@ while True:
         num =response.read()
         sss = num.decode()
         print(imei +"  "+ sss)
+
+                    ####################——————tak制作  vol.605——————####################

@@ -1,4 +1,6 @@
 # filename:Caculater
+                    ####################——————tak制作  vol.605——————####################
+                    ####################——————tak制作移植 2.X版——————####################
 
 import tkinter, time, decimal, math, string
 
@@ -176,3 +178,11 @@ def caidan(root):
 buju(root)
 caidan(root)
 root.mainloop()
+
+                    ####################——————tak制作  vol.605——————####################
+                    ####################——————tak制作移植 2.X版——————####################
+"""
+Code producer：aotak
+Mobile：+86 18817762560
+E-Mail：hujunyi@021.com 
+"""

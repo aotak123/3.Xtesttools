@@ -55,3 +55,5 @@ while True:
                 fullurl3bytes = response.read()
                 defullurl3 = fullurl3bytes.decode()
                 print(defullurl3)
+
+                    ####################——————tak制作  vol.605——————####################

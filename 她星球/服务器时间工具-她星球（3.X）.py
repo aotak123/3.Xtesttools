@@ -1,7 +1,7 @@
 # coding=utf-8
 import urllib.request
 import time
-####################——————tak制作  vol.605——————####################
+                    ####################——————tak制作  vol.605——————####################
 
 url = "http://test-servertime.yiqibuduoduo.com/update_time/update?f=update"
 
@@ -56,4 +56,11 @@ while True:
                 defullurl3 = fullurl3bytes.decode()
                 print(defullurl3)
 
-####################——————tak制作  vol.605——————####################
+                    ####################——————tak制作  vol.605——————####################
+                    ####################——————tak制作移植 2.X版——————####################
+
+"""
+Code producer：aotak
+Mobile：+86 18817762560
+E-Mail：hujunyi@021.com
+"""

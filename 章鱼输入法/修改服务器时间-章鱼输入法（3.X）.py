@@ -1,7 +1,7 @@
 # coding=utf-8
 import urllib.request
 import time
-####################——————tak制作  vol.605——————####################
+                    ####################——————tak制作  vol.605——————####################
 
 url = "http://test-zhangyu3.zhihuizhangyu.cn/spring-boot-update-time/timeOper/updateTime?date="
 
@@ -55,3 +55,5 @@ while True:
                 fullurl3bytes = response.read()
                 defullurl3 = fullurl3bytes.decode()
                 print (defullurl3)
+
+                    ####################——————tak制作  vol.605——————####################

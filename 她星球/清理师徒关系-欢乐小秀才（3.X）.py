@@ -55,3 +55,8 @@ while True:
         print(imei +"  "+ sss)
 
                     ####################——————tak制作  vol.605——————####################
+"""
+Code producer：aotak
+Mobile：+86 18817762560
+E-Mail：hujunyi@021.com 
+"""
