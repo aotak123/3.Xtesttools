@@ -23,7 +23,7 @@ while True:
         fullurl2 = url + "&datetime=" + nowtime
         # print fullurl
         request = urllib.request.Request(fullurl2)
-        response = urllib.request.urlopen(request)
+        response = urllib.request.Request(request)
         print("已恢复当前服务时间：")
         print (response.read())
         # break
