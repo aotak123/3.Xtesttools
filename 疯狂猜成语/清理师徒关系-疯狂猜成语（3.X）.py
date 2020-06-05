@@ -13,7 +13,7 @@ while True:
         url = "http://106.75.6.212:8020/testcleantools/cleanimei?apptypeid=100012&imei="
     if a == "2":
         # url = "https://invite.crazyccy.com/invite/Iiiii/imei_accid"
-        print ("\033[1;31m 功能暂时无法使用！！！ \033[0m")
+        print("\033[1;31m 功能暂时无法使用！！！ \033[0m")
         continue
     elif a > "2":
         print("\033[1;31m 输入有误，请重新选择！！！ \033[0m")
@@ -49,10 +49,10 @@ while True:
 
         fullurl = url + imei
         context = ssl._create_unverified_context()  # ssl证书免验证，python3需要验证https证书
-        # print (fullurl)
+        # print(fullurl)
 
         request = urllib.request.Request(fullurl)  # 构建请求url
         response = urllib.request.urlopen(request)
         num =response.read()
         sss = num.decode()
-        print (imei +"  "+ sss)
+        print(imei +"  "+ sss)
