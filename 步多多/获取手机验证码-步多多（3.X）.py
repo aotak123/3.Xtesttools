@@ -7,8 +7,10 @@ import time
                     ####################——————tak制作  vol.605——————####################
 
 key = "sLQq2_jaKLknsqAwZ"       #后台使用的key
-# testmobile = '测试手机号名单.xlsx' #测试记录文件的地址
-# realmobile = '正式手机号名单.xlsx' #正式记录文件的地址
+
+"""开启记录账号功能"""
+# testmobile = '测试手机号名单.xlsx' #修改测试记录文件的地址
+# realmobile = '正式手机号名单.xlsx' #修改正式记录文件的地址
 
 while True:
     type = input("\033[30m \n 请输入验证码类型：\n 1：测试登录\n 2：测试绑定\n 3：正式登录\n 4：正式绑定 \033[0m\n")
@@ -52,6 +54,7 @@ while True:
             sss = num.decode()      #字节编码处理decode为str
             print (sss)     #打印页面内容
 
+            """开启记录账号功能"""
             # if url == "http://test-u.yiqibuduoduo.com/login/main_login/testtool":#测试环境写入手机号纪录
             #     if num == '查不到！':   #如果接口没有返回没有查到则不记录
             #         continue

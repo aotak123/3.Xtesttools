@@ -1,7 +1,7 @@
 # coding=utf-8
 import urllib.request
 import time
-####################——————tak制作  vol.605——————####################
+####################——————tak制作  vol.606——————####################
 
 url = "http://test-task-fkccy.tiantianshuibaobao.com/Update_time/update?f=update"
 
@@ -56,4 +56,4 @@ while True:
                 defullurl3 = fullurl3bytes.decode()
                 print(defullurl3)
 
-                    ####################——————tak制作  vol.605——————####################
+                    ####################——————tak制作  vol.606——————####################

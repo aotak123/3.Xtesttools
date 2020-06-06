@@ -7,8 +7,8 @@ import time
                     ####################——————tak制作  vol.605——————####################
 
 key = "sLQq2_jaKLknsqAwZ"       #后台使用的key
-# testmobile = '测试手机号名单.xlsx' #测试记录文件的地址
-# realmobile = '正式手机号名单.xlsx' #正式记录文件的地址
+# testmobile = '/Users/aotak/Documents/测试手机号名单.xlsx' #测试记录文件的地址
+# realmobile = '/Users/aotak/Documents/正式手机号名单.xlsx' #正式记录文件的地址
 
 while True:
     type = input("\033[30m \n 请输入验证码类型：\n 1：测试登录\n 2：测试绑定\n 3：正式登录\n 4：正式绑定 \033[0m\n")
@@ -68,19 +68,19 @@ while True:
             #                 file_object.write(nowtime + "\n")
             #
             # if url == "https://uc.crazyccy.com/login/main_login/testtool":#正式环境写入手机号纪录
-            #     if num == '查不到！':       #如果接口没有返回没有查到则不记录
-            #         continue
-            #     else:
-            #         with open(realmobile,'r+') as file_object:      #打开记录execl文件
-            #             pi_string = ''
-            #             for lines in file_object:
-            #                 pi_string += lines.strip()
-            #             if mobile in pi_string:     #判断手机号是否存在于表内
-            #                 continue        #在表内不做写入
-            #             else:
-            #                 nowtime = time.strftime('%Y-%m-%d% %H:%M:%S')  # 获取当前时间
-            #                 file_object.write(mobile + "\t")  # \t = tab  \n = 换行
-            #                 file_object.write(nowtime + "\n")
+                # if num == '查不到！':       #如果接口没有返回没有查到则不记录
+                #     continue
+                # else:
+                #     with open(realmobile,'r+') as file_object:      #打开记录execl文件
+                #         pi_string = ''
+                #         for lines in file_object:
+                #             pi_string += lines.strip()
+                #         if mobile in pi_string:     #判断手机号是否存在于表内
+                #             continue        #在表内不做写入
+                #         else:
+                #             nowtime = time.strftime('%Y-%m-%d% %H:%M:%S')  # 获取当前时间
+                #             file_object.write(mobile + "\t")  # \t = tab  \n = 换行
+                #             file_object.write(nowtime + "\n")
 
         else:
             print("\033[1;31m！！!手机号码错误，请重新输入！！!\033[0m")
