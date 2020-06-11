@@ -1,7 +1,8 @@
 # coding=utf-8
 import urllib.request
 import time
-                    ####################——————tak制作  vol.605——————####################
+
+####################——————tak制作  vol.605——————####################
 
 url = "http://test-zhangyu3.zhihuizhangyu.cn/spring-boot-update-time/timeOper/updateTime?date="
 
@@ -13,9 +14,9 @@ while True:
         request = urllib.request.Request(urls)
         response = urllib.request.urlopen(request)
         openurl = response.read()
-        timenow =openurl.decode()
+        timenow = openurl.decode()
         print("\033[1;31m 当前服务时间： \033[0m")
-        print (timenow)
+        print(timenow)
         # break
 
     if type == "2":
@@ -27,15 +28,15 @@ while True:
         fullurl2bytes = response.read()
         defullurl2 = fullurl2bytes.decode()
         print("\033[1;31m 恢复成功 \033[0m")
-        print (defullurl2)
+        print(defullurl2)
         # break
 
     if type == "3":
         while True:  # 无限循环语句
             nowtime = time.strftime('%Y-%m-%d%%20%H:%M:%S')
-            print ("例子：" + nowtime)
+            print("例子：" + nowtime)
             yeartime = input("请输入你想修改的时间：            \033[1;31m！！！请复制例子进行修改时间！！！\033[0m\n恢复时间请输入：0\n")
-            #请使用例子中的格式，不得有误
+            # 请使用例子中的格式，不得有误
             if yeartime == "0":
                 nowtime = time.strftime('%Y-%m-%d%%20%H:%M:%S')
                 nowtimeurl = url + "&datetime=" + nowtime
@@ -44,7 +45,7 @@ while True:
                 response = urllib.request.urlopen(request)
                 nowtimeurlbytes = response.read()
                 denowtimeurl = nowtimeurlbytes.decode()
-                print (denowtimeurl)
+                print(denowtimeurl)
                 break
 
             else:
@@ -54,6 +55,6 @@ while True:
                 response = urllib.request.urlopen(request)
                 fullurl3bytes = response.read()
                 defullurl3 = fullurl3bytes.decode()
-                print (defullurl3)
+                print(defullurl3)
 
-                    ####################——————tak制作  vol.605——————####################
+####################——————tak制作  vol.605——————####################

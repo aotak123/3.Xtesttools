@@ -1,6 +1,7 @@
 # coding=utf-8
 import urllib.request
 import time
+
 ####################——————tak制作  vol.606——————####################
 
 url = "http://test-task-fkccy.tiantianshuibaobao.com/Update_time/update?f=update"
@@ -13,7 +14,7 @@ while True:
         request = urllib.request.Request(urls)
         response = urllib.request.urlopen(request)
         openurl = response.read()
-        timenow =openurl.decode()
+        timenow = openurl.decode()
         print("\033[1;31m 当前服务时间： \033[0m")
         print(timenow)
         # break
@@ -35,7 +36,7 @@ while True:
             nowtime = time.strftime('%Y-%m-%d%%20%H:%M:%S')
             print("例子：" + nowtime)
             yeartime = input("请输入你想修改的时间：            \033[1;31m！！！请复制例子进行修改时间！！！\033[0m\n恢复时间请输入：0\n")
-            #请使用例子中的格式，不得有误
+            # 请使用例子中的格式，不得有误
             if yeartime == "0":
                 nowtime = time.strftime('%Y-%m-%d%%20%H:%M:%S')
                 nowtimeurl = url + "&datetime=" + nowtime
@@ -56,4 +57,4 @@ while True:
                 defullurl3 = fullurl3bytes.decode()
                 print(defullurl3)
 
-                    ####################——————tak制作  vol.606——————####################
+####################——————tak制作  vol.606——————####################
