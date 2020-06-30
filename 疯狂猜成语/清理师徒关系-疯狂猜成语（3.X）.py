@@ -28,6 +28,11 @@ while True:  # 无限循环语句
         imei = "43e219e4af34ad4e"
         deviceid = "43e219e4af34ad4e"
 
+    if imei == "3":  # 三星S6
+        imei = "359596060310566"
+        deviceid = "f8a37fcb1c827dce"
+
+
     fullurl = url + imei
     context = ssl._create_unverified_context()  # ssl证书免验证，python3需要验证https证书
     # print(fullurl)
