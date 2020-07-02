@@ -4,13 +4,13 @@ import time
 
 ####################——————tak制作  vol.605——————####################
 
-url = "http://test-servertime.yiqibuduoduo.com/update_time/update?f=update"
+url = "http://test-task-fkccy.tiantianshuibaobao.com/Update_time//update?f=get"
 
 while True:
     type = input("\n 请输入数字：\n 1：查询时间\n 2：恢复时间\n 3：修改时间\n")
 
     if type == "1":
-        urls = "http://test-servertime.yiqibuduoduo.com/update_time/update?f=get"  # 疯狂猜成语获取服务器时间
+        urls = "http://test-task-fkccy.tiantianshuibaobao.com/Update_time//update?f=get"  # 疯狂猜成语获取服务器时间
         request = urllib.request.Request(urls)
         response = urllib.request.urlopen(request)
         openurl = response.read()
