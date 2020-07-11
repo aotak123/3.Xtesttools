@@ -8,8 +8,8 @@ import time
 ####################——————tak制作  vol.605——————####################
 
 key = "sLQq2_jaKLknsqAwZ"  # 后台使用的key
-# testmobile = '/Users/aotak/Documents/测试手机号名单.xlsx'  # 测试记录文件的地址
-# realmobile = '/Users/aotak/Documents/正式手机号名单.xlsx'  # 正式记录文件的地址
+testmobile = '/Users/aotak/Documents/测试手机号名单.xlsx'  # 测试记录文件的地址
+realmobile = '/Users/aotak/Documents/正式手机号名单.xlsx'  # 正式记录文件的地址
 
 while True:
     type = input("\033[30m \n 请输入验证码类型：\n 1：测试登录\n 2：测试绑定\n 3：正式登录\n 4：正式绑定 \033[0m\n")
@@ -52,10 +52,11 @@ while True:
             num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
             sss = num.decode()  # 字节编码处理decode为str
             print(sss)  # 打印页面内容
-
+            #
             # if url == "http://test-uc.crazyccy.com/login/main_login/testtool":#测试环境写入手机号纪录
             #     if num == '查不到！':   #如果接口没有返回没有查到则不记录
-            #         continue
+            #         print()
+            #     #     continue
             #     else:
             #         with open(testmobile,'r+') as file_object:      #打开记录记录文件
             #             pi_string = ''
@@ -69,8 +70,9 @@ while True:
             #                 file_object.write(nowtime + "\n")
             #
             # if url == "https://uc.crazyccy.com/login/main_login/testtool":#正式环境写入手机号纪录
-            # if num == '查不到！':       #如果接口没有返回没有查到则不记录
-            #     continue
+            #     if num == '查不到！':       #如果接口没有返回没有查到则不记录
+            #         print()
+            #     #     continue
             # else:
             #     with open(realmobile,'r+') as file_object:      #打开记录execl文件
             #         pi_string = ''
