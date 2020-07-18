@@ -20,22 +20,27 @@ capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
 
-capabilities['mobile'] = '18017700601'
-# capabilities['mobile'] = '18017700596'
-# capabilities['mobile'] = '18930223547'
-# capabilities['mobile'] = '18017700475'
-# capabilities['mobile'] = '18017700535'
-# capabilities['mobile'] = '18017700533'
-# capabilities['mobile'] = '18017700598'
-# capabilities['mobile'] = '17502150079'
-# capabilities['mobile'] = '18017700536'
-# capabilities['mobile'] = '18017700602'
-# capabilities['mobile'] = '18017700550'
 # capabilities['mobile'] = '18017700223'
-# capabilities['mobile'] = '18017700597'
-# capabilities['mobile'] = '15606566329'
-# capabilities['mobile'] = '18017700599'
+# capabilities['mobile'] = '18017700475'
+# capabilities['mobile'] = '18017700515'
+# capabilities['mobile'] = '18017700516'
 # capabilities['mobile'] = '18017700526'
+# capabilities['mobile'] = '18017700533'
+# capabilities['mobile'] = '18017700535'
+# capabilities['mobile'] = '18017700536'
+# capabilities['mobile'] = '18017700537'
+# capabilities['mobile'] = '18017700550'
+# capabilities['mobile'] = '18017700596'
+# capabilities['mobile'] = '18017700597'
+# capabilities['mobile'] = '18017700598'
+# capabilities['mobile'] = '18017700599'
+# capabilities['mobile'] = '18017700601'
+# capabilities['mobile'] = '18017700602'
+capabilities['mobile'] = '18017700715'
+# capabilities['mobile'] = '18017700717'
+# capabilities['mobile'] = '18930223547'
+# capabilities['mobile'] = '17502150079'
+# capabilities['mobile'] = '15606566329'
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 mobile = capabilities['mobile']
@@ -133,7 +138,8 @@ time.sleep(3)
 
 TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
 time.sleep(3)
-a = 13
+# 广告次数
+a = 12
 while a > 0:
     TouchAction(driver).tap(x=475, y=2280).perform()
     time.sleep(1)
@@ -152,7 +158,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print("toutiaosdk广告关闭")
     else:
@@ -174,7 +180,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print("toutiaosdk广告关闭")
     else:
@@ -200,4 +206,7 @@ TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 # checklogout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")  # 确定退出
 TouchAction(driver).tap(x=960, y=1440).perform()
+print("\n账号退出成功")
+driver.back()
+driver.back()  # 关闭app
 sys.exit()
