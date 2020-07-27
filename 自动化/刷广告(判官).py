@@ -18,6 +18,7 @@ capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系
 capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
 capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
+# capabilities['autoDismissAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
 
 # capabilities['mobile'] = '18017700601'

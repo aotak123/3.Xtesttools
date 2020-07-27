@@ -36,9 +36,11 @@ capabilities['autoWebview'] = 'false'
 # capabilities['mobile'] = '18017700599'
 # capabilities['mobile'] = '18017700601'
 # capabilities['mobile'] = '18017700602'
-capabilities['mobile'] = '18017700715'
+# capabilities['mobile'] = '18017700400'
 # capabilities['mobile'] = '18017700717'
+# capabilities['mobile'] = '18017700410'
 # capabilities['mobile'] = '18930223547'
+capabilities['mobile'] = '18017700716'
 # capabilities['mobile'] = '17502150079'
 # capabilities['mobile'] = '15606566329'
 
@@ -149,9 +151,6 @@ while a > 0:
     time.sleep(3)
     TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
     print(a)
-    # time.sleep(40)
-    # TouchAction(driver).tap(x=1285, y=135).perform()  # toutiaosdk广告按钮
-
     # 广告的check判断
     time.sleep(6)
     try:

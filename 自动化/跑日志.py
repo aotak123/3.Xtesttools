@@ -11,9 +11,17 @@ while True:
     capabilities['platformVersion'] = '10'
     capabilities['deviceName'] = 'SEA-AL10'
 # 系统手机中的联系人app的包名
-    
-    capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'
-# 系统手机中的联系人app的主入口activity
+# # 疯狂猜成语
+#     capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'
+#     capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'
+# # 多多守护
+#     capabilities['appPackage'] = 'com.xiaoxian.guardian.everyday'
+#     capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'
+# # 看图猜成语
+#     capabilities['appPackage'] = 'com.xiaoxian.cy.kantu.android'
+#     capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'
+# 天天守护
+    capabilities['appPackage'] = 'com.xiaoxian.guardian.everyday'
     capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'
     capabilities['unicodeKeyboard'] = 'true'  # 如果指定UI2作为驱动，不需要配置
     capabilities['resetKeyboard'] = 'true'  # 重置自动化时设置的键盘

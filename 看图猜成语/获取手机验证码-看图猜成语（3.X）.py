@@ -44,7 +44,7 @@ while True:
             # print ("检验通过")    #手机号校验打印
             fullurl = url + "?key=" + key + "&type=" + type + "&mobile=" + mobile  # 拼接完整请求url
 
-            # print (fullurl)       #打印拼接url
+            print (fullurl)       #打印拼接url
 
             request = urllib.request.Request(fullurl)  # 构建请求url
             response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context
