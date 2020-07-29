@@ -20,6 +20,9 @@ capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 context = ssl._create_unverified_context()
 
+#####刷判官#####
+
+
 #######################################################################################################################
 mobile = "18017700223"
 AA = "\033[1;31mNO.1\033[0m " + mobile + " \033[1;31m开始\033[0m"
@@ -96,56 +99,35 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -158,8 +140,6 @@ print(BB)
 nowtime = time.strftime('%Y-%m-%d% %H:%M:%S')
 print(nowtime)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700475"
@@ -237,56 +217,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -297,8 +255,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700515"
@@ -376,56 +332,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -436,8 +370,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700516"
@@ -515,56 +447,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -575,8 +485,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700526"
@@ -654,56 +562,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -714,8 +600,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700533"
@@ -793,56 +677,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -853,8 +715,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700535"
@@ -932,56 +792,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -992,8 +830,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700536"
@@ -1071,56 +907,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -1131,8 +945,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700537"
@@ -1210,56 +1022,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -1271,7 +1061,7 @@ BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
 
-#######################################################################################################################
+
 mobile = "18017700550"
 AA = "\033[1;31mNO.10\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
@@ -1347,56 +1137,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -1407,8 +1175,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700596"
@@ -1486,56 +1252,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -1546,8 +1290,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700597"
@@ -1625,56 +1367,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -1685,8 +1405,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700598"
@@ -1764,56 +1482,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -1824,7 +1520,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
 
 
 mobile = "18017700599"
@@ -1902,56 +1597,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -1962,8 +1635,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700601"
@@ -2041,56 +1712,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -2101,8 +1750,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700602"
@@ -2180,56 +1827,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -2240,8 +1865,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700715"
@@ -2319,56 +1942,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -2379,8 +1980,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700717"  # 卢俊
@@ -2458,56 +2057,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -2518,8 +2095,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700530"
@@ -2597,56 +2172,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -2657,8 +2210,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700580"
@@ -2736,56 +2287,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -2796,8 +2325,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "17502150079"
@@ -2875,56 +2402,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -2935,7 +2440,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
 
 
 mobile = "18930223547"
@@ -3013,56 +2517,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -3073,7 +2555,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
 
 
 mobile = "15606566329"
@@ -3151,56 +2632,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -3211,7 +2670,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
 
 
 mobile = "18017700710"
@@ -3289,56 +2747,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -3349,8 +2785,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700722"
@@ -3430,56 +2864,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -3492,7 +2904,6 @@ print(BB)
 #######################################################################################################################
 
 
-#######################################################################################################################
 mobile = "18017700339"
 AA = "\033[1;31mNO.26\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
@@ -3568,56 +2979,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -3628,7 +3017,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
 
 
 mobile = "18017700521"
@@ -3706,56 +3094,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -3766,7 +3132,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
 
 
 mobile = "18017700400"
@@ -3844,56 +3209,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -3904,7 +3247,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
 
 
 mobile = "18017700410"
@@ -3982,56 +3324,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -4042,8 +3362,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
 
 
 mobile = "18017700716"
@@ -4121,56 +3439,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -4181,10 +3477,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
-
-
 
 
 mobile = "18017700411"
@@ -4262,56 +3554,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -4322,10 +3592,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
-
-
-
 
 
 mobile = "18017700610"
@@ -4403,56 +3669,34 @@ def check_signtoast():  # 检查是否开启签到提示
 
 check_signtoast()
 time.sleep(3)
-TouchAction(driver).tap(x=175, y=2385).perform()  # 进入看图猜成语
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+time.sleep(1)
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
-# 广告次数
-a = 12
+
+a = 13
 while a > 0:
-    TouchAction(driver).tap(x=475, y=2280).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=1105, y=2188).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=800, y=2280).perform()  # 选择(位置)
-    time.sleep(3)
-    TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
-    print(a)
-    time.sleep(6)
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+    time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        print("头条广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+        print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        print("广点通广告")
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
+        print(a)
         print("GDTsdk广告关闭")
     a -= 1
-    time.sleep(2)
-    TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
-    print(a)
-    time.sleep(6)
-    try:
-        GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-    except NoSuchElementException:
-        print("toutiaosdk广告")
-        time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
-    else:
-        print("GDTsdk广告")
-        time.sleep(55)
-        driver.back()  # GDTsdk广告按钮
-        print("GDTsdk广告关闭")
-    # print(a)
-    time.sleep(2)
-    driver.back()
-    time.sleep(2)
-    a -= 1
-driver.back()  # 返回首页
-time.sleep(2)
+
+driver.back()  # 判官中回到首页
+driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
 TouchAction(driver).tap(x=1275, y=243).perform()
@@ -4463,7 +3707,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 BB = mobile + " \033[1;31m账号退出成功\033[0m"
 print(BB)
 #######################################################################################################################
-
 
 
 nowtime = time.strftime('%Y-%m-%d% %H:%M:%S')

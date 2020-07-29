@@ -40,20 +40,21 @@ driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连�
 mobile = capabilities['mobile']
 context = ssl._create_unverified_context()
 
-
-#看图刷toutiao广告
+# 看图刷toutiao广告
 print("服务启动")
 time.sleep(5)
+
+
 # 检查用户协议及隐私条款
 def check_agree():
-
     try:
         time.sleep(3)
         check_agree = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_agree")  # 三星
     except NoSuchElementException:
         print("无隐私条款")
     else:
-        TouchAction(driver).tap(x=1000, y=2050).perform() #点击确定
+        TouchAction(driver).tap(x=1000, y=2050).perform()  # 点击确定
+
 
 check_agree()
 time.sleep(5)
@@ -91,6 +92,7 @@ def check_login():
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
         print("账号登录成功")
 
+
 check_login()
 time.sleep(15)  # 等待10秒加载进入首页
 
@@ -104,6 +106,7 @@ def check_signwindows():  # 检查用户签到弹窗
     else:
         TouchAction(driver).tap(x=1270, y=655).perform()
         time.sleep(3)
+
 
 check_signwindows()
 time.sleep(3)
@@ -124,25 +127,26 @@ def check_signtoast():  # 检查是否开启签到提示
     else:
         TouchAction(driver).tap(x=1228, y=748).perform()
 
+
 check_signtoast()
 time.sleep(3)
 
-TouchAction(driver).tap(x=439, y=2379).perform()#选择进入判官
+TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
 time.sleep(1)
-TouchAction(driver).tap(x=712, y=1342).perform()#选择开始挑战
+TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
 a = 13
 while a > 0:
-    time.sleep(6)
-    TouchAction(driver).tap(x=671, y=1734).perform()#点击查看广告
+    time.sleep(8)
+    TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(5)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("头条广告")
         time.sleep(35)
-        TouchAction(driver).tap(x=1285, y=139).perform()#关闭toutiao广告
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
     else:
@@ -153,16 +157,13 @@ while a > 0:
         print("GDTsdk广告关闭")
     a -= 1
 
-driver.back()#判官中回到首页
+driver.back()  # 判官中回到首页
 driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)
-# set1 = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")  # 进入设置
 TouchAction(driver).tap(x=1275, y=243).perform()
 time.sleep(1)
-# logout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")  # 选择退出
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
-# checklogout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")  # 确定退出
 TouchAction(driver).tap(x=960, y=1440).perform()
 sys.exit()
