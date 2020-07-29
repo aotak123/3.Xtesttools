@@ -41,15 +41,17 @@ capabilities['autoWebview'] = 'false'
 # capabilities['mobile'] = '18017700410'
 # capabilities['mobile'] = '18930223547'
 # capabilities['mobile'] = '18017700716'
-# capabilities['mobile'] = '18017700610'
+capabilities['mobile'] = '18017700610'
 # capabilities['mobile'] = '18017700411'
 # capabilities['mobile'] = '17502150079'
 # capabilities['mobile'] = '15606566329'
-capabilities['mobile'] = '18017700120'
+# capabilities['mobile'] = '18017700120'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 mobile = capabilities['mobile']
 context = ssl._create_unverified_context()
 
+nowtime = time.strftime('%Y-%m-%d% %H:%M:%S')
+print(nowtime)
 # 看图刷toutiao广告
 print("服务启动")
 time.sleep(5)
@@ -67,7 +69,10 @@ def check_agree():
 
 
 check_agree()
+
 time.sleep(5)
+
+
 def check_login():
     try:
         check_login = driver.find_element_by_id(
@@ -102,6 +107,7 @@ def check_login():
 
 
 check_login()
+
 time.sleep(15)  # 等待10秒加载进入首页
 
 
@@ -131,6 +137,7 @@ def check_signwindows():  # 检查用户签到弹窗
             print("GDTsdk广告关闭")
             time.sleep(6)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
+
 
 check_signwindows()
 time.sleep(3)
@@ -223,6 +230,7 @@ def choujiang():
 
 
 choujiang()
+
 time.sleep(3)
 TouchAction(driver).tap(x=707, y=2070).perform()  # 进入接龙页面
 time.sleep(3)
