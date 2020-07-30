@@ -144,15 +144,18 @@ time.sleep(3)
 
 
 def choujiang():
+    time.sleep(3)
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
     time.sleep(6)
     TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
     time.sleep(6)
     TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
     time.sleep(6)
@@ -172,14 +175,17 @@ def choujiang():
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
     time.sleep(6)
     TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
     time.sleep(6)
     TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
     time.sleep(6)
     TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
     time.sleep(6)
@@ -199,18 +205,22 @@ def choujiang():
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
     time.sleep(6)
     TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
     time.sleep(6)
     TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
     time.sleep(6)
     TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
     time.sleep(6)
     TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
     time.sleep(6)
