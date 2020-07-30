@@ -27,7 +27,7 @@ capabilities['autoWebview'] = 'false'
 # capabilities['mobile'] = '18017700526'
 # capabilities['mobile'] = '18017700533'
 # capabilities['mobile'] = '18017700535'
-# capabilities['mobile'] = '18017700536'
+capabilities['mobile'] = '18017700536'
 # capabilities['mobile'] = '18017700537'
 # capabilities['mobile'] = '18017700550'
 # capabilities['mobile'] = '18017700596'
@@ -41,7 +41,7 @@ capabilities['autoWebview'] = 'false'
 # capabilities['mobile'] = '18017700410'
 # capabilities['mobile'] = '18930223547'
 # capabilities['mobile'] = '18017700716'
-capabilities['mobile'] = '18017700610'
+# capabilities['mobile'] = '18017700610'
 # capabilities['mobile'] = '18017700411'
 # capabilities['mobile'] = '17502150079'
 # capabilities['mobile'] = '15606566329'
@@ -149,12 +149,12 @@ def choujiang():
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
     time.sleep(6)
-    TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
     time.sleep(6)
-    TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
@@ -174,17 +174,17 @@ def choujiang():
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
     time.sleep(6)
-    TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
     time.sleep(6)
-    TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
     time.sleep(6)
-    TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
@@ -204,22 +204,22 @@ def choujiang():
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
     time.sleep(6)
-    TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
     time.sleep(6)
-    TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
     time.sleep(6)
-    TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
     time.sleep(6)
-    TouchAction(driver).tap(x=717, y=1615).perform()  # 关闭奖励弹窗
+    TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
@@ -332,7 +332,3 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-BB = mobile + " \033[1;31m账号退出成功\033[0m"
-print(BB)
-nowtime = time.strftime('%Y-%m-%d% %H:%M:%S')
-print(nowtime)
