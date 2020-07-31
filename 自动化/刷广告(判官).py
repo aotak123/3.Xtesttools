@@ -157,7 +157,8 @@ while a > 0:
         print("GDTsdk广告关闭")
     a -= 1
 
-driver.back()  # 判官中回到首页
+driver.back() # 判官中回到首页
+time.sleep(1)
 driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
 time.sleep(2)

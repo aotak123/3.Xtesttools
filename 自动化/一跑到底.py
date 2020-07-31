@@ -76,9 +76,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -86,14 +86,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -106,17 +106,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -131,22 +131,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -161,27 +161,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -242,7 +242,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -259,7 +259,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -352,9 +352,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -362,14 +362,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -382,17 +382,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -407,22 +407,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -437,27 +437,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -518,7 +518,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -535,7 +535,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -624,9 +624,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -634,14 +634,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -654,17 +654,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -679,22 +679,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -709,27 +709,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -790,7 +790,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -807,7 +807,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -896,9 +896,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -906,14 +906,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -926,17 +926,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -951,22 +951,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -981,27 +981,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -1062,7 +1062,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1079,7 +1079,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1168,9 +1168,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1178,14 +1178,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -1198,17 +1198,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -1223,22 +1223,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -1253,27 +1253,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -1334,7 +1334,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1351,7 +1351,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1440,9 +1440,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1450,14 +1450,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -1470,17 +1470,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -1495,22 +1495,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -1525,27 +1525,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -1606,7 +1606,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1623,7 +1623,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1712,9 +1712,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1722,14 +1722,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -1742,17 +1742,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -1767,22 +1767,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -1797,27 +1797,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -1878,7 +1878,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1895,7 +1895,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1984,9 +1984,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -1994,14 +1994,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -2014,17 +2014,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2039,22 +2039,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2069,27 +2069,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2150,7 +2150,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -2167,7 +2167,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -2256,9 +2256,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -2266,14 +2266,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -2286,17 +2286,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2311,22 +2311,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2341,27 +2341,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2422,7 +2422,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -2439,7 +2439,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -2528,9 +2528,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -2538,14 +2538,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -2558,17 +2558,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2583,22 +2583,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2613,27 +2613,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2694,7 +2694,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -2711,7 +2711,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -2800,9 +2800,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -2810,14 +2810,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -2830,17 +2830,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2855,22 +2855,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2885,27 +2885,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -2966,7 +2966,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -2983,7 +2983,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3072,9 +3072,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3082,14 +3082,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -3102,17 +3102,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3127,22 +3127,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3157,27 +3157,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3238,7 +3238,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3255,7 +3255,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3344,9 +3344,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3354,14 +3354,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -3374,17 +3374,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3399,22 +3399,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3429,27 +3429,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3510,7 +3510,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3527,7 +3527,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3616,9 +3616,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3626,14 +3626,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -3646,17 +3646,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3671,22 +3671,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3701,27 +3701,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3782,7 +3782,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3799,7 +3799,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3888,9 +3888,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -3898,14 +3898,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -3918,17 +3918,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3943,22 +3943,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -3973,27 +3973,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -4054,7 +4054,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4071,7 +4071,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4160,9 +4160,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4170,14 +4170,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -4190,17 +4190,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -4215,22 +4215,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -4245,27 +4245,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -4326,7 +4326,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4343,7 +4343,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4432,9 +4432,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4442,14 +4442,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -4462,17 +4462,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -4487,22 +4487,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -4517,27 +4517,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -4598,7 +4598,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4615,7 +4615,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4704,9 +4704,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4714,14 +4714,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -4734,17 +4734,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -4759,22 +4759,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -4789,27 +4789,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -4870,7 +4870,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4887,7 +4887,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4976,9 +4976,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -4986,14 +4986,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -5006,17 +5006,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5031,22 +5031,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5061,27 +5061,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5142,7 +5142,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -5159,7 +5159,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -5248,9 +5248,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -5258,14 +5258,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -5278,17 +5278,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5303,22 +5303,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5333,27 +5333,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5414,7 +5414,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -5431,7 +5431,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -5520,9 +5520,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -5530,14 +5530,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -5550,17 +5550,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5575,22 +5575,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5605,27 +5605,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5686,7 +5686,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -5703,7 +5703,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -5792,9 +5792,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -5802,14 +5802,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -5822,17 +5822,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5847,22 +5847,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5877,27 +5877,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -5958,7 +5958,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -5975,7 +5975,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6064,9 +6064,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6074,14 +6074,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -6094,17 +6094,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6119,22 +6119,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6149,27 +6149,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6230,7 +6230,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6247,7 +6247,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6336,9 +6336,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6346,14 +6346,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -6366,17 +6366,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6391,22 +6391,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6421,27 +6421,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6502,7 +6502,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6519,7 +6519,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6609,9 +6609,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6619,14 +6619,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -6639,17 +6639,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6664,22 +6664,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6694,27 +6694,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6775,7 +6775,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6792,7 +6792,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6881,9 +6881,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -6891,14 +6891,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -6911,17 +6911,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6936,22 +6936,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -6966,27 +6966,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -7047,7 +7047,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7064,7 +7064,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7153,9 +7153,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7163,14 +7163,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -7183,17 +7183,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -7208,22 +7208,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -7238,27 +7238,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -7319,7 +7319,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7336,7 +7336,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7425,9 +7425,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7435,14 +7435,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -7455,17 +7455,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -7480,22 +7480,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -7510,27 +7510,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -7591,7 +7591,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7608,7 +7608,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7697,9 +7697,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7707,14 +7707,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -7727,17 +7727,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -7752,22 +7752,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -7782,27 +7782,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -7863,7 +7863,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7880,7 +7880,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7969,9 +7969,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -7979,14 +7979,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -7999,17 +7999,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -8024,22 +8024,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -8054,27 +8054,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -8135,7 +8135,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -8152,7 +8152,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -8241,9 +8241,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -8251,14 +8251,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -8271,17 +8271,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -8296,22 +8296,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -8326,27 +8326,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -8407,7 +8407,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -8424,7 +8424,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -8513,9 +8513,9 @@ def check_signwindows():  # 检查用户签到弹窗
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=712, y=1884).perform()
-        time.sleep(6)
+        time.sleep(7)
         TouchAction(driver).tap(x=712, y=852).perform()
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -8523,14 +8523,14 @@ def check_signwindows():  # 检查用户签到弹窗
             time.sleep(40)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("toutiaosdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
         else:
             print("GDTsdk广告")
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             print("GDTsdk广告关闭")
-            time.sleep(6)
+            time.sleep(7)
             TouchAction(driver).tap(x=1254, y=671).perform()  # 关闭加分弹窗
 
 
@@ -8543,17 +8543,17 @@ def choujiang():
     TouchAction(driver).tap(x=1285, y=2354).perform()  # 进入抽奖页面
     time.sleep(2)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽10次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽9次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -8568,22 +8568,22 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽8次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽7次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽6次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -8598,27 +8598,27 @@ def choujiang():
         print("GDTsdk广告关闭")
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽5次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽4次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽3次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 抽2次
-    time.sleep(6)
+    time.sleep(7)
     TouchAction(driver).tap(x=717, y=1620).perform()  # 关闭奖励弹窗
     TouchAction(driver).tap(x=717, y=1486).perform()  # 关闭奖励弹窗
     time.sleep(1)
     TouchAction(driver).tap(x=1037, y=1977).perform()  # 看广告
-    time.sleep(6)
+    time.sleep(7)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
@@ -8679,7 +8679,7 @@ def kantu():
         time.sleep(3)
         TouchAction(driver).tap(x=444, y=1560).perform()  # 选择左侧去除多余选项广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -8696,7 +8696,7 @@ def kantu():
         time.sleep(2)
         TouchAction(driver).tap(x=1000, y=1560).perform()  # 选择右侧提示广告
         print(a)
-        time.sleep(6)
+        time.sleep(7)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
