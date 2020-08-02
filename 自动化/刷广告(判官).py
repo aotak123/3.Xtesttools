@@ -33,7 +33,7 @@ capabilities['autoWebview'] = 'false'
 # capabilities['mobile'] = '18017700602'
 # capabilities['mobile'] = '18017700550'
 # capabilities['mobile'] = '18017700223'
-# capabilities['mobile'] = '18017700597'
+capabilities['mobile'] = '18017700597'
 
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
@@ -157,6 +157,7 @@ while a > 0:
         print("GDTsdk广告关闭")
     a -= 1
 
+time.sleep(8)
 driver.back() # 判官中回到首页
 time.sleep(1)
 driver.back()
