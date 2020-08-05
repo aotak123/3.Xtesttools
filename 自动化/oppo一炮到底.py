@@ -118,7 +118,7 @@ while a > 0:
     except NoSuchElementException:
         print("toutiaosdk广告")
         time.sleep(35)
-        TouchAction(driver).tap(x=641, y=76).perform()  # 关闭toutiao广告
+        TouchAction(driver).tap(x=641, y=119).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
     else:
@@ -132,19 +132,19 @@ while a > 0:
 time.sleep(7)
 driver.back()  # 判官中回到首页
 time.sleep(1)
-TouchAction(driver).tap(x=283, y=98).perform()  # 返回进入个人中心
+TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(1)
-setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-setbutton.click()
-# TouchAction(driver).tap(x=636, y=128).perform() # 点击设置
+# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
+# setbutton.click()
+TouchAction(driver).tap(x=638, y=122).perform()  # 点击设置
 time.sleep(1)
-loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-loginout.click()
-# TouchAction(driver).tap(x=361, y=1358).perform() # 点击退出
+# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
+# loginout.click()
+TouchAction(driver).tap(x=354, y=1355).perform()  # 点击退出
 time.sleep(1)
-# TouchAction(driver).tap(x=480, y=800).perform() # 弹窗确定退出
-loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-loginout_true.click()
+TouchAction(driver).tap(x=479, y=790).perform()  # 弹窗确定退出
+# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
+# loginout_true.click()
 
 
 
@@ -246,7 +246,7 @@ while a > 0:
     except NoSuchElementException:
         print("toutiaosdk广告")
         time.sleep(35)
-        TouchAction(driver).tap(x=641, y=76).perform()  # 关闭toutiao广告
+        TouchAction(driver).tap(x=641, y=119).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
     else:
@@ -260,19 +260,19 @@ while a > 0:
 time.sleep(7)
 driver.back()  # 判官中回到首页
 time.sleep(1)
-TouchAction(driver).tap(x=283, y=98).perform()  # 返回进入个人中心
+TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(1)
-setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-setbutton.click()
-# TouchAction(driver).tap(x=636, y=128).perform() # 点击设置
+# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
+# setbutton.click()
+TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
 time.sleep(1)
-loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-loginout.click()
-# TouchAction(driver).tap(x=361, y=1358).perform() # 点击退出
+# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
+# loginout.click()
+TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
 time.sleep(1)
-# TouchAction(driver).tap(x=480, y=800).perform() # 弹窗确定退出
-loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-loginout_true.click()
+TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
+# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
+# loginout_true.click()
 
 
 
@@ -375,7 +375,7 @@ while a > 0:
     except NoSuchElementException:
         print("toutiaosdk广告")
         time.sleep(35)
-        TouchAction(driver).tap(x=641, y=76).perform()  # 关闭toutiao广告
+        TouchAction(driver).tap(x=641, y=119).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
     else:
@@ -389,19 +389,19 @@ while a > 0:
 time.sleep(7)
 driver.back()  # 判官中回到首页
 time.sleep(1)
-TouchAction(driver).tap(x=283, y=98).perform()  # 返回进入个人中心
+TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(1)
-setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-setbutton.click()
-# TouchAction(driver).tap(x=636, y=128).perform() # 点击设置
+# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
+# setbutton.click()
+TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
 time.sleep(1)
-loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-loginout.click()
-# TouchAction(driver).tap(x=361, y=1358).perform() # 点击退出
+# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
+# loginout.click()
+TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
 time.sleep(1)
-# TouchAction(driver).tap(x=480, y=800).perform() # 弹窗确定退出
-loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-loginout_true.click()
+TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
+# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
+# loginout_true.click()
 
 
 
@@ -504,7 +504,7 @@ while a > 0:
     except NoSuchElementException:
         print("toutiaosdk广告")
         time.sleep(35)
-        TouchAction(driver).tap(x=641, y=76).perform()  # 关闭toutiao广告
+        TouchAction(driver).tap(x=641, y=119).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
     else:
@@ -518,19 +518,19 @@ while a > 0:
 time.sleep(7)
 driver.back()  # 判官中回到首页
 time.sleep(1)
-TouchAction(driver).tap(x=283, y=98).perform()  # 返回进入个人中心
+TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(1)
-setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-setbutton.click()
-# TouchAction(driver).tap(x=636, y=128).perform() # 点击设置
+# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
+# setbutton.click()
+TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
 time.sleep(1)
-loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-loginout.click()
-# TouchAction(driver).tap(x=361, y=1358).perform() # 点击退出
+# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
+# loginout.click()
+TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
 time.sleep(1)
-# TouchAction(driver).tap(x=480, y=800).perform() # 弹窗确定退出
-loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-loginout_true.click()
+TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
+# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
+# loginout_true.click()
 
 
 
@@ -633,7 +633,7 @@ while a > 0:
     except NoSuchElementException:
         print("toutiaosdk广告")
         time.sleep(35)
-        TouchAction(driver).tap(x=641, y=76).perform()  # 关闭toutiao广告
+        TouchAction(driver).tap(x=641, y=119).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
     else:
@@ -647,19 +647,19 @@ while a > 0:
 time.sleep(7)
 driver.back()  # 判官中回到首页
 time.sleep(1)
-TouchAction(driver).tap(x=283, y=98).perform()  # 返回进入个人中心
+TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(1)
-setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-setbutton.click()
-# TouchAction(driver).tap(x=636, y=128).perform() # 点击设置
+# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
+# setbutton.click()
+TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
 time.sleep(1)
-loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-loginout.click()
-# TouchAction(driver).tap(x=361, y=1358).perform() # 点击退出
+# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
+# loginout.click()
+TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
 time.sleep(1)
-# TouchAction(driver).tap(x=480, y=800).perform() # 弹窗确定退出
-loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-loginout_true.click()
+TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
+# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
+# loginout_true.click()
 
 
 
@@ -765,7 +765,7 @@ while a > 0:
     except NoSuchElementException:
         print("toutiaosdk广告")
         time.sleep(35)
-        TouchAction(driver).tap(x=641, y=76).perform()  # 关闭toutiao广告
+        TouchAction(driver).tap(x=641, y=119).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
     else:
@@ -779,19 +779,19 @@ while a > 0:
 time.sleep(7)
 driver.back()  # 判官中回到首页
 time.sleep(1)
-TouchAction(driver).tap(x=283, y=98).perform()  # 返回进入个人中心
+TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(1)
-setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-setbutton.click()
-# TouchAction(driver).tap(x=636, y=128).perform() # 点击设置
+# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
+# setbutton.click()
+TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
 time.sleep(1)
-loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-loginout.click()
-# TouchAction(driver).tap(x=361, y=1358).perform() # 点击退出
+# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
+# loginout.click()
+TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
 time.sleep(1)
-# TouchAction(driver).tap(x=480, y=800).perform() # 弹窗确定退出
-loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-loginout_true.click()
+TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
+# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
+# loginout_true.click()
 
 
 
@@ -899,7 +899,7 @@ while a > 0:
     except NoSuchElementException:
         print("toutiaosdk广告")
         time.sleep(35)
-        TouchAction(driver).tap(x=641, y=76).perform()  # 关闭toutiao广告
+        TouchAction(driver).tap(x=641, y=119).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
     else:
@@ -913,19 +913,19 @@ while a > 0:
 time.sleep(7)
 driver.back()  # 判官中回到首页
 time.sleep(1)
-TouchAction(driver).tap(x=283, y=98).perform()  # 返回进入个人中心
+TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(1)
-setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-setbutton.click()
-# TouchAction(driver).tap(x=636, y=128).perform() # 点击设置
+# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
+# setbutton.click()
+TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
 time.sleep(1)
-loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-loginout.click()
-# TouchAction(driver).tap(x=361, y=1358).perform() # 点击退出
+# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
+# loginout.click()
+TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
 time.sleep(1)
-# TouchAction(driver).tap(x=480, y=800).perform() # 弹窗确定退出
-loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-loginout_true.click()
+TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
+# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
+# loginout_true.click()
 
 
 
@@ -1033,7 +1033,7 @@ while a > 0:
     except NoSuchElementException:
         print("toutiaosdk广告")
         time.sleep(35)
-        TouchAction(driver).tap(x=641, y=76).perform()  # 关闭toutiao广告
+        TouchAction(driver).tap(x=641, y=119).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
     else:
@@ -1047,19 +1047,19 @@ while a > 0:
 time.sleep(7)
 driver.back()  # 判官中回到首页
 time.sleep(1)
-TouchAction(driver).tap(x=283, y=98).perform()  # 返回进入个人中心
+TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(1)
-setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-setbutton.click()
-# TouchAction(driver).tap(x=636, y=128).perform() # 点击设置
+# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
+# setbutton.click()
+TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
 time.sleep(1)
-loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-loginout.click()
-# TouchAction(driver).tap(x=361, y=1358).perform() # 点击退出
+# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
+# loginout.click()
+TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
 time.sleep(1)
-# TouchAction(driver).tap(x=480, y=800).perform() # 弹窗确定退出
-loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-loginout_true.click()
+TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
+# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
+# loginout_true.click()
 
 
 
