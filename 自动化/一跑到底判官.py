@@ -111,7 +111,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -227,7 +227,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -343,7 +343,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -459,7 +459,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -575,7 +575,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -691,7 +691,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -719,7 +719,7 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 
 
 #######################################################################################################################
-mobile = "18930223547"
+mobile = "18930224047"
 AA = "\033[1;31mNO.7\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
 nowtime = time.strftime('%H:%M:%S')
@@ -807,7 +807,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -923,7 +923,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -1039,7 +1039,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -1155,7 +1155,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -1271,7 +1271,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -1387,7 +1387,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -1503,7 +1503,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -1619,7 +1619,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -1735,7 +1735,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -1851,7 +1851,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -1967,7 +1967,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -2083,7 +2083,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -2199,7 +2199,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -2227,7 +2227,7 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 
 
 #######################################################################################################################
-mobile = "18017700535"
+mobile = "18017700540"
 AA = "\033[1;31mNO.20\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
 nowtime = time.strftime('%H:%M:%S')
@@ -2315,7 +2315,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -2431,7 +2431,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -2547,7 +2547,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -2663,7 +2663,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -2779,7 +2779,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -2895,7 +2895,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -3011,7 +3011,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -3127,7 +3127,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -3243,7 +3243,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -3359,7 +3359,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -3475,7 +3475,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -3590,7 +3590,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -3705,7 +3705,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -3820,7 +3820,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -3935,7 +3935,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -3963,7 +3963,7 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 
 #######################################################################################################################
 mobile = "18017700607"
-AA = "\033[1;31mNO.35\033[0m " + mobile + " \033[1;31m开始\033[0m"
+AA = "\033[1;31mNO.40\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
 nowtime = time.strftime('%H:%M:%S')
 print(nowtime)
@@ -4050,7 +4050,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -4165,7 +4165,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -4280,7 +4280,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -4395,7 +4395,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -4510,7 +4510,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -4625,7 +4625,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -4740,7 +4740,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
@@ -4856,7 +4856,7 @@ while a > 0:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
         print("toutiaosdk广告")
-        time.sleep(35)
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")

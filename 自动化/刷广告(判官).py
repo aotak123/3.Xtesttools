@@ -21,20 +21,10 @@ capabilities['autoAcceptAlerts'] = 'true'
 # capabilities['autoDismissAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
 
-# capabilities['mobile'] = '18017700601'
-# capabilities['mobile'] = '18017700596'
-# capabilities['mobile'] = '18930223547'
-# capabilities['mobile'] = '18017700475'
-# capabilities['mobile'] = '18017700535'
-# capabilities['mobile'] = '18017700533'
-# capabilities['mobile'] = '18017700598'
-# capabilities['mobile'] = '17502150079'
-# capabilities['mobile'] = '18017700536'
-# capabilities['mobile'] = '18017700602'
-# capabilities['mobile'] = '18017700550'
-# capabilities['mobile'] = '18017700223'
+
+
 capabilities['mobile'] = '18017700611'
-# capabilities['mobile'] = '18017700597'
+
 
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
