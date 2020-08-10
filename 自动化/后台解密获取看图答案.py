@@ -20,7 +20,7 @@ headers = {
 }
 
 while True:
-    type = input("\033[30m \n 请输入加密字符串\n")
+    type = input("\033[30m \n 请输入加密字符串:\n")
     data1 = {
         "event": "decode",
         "data": type

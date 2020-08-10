@@ -24,5 +24,5 @@ data1 = {
         "event": "decode",
         "data": type
     }
-json1 = (s.post(url, headers=headers, data=data1).json().get("info"))
+json1 = (s.post(url, headers=headers, data=data1).json())
 print(json1)
