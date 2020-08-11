@@ -27,5 +27,3 @@ while True:
     }
     json1 = (s.post(url, headers=headers, data=data1).json().get("info").get("data").get("body").get("idioms"))# 看图答案
     print(json1)
-
-
