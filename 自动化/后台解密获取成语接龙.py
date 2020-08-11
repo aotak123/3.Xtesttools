@@ -1,6 +1,7 @@
 # # coding=utf-8
 import requests
 import json
+import re
 
 s = requests.Session()
 url = "http://gm.crazyccy.com/Admin/Decode/index"
@@ -25,7 +26,11 @@ while True:
         "event": "decode",
         "data": type
     }
-    json1 = (s.post(url, headers=headers, data=data1).json().get("info").get("data").get("body").get("idioms"))# 看图答案
-    print(json1)
+    # json1 = (s.post(url, headers=headers, data=data1).json().get("info").get("data").get("body").get("idioms"))# 看图答案
+    json1 = (s.post(url, headers=headers, data=data1).json().get("info").get("data").get("body"))# 接龙答案
+    # print(json1)
+    dict = zip(json1)
+    for answer in dict:
+        print(answer)
 
 
