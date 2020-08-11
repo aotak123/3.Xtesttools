@@ -17,7 +17,7 @@ if setting == 1:
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15',
         'Referer': 'http://gm.crazyccy.com/Admin/Decode/index',
         'Content-Length': '1016',
-        'Cookie': 'PHPSESSID=jjhks6ttstuugvfgmi8bc5oqn3; requestUUID=0f51bbb7-919f-49d4-6148-b8dc93c13f24',
+        'Cookie': 'PHPSESSID=bcolasi5vg9o90l402t59fql1t; requestUUID=5622fcf5-61e9-ab80-81be-dc1c61c85395',
         'Connection': 'keep-alive',
     }
 
