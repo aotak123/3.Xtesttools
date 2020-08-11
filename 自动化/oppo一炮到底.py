@@ -19,8 +19,6 @@ capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 context = ssl._create_unverified_context()
 
-
-
 #######################################################################################################################
 mobile = "18017700401"
 AA = "\033[1;31mNO.1\033[0m " + mobile + " \033[1;31m开始\033[0m"
@@ -46,14 +44,15 @@ def check_login():
         getcode = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_get_identifyCode")
         getcode.click()
         # TouchAction(driver).tap(x=543, y=494).perform()  # 获取验证码
-        time.sleep(2) # 获取验证码
+        time.sleep(2)  # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
         # print(logincodeurl)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_Code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_Code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(2)
         edit_Code.send_keys(logincode)
         time.sleep(2)
@@ -134,20 +133,11 @@ driver.back()  # 判官中回到首页
 time.sleep(2)
 TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(2)
-# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-# setbutton.click()
 TouchAction(driver).tap(x=638, y=122).perform()  # 点击设置
 time.sleep(2)
-# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-# loginout.click()
 TouchAction(driver).tap(x=354, y=1355).perform()  # 点击退出
 time.sleep(2)
 TouchAction(driver).tap(x=479, y=790).perform()  # 弹窗确定退出
-# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-# loginout_true.click()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700403"
@@ -174,14 +164,15 @@ def check_login():
         getcode = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_get_identifyCode")
         getcode.click()
         # TouchAction(driver).tap(x=543, y=494).perform()  # 获取验证码
-        time.sleep(2) # 获取验证码
+        time.sleep(2)  # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
         # print(logincodeurl)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_Code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_Code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(2)
         edit_Code.send_keys(logincode)
         time.sleep(2)
@@ -262,21 +253,13 @@ driver.back()  # 判官中回到首页
 time.sleep(2)
 TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(2)
-# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-# setbutton.click()
-TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
+
+TouchAction(driver).tap(x=638, y=122).perform()  # 点击设置
 time.sleep(2)
-# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-# loginout.click()
-TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
+
+TouchAction(driver).tap(x=354, y=1355).perform()  # 点击退出
 time.sleep(2)
-TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
-# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-# loginout_true.click()
-
-
-
-
+TouchAction(driver).tap(x=479, y=790).perform()  # 弹窗确定退出
 
 #######################################################################################################################
 mobile = "18017700339"
@@ -303,14 +286,15 @@ def check_login():
         getcode = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_get_identifyCode")
         getcode.click()
         # TouchAction(driver).tap(x=543, y=494).perform()  # 获取验证码
-        time.sleep(2) # 获取验证码
+        time.sleep(2)  # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
         # print(logincodeurl)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_Code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_Code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(2)
         edit_Code.send_keys(logincode)
         time.sleep(2)
@@ -391,21 +375,13 @@ driver.back()  # 判官中回到首页
 time.sleep(2)
 TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(2)
-# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-# setbutton.click()
-TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
+
+TouchAction(driver).tap(x=638, y=122).perform()  # 点击设置
 time.sleep(2)
-# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-# loginout.click()
-TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
+
+TouchAction(driver).tap(x=354, y=1355).perform()  # 点击退出
 time.sleep(2)
-TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
-# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-# loginout_true.click()
-
-
-
-
+TouchAction(driver).tap(x=479, y=790).perform()  # 弹窗确定退出
 
 #######################################################################################################################
 mobile = "18017700413"
@@ -432,14 +408,15 @@ def check_login():
         getcode = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_get_identifyCode")
         getcode.click()
         # TouchAction(driver).tap(x=543, y=494).perform()  # 获取验证码
-        time.sleep(2) # 获取验证码
+        time.sleep(2)  # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
         # print(logincodeurl)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_Code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_Code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(2)
         edit_Code.send_keys(logincode)
         time.sleep(2)
@@ -520,21 +497,13 @@ driver.back()  # 判官中回到首页
 time.sleep(2)
 TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(2)
-# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-# setbutton.click()
-TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
+
+TouchAction(driver).tap(x=638, y=122).perform()  # 点击设置
 time.sleep(2)
-# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-# loginout.click()
-TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
+
+TouchAction(driver).tap(x=354, y=1355).perform()  # 点击退出
 time.sleep(2)
-TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
-# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-# loginout_true.click()
-
-
-
-
+TouchAction(driver).tap(x=479, y=790).perform()  # 弹窗确定退出
 
 #######################################################################################################################
 mobile = "18017700414"
@@ -561,14 +530,15 @@ def check_login():
         getcode = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_get_identifyCode")
         getcode.click()
         # TouchAction(driver).tap(x=543, y=494).perform()  # 获取验证码
-        time.sleep(2) # 获取验证码
+        time.sleep(2)  # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
         # print(logincodeurl)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_Code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_Code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(2)
         edit_Code.send_keys(logincode)
         time.sleep(2)
@@ -649,24 +619,13 @@ driver.back()  # 判官中回到首页
 time.sleep(2)
 TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(2)
-# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-# setbutton.click()
-TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
+
+TouchAction(driver).tap(x=638, y=122).perform()  # 点击设置
 time.sleep(2)
-# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-# loginout.click()
-TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
+
+TouchAction(driver).tap(x=354, y=1355).perform()  # 点击退出
 time.sleep(2)
-TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
-# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-# loginout_true.click()
-
-
-
-
-
-
-
+TouchAction(driver).tap(x=479, y=790).perform()  # 弹窗确定退出
 
 #######################################################################################################################
 mobile = "18017700521"
@@ -693,14 +652,15 @@ def check_login():
         getcode = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_get_identifyCode")
         getcode.click()
         # TouchAction(driver).tap(x=543, y=494).perform()  # 获取验证码
-        time.sleep(2) # 获取验证码
+        time.sleep(2)  # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
         # print(logincodeurl)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_Code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_Code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(2)
         edit_Code.send_keys(logincode)
         time.sleep(2)
@@ -781,26 +741,13 @@ driver.back()  # 判官中回到首页
 time.sleep(2)
 TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(2)
-# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-# setbutton.click()
-TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
+
+TouchAction(driver).tap(x=638, y=122).perform()  # 点击设置
 time.sleep(2)
-# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-# loginout.click()
-TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
+
+TouchAction(driver).tap(x=354, y=1355).perform()  # 点击退出
 time.sleep(2)
-TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
-# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-# loginout_true.click()
-
-
-
-
-
-
-
-
-
+TouchAction(driver).tap(x=479, y=790).perform()  # 弹窗确定退出
 
 #######################################################################################################################
 mobile = "18017700715"
@@ -827,14 +774,15 @@ def check_login():
         getcode = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_get_identifyCode")
         getcode.click()
         # TouchAction(driver).tap(x=543, y=494).perform()  # 获取验证码
-        time.sleep(2) # 获取验证码
+        time.sleep(2)  # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
         # print(logincodeurl)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_Code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_Code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(2)
         edit_Code.send_keys(logincode)
         time.sleep(2)
@@ -915,26 +863,13 @@ driver.back()  # 判官中回到首页
 time.sleep(2)
 TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(2)
-# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-# setbutton.click()
-TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
+
+TouchAction(driver).tap(x=638, y=122).perform()  # 点击设置
 time.sleep(2)
-# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-# loginout.click()
-TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
+
+TouchAction(driver).tap(x=354, y=1355).perform()  # 点击退出
 time.sleep(2)
-TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
-# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-# loginout_true.click()
-
-
-
-
-
-
-
-
-
+TouchAction(driver).tap(x=479, y=790).perform()  # 弹窗确定退出
 
 #######################################################################################################################
 mobile = "18220860324"
@@ -961,14 +896,15 @@ def check_login():
         getcode = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_get_identifyCode")
         getcode.click()
         # TouchAction(driver).tap(x=543, y=494).perform()  # 获取验证码
-        time.sleep(2) # 获取验证码
+        time.sleep(2)  # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
         # print(logincodeurl)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_Code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_Code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(2)
         edit_Code.send_keys(logincode)
         time.sleep(2)
@@ -1049,27 +985,13 @@ driver.back()  # 判官中回到首页
 time.sleep(2)
 TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(2)
-# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-# setbutton.click()
-TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
+
+TouchAction(driver).tap(x=638, y=122).perform()  # 点击设置
 time.sleep(2)
-# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-# loginout.click()
-TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
+
+TouchAction(driver).tap(x=354, y=1355).perform()  # 点击退出
 time.sleep(2)
-TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
-# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-# loginout_true.click()
-
-
-
-
-
-
-
-
-
-
+TouchAction(driver).tap(x=479, y=790).perform()  # 弹窗确定退出
 
 #######################################################################################################################
 mobile = "18116699805"
@@ -1096,14 +1018,15 @@ def check_login():
         getcode = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_get_identifyCode")
         getcode.click()
         # TouchAction(driver).tap(x=543, y=494).perform()  # 获取验证码
-        time.sleep(2) # 获取验证码
+        time.sleep(2)  # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
         # print(logincodeurl)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_Code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_Code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(2)
         edit_Code.send_keys(logincode)
         time.sleep(2)
@@ -1184,20 +1107,13 @@ driver.back()  # 判官中回到首页
 time.sleep(2)
 TouchAction(driver).tap(x=290, y=85).perform()  # 返回进入个人中心
 time.sleep(2)
-# setbutton = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
-# setbutton.click()
-TouchAction(driver).tap(x=638, y=122).perform() # 点击设置
+
+TouchAction(driver).tap(x=638, y=122).perform()  # 点击设置
 time.sleep(2)
-# loginout = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/btn_login_exit")
-# loginout.click()
-TouchAction(driver).tap(x=354, y=1355).perform() # 点击退出
+
+TouchAction(driver).tap(x=354, y=1355).perform()  # 点击退出
 time.sleep(2)
-TouchAction(driver).tap(x=479, y=790).perform() # 弹窗确定退出
-# loginout_true = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/text_right")
-# loginout_true.click()
-
-
-
+TouchAction(driver).tap(x=479, y=790).perform()  # 弹窗确定退出
 
 #######################################################################################################################
 nowtime = time.strftime('%H:%M:%S')

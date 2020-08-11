@@ -20,8 +20,6 @@ capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 context = ssl._create_unverified_context()
 
-
-
 #######################################################################################################################
 mobile = "18017700223"
 AA = "\033[1;31mNO.1\033[0m " + mobile + " \033[1;31m开始\033[0m"
@@ -52,7 +50,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -134,9 +133,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "15606566329"
@@ -168,7 +164,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -250,9 +247,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "17502150079"
@@ -284,7 +278,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -366,9 +361,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700411"
@@ -400,7 +392,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -482,9 +475,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700610"
@@ -516,7 +506,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -598,9 +589,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700716"
@@ -632,7 +620,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -714,9 +703,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18930224047"
@@ -748,7 +734,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -830,9 +817,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700410"
@@ -864,7 +848,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -946,9 +931,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700717"
@@ -980,7 +962,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -1062,9 +1045,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700400"
@@ -1096,7 +1076,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -1178,9 +1159,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700602"
@@ -1212,7 +1190,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -1294,9 +1273,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700601"
@@ -1328,7 +1304,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -1410,9 +1387,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700599"
@@ -1444,7 +1418,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -1526,9 +1501,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700598"
@@ -1560,7 +1532,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -1642,9 +1615,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700597"
@@ -1676,7 +1646,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -1758,9 +1729,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700596"
@@ -1792,7 +1760,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -1874,9 +1843,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700550"
@@ -1908,7 +1874,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -1990,9 +1957,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700537"
@@ -2024,7 +1988,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -2106,9 +2071,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700536"
@@ -2140,7 +2102,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -2222,9 +2185,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700540"
@@ -2256,7 +2216,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -2338,9 +2299,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700533"
@@ -2372,7 +2330,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -2454,9 +2413,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700526"
@@ -2488,7 +2444,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -2570,9 +2527,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700516"
@@ -2604,7 +2558,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -2686,9 +2641,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700515"
@@ -2720,7 +2672,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -2802,9 +2755,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700475"
@@ -2836,7 +2786,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -2918,9 +2869,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700710"
@@ -2952,7 +2900,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -3034,9 +2983,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700580"
@@ -3068,7 +3014,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -3150,9 +3097,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700530"
@@ -3184,7 +3128,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -3266,9 +3211,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700722"
@@ -3300,7 +3242,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -3382,9 +3325,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
 
 #######################################################################################################################
 mobile = "18017700713"
@@ -3416,7 +3356,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -3498,8 +3439,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 mobile = "18017700595"
@@ -3531,7 +3470,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -3613,8 +3553,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 mobile = "18017700571"
@@ -3646,7 +3584,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -3728,8 +3667,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 mobile = "18017700477"
@@ -3761,7 +3698,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -3843,8 +3781,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 mobile = "18017700608"
@@ -3876,7 +3812,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -3958,8 +3895,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 mobile = "18017700607"
@@ -3991,7 +3926,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -4073,8 +4009,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 mobile = "18017700606"
@@ -4106,7 +4040,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -4188,8 +4123,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 mobile = "18017700605"
@@ -4221,7 +4154,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -4303,8 +4237,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 mobile = "18017700604"
@@ -4336,7 +4268,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -4418,8 +4351,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 mobile = "18017700603"
@@ -4451,7 +4382,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -4533,8 +4465,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 mobile = "18017700600"
@@ -4566,7 +4496,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -4649,11 +4580,9 @@ TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
 
-
-
 #######################################################################################################################
 mobile = "18017700611"
-AA = "\033[1;31mNO.41\033[0m " + mobile + " \033[1;31m开始\033[0m"
+AA = "\033[1;31m   \033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
 nowtime = time.strftime('%H:%M:%S')
 print(nowtime)
@@ -4681,7 +4610,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -4762,10 +4692,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
-
-
 
 #######################################################################################################################
 mobile = "18017700207"
@@ -4797,7 +4723,8 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        edit_code = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
@@ -4879,8 +4806,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-
-
 
 #######################################################################################################################
 nowtime = time.strftime('%H:%M:%S')
