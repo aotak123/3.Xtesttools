@@ -17,7 +17,7 @@ if setting == 1:
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15',
         'Referer': 'http://gm.crazyccy.com/Admin/Decode/index',
         'Content-Length': '1016',
-        'Cookie': 'PHPSESSID=bcolasi5vg9o90l402t59fql1t; requestUUID=5622fcf5-61e9-ab80-81be-dc1c61c85395',
+        'Cookie': 'PHPSESSID=vmph8k4dtqca1a6sc15fjise18; requestUUID=92b6859a-42cf-cd33-04a6-d0252ccc801e',
         'Connection': 'keep-alive',
     }
 
@@ -34,7 +34,7 @@ if setting == 0:
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15',
         'Referer': 'http://test-gm-fkccy.tiantianshuibaobao.com/Admin/Decode/index',
         'Content-Length': '1016',
-        'Cookie': 'PHPSESSID=7u2kgtjtjlcu77a9hf4h77rq9v; requestUUID=eb611f95-e5da-6a1c-9c4a-74e8539836e6',
+        'Cookie': 'requestUUID=0d70df67-0243-d7f2-a161-ba3344b01f6d; PHPSESSID=c5nqm9r19bealgm0v841s363ji',
         'Connection': 'keep-alive',
     }
 while True:

@@ -15,7 +15,7 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15',
     'Referer': 'http://gm.crazyccy.com/Admin/Decode/index',
     'Content-Length': '1016',
-    'Cookie': 'PHPSESSID=bcolasi5vg9o90l402t59fql1t; requestUUID=5622fcf5-61e9-ab80-81be-dc1c61c85395',
+    'Cookie': 'PHPSESSID=vmph8k4dtqca1a6sc15fjise18; requestUUID=92b6859a-42cf-cd33-04a6-d0252ccc801e',
     'Connection': 'keep-alive',
 }
 
