@@ -15,12 +15,14 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15',
     'Referer': 'http://gm.crazyccy.com/Admin/Decode/index',
     'Content-Length': '1016',
-    'Cookie': 'PHPSESSID=vmph8k4dtqca1a6sc15fjise18; requestUUID=92b6859a-42cf-cd33-04a6-d0252ccc801e',
+    'Cookie': 'requestUUID=afe6ff85-6034-97c4-540f-4c068b1fe020; PHPSESSID=vmph8k4dtqca1a6sc15fjise18',
     'Connection': 'keep-alive',
 }
 
 while True:
     type = input("\033[30m \n 请输入加密字符串:\n")
+    if type == "":  # 输入空不执行
+        continue
     data1 = {
         "event": "decode",
         "data": type

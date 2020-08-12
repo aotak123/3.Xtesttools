@@ -1,6 +1,9 @@
-import time
+# # coding=utf-8
+import requests
 import json
+import time
 import response
+
 # for i in range(5):
 #     print(i)
 # else:
@@ -42,4 +45,3 @@ import response
 #     time.sleep(delay)
 #     print('睡醒了')
 # i_want_to_sleep(2)
-
