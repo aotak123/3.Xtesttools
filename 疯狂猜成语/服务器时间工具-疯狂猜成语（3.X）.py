@@ -4,7 +4,7 @@ import time
 
 ####################——————tak制作  vol.605——————####################
 
-url = "http://test-task-fkccy.tiantianshuibaobao.com/Update_time//update?f=get"
+url = "http://test-task-fkccy.tiantianshuibaobao.com/Update_time//update?f=update"
 
 while True:
     type = input("\n 请输入数字：\n 1：查询时间\n 2：恢复时间\n 3：修改时间\n")
@@ -40,7 +40,7 @@ while True:
             if yeartime == "0":
                 nowtime = time.strftime('%Y-%m-%d%%20%H:%M:%S')
                 nowtimeurl = url + "&datetime=" + nowtime
-                # print(nowtimeurl)
+                print(nowtimeurl)
                 request = urllib.request.Request(nowtimeurl)
                 response = urllib.request.urlopen(request)
                 nowtimeurlbytes = response.read()
@@ -50,7 +50,7 @@ while True:
 
             else:
                 fullurl3 = url + "&datetime=" + yeartime
-                # print(fullurl3)
+                print(fullurl3)
                 request = urllib.request.Request(fullurl3)
                 response = urllib.request.urlopen(request)
                 fullurl3bytes = response.read()
