@@ -72,9 +72,15 @@ def check_login():
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        if logincode == "查不到！":
-            print("获取验证码失败")
+        if logincode == '查不到！':
             TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
+            time.sleep(2)  # 获取验证码
+            logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
+            request = urllib.request.Request(logincodeurl)  # 构建请求url
+            response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
+            num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
+            logincode = num.decode()
+            print(logincodeurl)
         time.sleep(1)
         el4 = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(2)
