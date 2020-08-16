@@ -131,7 +131,7 @@ while a > 0:
         print("toutiaosdk广告关闭")
     else:
         print("GDTsdk广告")
-        time.sleep(55)
+        time.sleep(60)
         driver.back()  # GDTsdk广告按钮
         print(a)
         print("GDTsdk广告关闭")
@@ -260,7 +260,7 @@ while a > 0:
         print("toutiaosdk广告关闭")
     else:
         print("GDTsdk广告")
-        time.sleep(55)
+        time.sleep(60)
         driver.back()  # GDTsdk广告按钮
         print(a)
         print("GDTsdk广告关闭")
@@ -391,7 +391,7 @@ while a > 0:
         print("toutiaosdk广告关闭")
     else:
         print("GDTsdk广告")
-        time.sleep(55)
+        time.sleep(60)
         driver.back()  # GDTsdk广告按钮
         print(a)
         print("GDTsdk广告关闭")
@@ -522,7 +522,7 @@ while a > 0:
         print("toutiaosdk广告关闭")
     else:
         print("GDTsdk广告")
-        time.sleep(55)
+        time.sleep(60)
         driver.back()  # GDTsdk广告按钮
         print(a)
         print("GDTsdk广告关闭")
@@ -653,7 +653,7 @@ while a > 0:
         print("toutiaosdk广告关闭")
     else:
         print("GDTsdk广告")
-        time.sleep(55)
+        time.sleep(60)
         driver.back()  # GDTsdk广告按钮
         print(a)
         print("GDTsdk广告关闭")
@@ -784,7 +784,7 @@ while a > 0:
         print("toutiaosdk广告关闭")
     else:
         print("GDTsdk广告")
-        time.sleep(55)
+        time.sleep(60)
         driver.back()  # GDTsdk广告按钮
         print(a)
         print("GDTsdk广告关闭")
@@ -915,7 +915,7 @@ while a > 0:
         print("toutiaosdk广告关闭")
     else:
         print("GDTsdk广告")
-        time.sleep(55)
+        time.sleep(60)
         driver.back()  # GDTsdk广告按钮
         print(a)
         print("GDTsdk广告关闭")
@@ -1046,7 +1046,7 @@ while a > 0:
         print("toutiaosdk广告关闭")
     else:
         print("GDTsdk广告")
-        time.sleep(55)
+        time.sleep(60)
         driver.back()  # GDTsdk广告按钮
         print(a)
         print("GDTsdk广告关闭")
@@ -1177,7 +1177,7 @@ while a > 0:
         print("toutiaosdk广告关闭")
     else:
         print("GDTsdk广告")
-        time.sleep(55)
+        time.sleep(60)
         driver.back()  # GDTsdk广告按钮
         print(a)
         print("GDTsdk广告关闭")
