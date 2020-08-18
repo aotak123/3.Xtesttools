@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9c17beb4-4296-4304-bcec-96ffb2b418b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1TvcRmfdna1c2R5aDQ8LbQ36KtS" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../3.X工具/其他小工具" />
+      <recent name="$PROJECT_DIR$/../3.X工具/疯狂猜成语" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.获取手机验证码-疯狂猜成语（3.X）">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="获取手机验证码-疯狂猜成语（3.X）" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\admin\PycharmProjects\autotest\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/疯狂猜成语" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/疯狂猜成语/获取手机验证码-疯狂猜成语（3.X）.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="测试" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/测试.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="手机号验证获取（3.X）" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/手机号验证获取（3.X）.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="疯狂猜成语服务器时间工具（3.X）" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../3.X工具/疯狂猜成语" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../3.X工具/疯狂猜成语/疯狂猜成语服务器时间工具（3.X）.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="测试" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/测试.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="计算器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/计算器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="计算器" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/计算器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="autotest.py" type="tests" factoryName="Unittests" temporary="true">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../3.X工具" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../3.X工具/autotest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.手机号验证获取（3.X）" />
+      <item itemvalue="Python.1" />
+      <item itemvalue="Python.测试" />
+      <item itemvalue="Python.获取手机验证码-疯狂猜成语（3.X）" />
+      <item itemvalue="Python tests.autotest.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.获取手机验证码-疯狂猜成语（3.X）" />
+        <item itemvalue="Python.手机号验证获取（3.X）" />
+        <item itemvalue="Python.1" />
+        <item itemvalue="Python.测试" />
+        <item itemvalue="Python tests.autotest.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c17beb4-4296-4304-bcec-96ffb2b418b0" name="Default Changelist" comment="" />
+      <created>1574344003840</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574344003840</updated>
+      <workItem from="1574344006337" duration="583000" />
+      <workItem from="1574385366670" duration="472000" />
+      <workItem from="1574431804516" duration="57000" />
+      <workItem from="1574823864685" duration="772000" />
+      <workItem from="1574841965553" duration="130000" />
+      <workItem from="1575447146923" duration="256000" />
+      <workItem from="1575447447298" duration="22000" />
+      <workItem from="1575447484168" duration="2897000" />
+      <workItem from="1575534598572" duration="2408000" />
+      <workItem from="1579679551073" duration="3262000" />
+      <workItem from="1580789333530" duration="2000" />
+      <workItem from="1587031379084" duration="1435000" />
+      <workItem from="1587032849251" duration="1321000" />
+      <workItem from="1590461355687" duration="2732000" />
+      <workItem from="1591173464259" duration="181000" />
+      <workItem from="1591173648435" duration="2000" />
+      <workItem from="1591250607918" duration="1084000" />
+      <workItem from="1591254153247" duration="5377000" />
+      <workItem from="1591334995952" duration="10593000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-2319" y="152" key="#Notifications" timestamp="1591335024676">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state x="-2319" y="152" key="#Notifications/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1591335024676" />
+    <state x="-2252" y="283" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591173589841">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state x="-2252" y="283" key="#com.intellij.execution.impl.EditConfigurationsDialog/-2560.23.2560.1057/0.23.1440.827@-2560.23.2560.1057" timestamp="1591173589841" />
+    <state x="-2181" y="241" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591341997514">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state x="-2181" y="241" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1591341997514" />
+    <state x="415" y="65" key="#test" timestamp="1587031896381">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="415" y="65" key="#test/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1587031896381" />
+    <state width="1241" height="304" key="GridCell.Tab.0.bottom" timestamp="1591346043097">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1241" height="304" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1591346043097" />
+    <state width="1241" height="241" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1591257832377" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.827@-2560.23.2560.1057" timestamp="1591251434912" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.828@-2560.23.2560.1057" timestamp="1591251160139" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.829@-2560.23.2560.1057" timestamp="1587034263070" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.831@-2560.23.2560.1057" timestamp="1587033961483" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1587033421919" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.833@0.23.1440.833" timestamp="1587032300538" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.834@0.23.1440.834" timestamp="1587032236065" />
+    <state width="1241" height="304" key="GridCell.Tab.0.center" timestamp="1591346043097">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1241" height="304" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1591346043097" />
+    <state width="1241" height="241" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1591257832375" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.827@-2560.23.2560.1057" timestamp="1591251434911" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.828@-2560.23.2560.1057" timestamp="1591251160139" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.829@-2560.23.2560.1057" timestamp="1587034263069" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.831@-2560.23.2560.1057" timestamp="1587033961483" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1587033421918" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.833@0.23.1440.833" timestamp="1587032300538" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.834@0.23.1440.834" timestamp="1587032236064" />
+    <state width="1241" height="304" key="GridCell.Tab.0.left" timestamp="1591346043096">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1241" height="304" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1591346043096" />
+    <state width="1241" height="241" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1591257832375" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.827@-2560.23.2560.1057" timestamp="1591251434911" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.828@-2560.23.2560.1057" timestamp="1591251160138" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.829@-2560.23.2560.1057" timestamp="1587034263069" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.831@-2560.23.2560.1057" timestamp="1587033961482" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1587033421918" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.833@0.23.1440.833" timestamp="1587032300537" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.834@0.23.1440.834" timestamp="1587032236064" />
+    <state width="1241" height="304" key="GridCell.Tab.0.right" timestamp="1591346043097">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1241" height="304" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1591346043097" />
+    <state width="1241" height="241" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1591257832376" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.827@-2560.23.2560.1057" timestamp="1591251434912" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.828@-2560.23.2560.1057" timestamp="1591251160139" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.829@-2560.23.2560.1057" timestamp="1587034263070" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.831@-2560.23.2560.1057" timestamp="1587033961483" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1587033421919" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.833@0.23.1440.833" timestamp="1587032300538" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.834@0.23.1440.834" timestamp="1587032236065" />
+    <state width="1241" height="304" key="GridCell.Tab.1.bottom" timestamp="1591346043098">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1241" height="304" key="GridCell.Tab.1.bottom/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1591346043098" />
+    <state width="1398" height="266" key="GridCell.Tab.1.bottom/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1587032817215" />
+    <state width="1241" height="304" key="GridCell.Tab.1.center" timestamp="1591346043098">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1241" height="304" key="GridCell.Tab.1.center/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1591346043098" />
+    <state width="1398" height="266" key="GridCell.Tab.1.center/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1587032817214" />
+    <state width="1241" height="304" key="GridCell.Tab.1.left" timestamp="1591346043098">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1241" height="304" key="GridCell.Tab.1.left/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1591346043098" />
+    <state width="1398" height="266" key="GridCell.Tab.1.left/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1587032817214" />
+    <state width="1241" height="304" key="GridCell.Tab.1.right" timestamp="1591346043098">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1241" height="304" key="GridCell.Tab.1.right/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1591346043098" />
+    <state width="1398" height="266" key="GridCell.Tab.1.right/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1587032817214" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/$garbage_classification.coverage" NAME="garbage_classification Coverage Results" MODIFIED="1587031406661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 Coverage Results" MODIFIED="1591342914812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$.coverage" NAME="测试 Coverage Results" MODIFIED="1591341249977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$Unittests_in_autotest_py.coverage" NAME="autotest.py Coverage Results" MODIFIED="1591173591596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$test.coverage" NAME="计算器 Coverage Results" MODIFIED="1587032300530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$autotest_py.coverage" NAME="autotest.py Coverage Results" MODIFIED="1591257832354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1575536604117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$3_X.coverage" NAME="疯狂猜成语服务器时间工具（3.X） Coverage Results" MODIFIED="1591345826180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../3.X工具/疯狂猜成语" />
+  </component>
+</project>
