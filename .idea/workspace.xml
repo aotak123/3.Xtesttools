@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c17beb4-4296-4304-bcec-96ffb2b418b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/3.Xtesttools.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9c17beb4-4296-4304-bcec-96ffb2b418b0" name="Default Changelist" comment="新增2个手机号  添加备注说明">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/疯狂猜成语/获取手机验证码-疯狂猜成语（3.X）.py" beforeDir="false" afterPath="$PROJECT_DIR$/疯狂猜成语/获取手机验证码-疯狂猜成语（3.X）.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化/一跑到底判官.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化/一跑到底判官.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化/oppo一炮到底.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化/oppo一炮到底.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1TvcRmfdna1c2R5aDQ8LbQ36KtS" />
   <component name="ProjectLevelVcsManager">
@@ -45,7 +41,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -66,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.获取手机验证码-疯狂猜成语（3.X）">
+  <component name="RunManager" selected="Python.oppo一炮到底">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="3.X工具" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,28 +144,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="3.X工具" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="一跑到底判官" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="3.Xtesttools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,6 +158,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/自动化/一跑到底判官.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -401,8 +397,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.获取手机验证码-疯狂猜成语（3.X）" />
         <item itemvalue="Python.oppo一炮到底" />
+        <item itemvalue="Python.获取手机验证码-疯狂猜成语（3.X）" />
         <item itemvalue="Python.一跑到底判官" />
         <item itemvalue="Python.手机号验证获取（3.X）" />
         <item itemvalue="Python.1" />
@@ -446,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597757636502</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="新增2个手机号  添加备注说明">
+      <created>1598066061615</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598066061615</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +470,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="移动文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="移动文件" />
+    <MESSAGE value="新增2个手机号  添加备注说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增2个手机号  添加备注说明" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-2319" y="152" key="#Notifications" timestamp="1591335024676">
