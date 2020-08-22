@@ -13,23 +13,18 @@ capabilities['platformName'] = 'Android'  # Android平台测试
 # 三星
 capabilities['platformVersion'] = '6.0.1'
 capabilities['deviceName'] = 'SM-G9250'
-
 capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系统手机中的联系人app的包名
 capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
 capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 # capabilities['autoDismissAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
-
-
-
-capabilities['mobile'] = '18017700611'
-
-
-
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 mobile = capabilities['mobile']
 context = ssl._create_unverified_context()
+
+
+capabilities['mobile'] = '13402063488'
 
 # 看图刷toutiao广告
 print("服务启动")
@@ -133,7 +128,7 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 13
+a = 11
 while a > 0:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
