@@ -19,12 +19,16 @@ capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 # capabilities['autoDismissAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
+
+capabilities['mobile'] = '13402063488'
+
+
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 mobile = capabilities['mobile']
 context = ssl._create_unverified_context()
 
 
-capabilities['mobile'] = '13402063488'
+
 
 # 看图刷toutiao广告
 print("服务启动")
