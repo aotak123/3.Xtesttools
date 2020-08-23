@@ -23,7 +23,7 @@ capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 
-mobile = '13651711999'
+mobile = '15721403717'
 context = ssl._create_unverified_context()
 
 print("服务启动")
