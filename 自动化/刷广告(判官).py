@@ -13,24 +13,19 @@ capabilities['platformName'] = 'Android'  # Android平台测试
 # 三星
 capabilities['platformVersion'] = '6.0.1'
 capabilities['deviceName'] = 'SM-G9250'
+
 capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系统手机中的联系人app的包名
 capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
 capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 # capabilities['autoDismissAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
-
-capabilities['mobile'] = '13651711999'
-
-
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
-mobile = capabilities['mobile']
+
+
+mobile = '13651711999'
 context = ssl._create_unverified_context()
 
-
-
-
-# 看图刷toutiao广告
 print("服务启动")
 time.sleep(5)
 
