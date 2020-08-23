@@ -20,7 +20,7 @@ capabilities['autoAcceptAlerts'] = 'true'
 # capabilities['autoDismissAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
 
-capabilities['mobile'] = '13402063488'
+capabilities['mobile'] = '13651711999'
 
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
@@ -164,4 +164,3 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
-sys.exit()
