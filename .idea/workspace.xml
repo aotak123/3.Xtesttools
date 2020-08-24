@@ -4,9 +4,7 @@
     <list default="true" id="9c17beb4-4296-4304-bcec-96ffb2b418b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/自动化/oppo一炮到底.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化/oppo一炮到底.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/自动化/刷广告(判官).py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化/刷广告(判官).py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,19 +50,7 @@
       <recent name="$PROJECT_DIR$/../3.X工具/疯狂猜成语" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.刷广告(判官)">
+  <component name="RunManager" selected="Python.一跑到底判官">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="3.X工具" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,19 +95,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <module name="3.X工具" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="获取手机验证码-疯狂猜成语（3.X）" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -344,6 +317,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="3.X工具" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
       <module name="3.X工具" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -399,9 +385,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.一跑到底判官" />
         <item itemvalue="Python.刷广告(判官)" />
         <item itemvalue="Python.获取手机验证码-疯狂猜成语（3.X）" />
-        <item itemvalue="Python.一跑到底判官" />
         <item itemvalue="Python.oppo一炮到底" />
         <item itemvalue="Python.手机号验证获取（3.X）" />
       </list>
@@ -436,6 +422,7 @@
       <workItem from="1591250607918" duration="1084000" />
       <workItem from="1591254153247" duration="5377000" />
       <workItem from="1591334995952" duration="10593000" />
+      <workItem from="1598233573972" duration="2276000" />
     </task>
     <task id="LOCAL-00001" summary="移动文件">
       <created>1597757636502</created>
@@ -581,6 +568,7 @@
     <state width="1398" height="266" key="GridCell.Tab.1.right/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/3_Xtesttools$.coverage" NAME="一跑到底判官 Coverage Results" MODIFIED="1598233668251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/自动化" />
     <SUITE FILE_PATH="coverage/$garbage_classification.coverage" NAME="garbage_classification Coverage Results" MODIFIED="1587031406661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 Coverage Results" MODIFIED="1591342914812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$.coverage" NAME="测试 Coverage Results" MODIFIED="1591341249977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
