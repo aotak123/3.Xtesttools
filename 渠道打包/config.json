@@ -1,0 +1,19 @@
+{
+  //extraInfo 不要出现以`channel`为key的情况
+  /*
+  不声明extraInfo的channel默认使用的extraInfo
+  如果没有此项则没有默认extraInfo
+   /     "channel": "cyceshi",
+  */
+  "defaultExtraInfo": {
+    "CHANNEL_LABEL": ""
+  },
+  "channelInfoList": [
+    {
+	  "channel": "vivopppppp",
+      "extraInfo": {
+        "CHANNEL_LABEL": ""
+      }
+    }
+  ]
+}
