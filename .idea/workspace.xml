@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c17beb4-4296-4304-bcec-96ffb2b418b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/渠道打包/channelPKG.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/渠道打包/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/渠道打包/walle-cli-all.jar" afterDir="false" />
+    <list default="true" id="9c17beb4-4296-4304-bcec-96ffb2b418b0" name="Default Changelist" comment="新增账号">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化/oppo一炮到底.py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化/oppo一炮到底.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/自动化/刷广告(判官).py" beforeDir="false" afterPath="$PROJECT_DIR$/自动化/刷广告(判官).py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -53,7 +53,7 @@
       <recent name="$PROJECT_DIR$/../3.X工具/疯狂猜成语" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.channelPKG">
+  <component name="RunManager" selected="Python.一跑到底判官">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="3.X工具" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,9 +173,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.8/bin/python3" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -410,10 +410,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.刷广告(判官)" />
+        <item itemvalue="Python.一跑到底判官" />
         <item itemvalue="Python.channelPKG" />
         <item itemvalue="Python.start" />
-        <item itemvalue="Python.一跑到底判官" />
-        <item itemvalue="Python.刷广告(判官)" />
         <item itemvalue="Python.获取手机验证码-疯狂猜成语（3.X）" />
       </list>
     </recent_temporary>
@@ -448,7 +448,11 @@
       <workItem from="1591254153247" duration="5377000" />
       <workItem from="1591334995952" duration="10593000" />
       <workItem from="1598233573972" duration="8648000" />
-      <workItem from="1598318643212" duration="4493000" />
+      <workItem from="1598318643212" duration="8569000" />
+      <workItem from="1598405780826" duration="4304000" />
+      <workItem from="1598493898089" duration="29000" />
+      <workItem from="1598493952676" duration="184000" />
+      <workItem from="1598494141685" duration="102000" />
     </task>
     <task id="LOCAL-00001" summary="移动文件">
       <created>1597757636502</created>
@@ -513,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598247003569</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="新增渠道打包工具">
+      <created>1598341040686</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598341040686</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +549,8 @@
     <MESSAGE value="新增2个手机号  添加备注说明" />
     <MESSAGE value="格式更新" />
     <MESSAGE value="新增手机号" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增手机号" />
+    <MESSAGE value="新增渠道打包工具" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增渠道打包工具" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-2319" y="152" key="#Notifications" timestamp="1598246993259" />
@@ -549,16 +561,22 @@
     <state x="-2181" y="241" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1598246993260" />
     <state x="415" y="65" key="#test" timestamp="1598246993260" />
     <state x="415" y="65" key="#test/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1598246993260" />
-    <state x="-2203" y="43" key="CommitChangelistDialog2" timestamp="1598247003441">
+    <state x="-2002" y="254" key="#一跑到底判官" timestamp="1598494225900">
+      <screen x="-2560" y="23" width="2560" height="1057" />
+    </state>
+    <state x="-2002" y="254" key="#一跑到底判官/-2560.23.2560.1057/0.23.1440.821@-2560.23.2560.1057" timestamp="1598494225900" />
+    <state x="-2203" y="43" key="CommitChangelistDialog2" timestamp="1598428826507">
       <screen x="-2560" y="23" width="2560" height="1057" />
     </state>
     <state x="-2203" y="43" key="CommitChangelistDialog2/-2560.23.2560.1057/0.23.1440.821@-2560.23.2560.1057" timestamp="1598247003441" />
-    <state width="1322" height="220" key="GridCell.Tab.0.bottom" timestamp="1598338975646">
+    <state x="-2203" y="43" key="CommitChangelistDialog2/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1598428826507" />
+    <state width="1322" height="220" key="GridCell.Tab.0.bottom" timestamp="1598438708490">
       <screen x="-2560" y="23" width="2560" height="1057" />
     </state>
     <state width="1241" height="304" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1598246993260" />
-    <state width="1322" height="220" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.821@-2560.23.2560.1057" timestamp="1598338975646" />
-    <state width="1322" height="220" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1598338887579" />
+    <state width="1322" height="220" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.821@-2560.23.2560.1057" timestamp="1598438708490" />
+    <state width="1322" height="220" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1598429726916" />
+    <state width="1322" height="220" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.824@-2560.23.2560.1057" timestamp="1598428531024" />
     <state width="1398" height="210" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.827@-2560.23.2560.1057" timestamp="1598246993260" />
     <state width="1398" height="210" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.828@-2560.23.2560.1057" timestamp="1598246993260" />
     <state width="1398" height="210" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.829@-2560.23.2560.1057" timestamp="1598246993260" />
@@ -566,12 +584,13 @@
     <state width="1398" height="210" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1598246993260" />
     <state width="1398" height="213" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.833@0.23.1440.833" timestamp="1598246993260" />
     <state width="1398" height="213" key="GridCell.Tab.0.bottom/-2560.23.2560.1057/0.23.1440.834@0.23.1440.834" timestamp="1598246993260" />
-    <state width="1322" height="220" key="GridCell.Tab.0.center" timestamp="1598338975645">
+    <state width="1322" height="220" key="GridCell.Tab.0.center" timestamp="1598438708489">
       <screen x="-2560" y="23" width="2560" height="1057" />
     </state>
     <state width="1241" height="304" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1598246993260" />
-    <state width="1322" height="220" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.821@-2560.23.2560.1057" timestamp="1598338975645" />
-    <state width="1322" height="220" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1598338887579" />
+    <state width="1322" height="220" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.821@-2560.23.2560.1057" timestamp="1598438708489" />
+    <state width="1322" height="220" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1598429726915" />
+    <state width="1322" height="220" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.824@-2560.23.2560.1057" timestamp="1598428531022" />
     <state width="1398" height="210" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.827@-2560.23.2560.1057" timestamp="1598246993260" />
     <state width="1398" height="210" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.828@-2560.23.2560.1057" timestamp="1598246993260" />
     <state width="1398" height="210" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.829@-2560.23.2560.1057" timestamp="1598246993260" />
@@ -579,12 +598,13 @@
     <state width="1398" height="210" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1598246993260" />
     <state width="1398" height="213" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.833@0.23.1440.833" timestamp="1598246993260" />
     <state width="1398" height="213" key="GridCell.Tab.0.center/-2560.23.2560.1057/0.23.1440.834@0.23.1440.834" timestamp="1598246993260" />
-    <state width="1322" height="220" key="GridCell.Tab.0.left" timestamp="1598338975645">
+    <state width="1322" height="220" key="GridCell.Tab.0.left" timestamp="1598438708488">
       <screen x="-2560" y="23" width="2560" height="1057" />
     </state>
     <state width="1241" height="304" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1598246993260" />
-    <state width="1322" height="220" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.821@-2560.23.2560.1057" timestamp="1598338975645" />
-    <state width="1322" height="220" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1598338887578" />
+    <state width="1322" height="220" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.821@-2560.23.2560.1057" timestamp="1598438708488" />
+    <state width="1322" height="220" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1598429726914" />
+    <state width="1322" height="220" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.824@-2560.23.2560.1057" timestamp="1598428531022" />
     <state width="1398" height="210" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.827@-2560.23.2560.1057" timestamp="1598246993260" />
     <state width="1398" height="210" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.828@-2560.23.2560.1057" timestamp="1598246993260" />
     <state width="1398" height="210" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.829@-2560.23.2560.1057" timestamp="1598246993260" />
@@ -592,12 +612,13 @@
     <state width="1398" height="210" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1598246993260" />
     <state width="1398" height="213" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.833@0.23.1440.833" timestamp="1598246993260" />
     <state width="1398" height="213" key="GridCell.Tab.0.left/-2560.23.2560.1057/0.23.1440.834@0.23.1440.834" timestamp="1598246993260" />
-    <state width="1322" height="220" key="GridCell.Tab.0.right" timestamp="1598338975646">
+    <state width="1322" height="220" key="GridCell.Tab.0.right" timestamp="1598438708489">
       <screen x="-2560" y="23" width="2560" height="1057" />
     </state>
     <state width="1241" height="304" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.820@-2560.23.2560.1057" timestamp="1598246993260" />
-    <state width="1322" height="220" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.821@-2560.23.2560.1057" timestamp="1598338975646" />
-    <state width="1322" height="220" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1598338887579" />
+    <state width="1322" height="220" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.821@-2560.23.2560.1057" timestamp="1598438708489" />
+    <state width="1322" height="220" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.823@-2560.23.2560.1057" timestamp="1598429726915" />
+    <state width="1322" height="220" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.824@-2560.23.2560.1057" timestamp="1598428531023" />
     <state width="1398" height="210" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.827@-2560.23.2560.1057" timestamp="1598246993260" />
     <state width="1398" height="210" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.828@-2560.23.2560.1057" timestamp="1598246993260" />
     <state width="1398" height="210" key="GridCell.Tab.0.right/-2560.23.2560.1057/0.23.1440.829@-2560.23.2560.1057" timestamp="1598246993260" />
@@ -619,16 +640,17 @@
     <state width="1398" height="266" key="GridCell.Tab.1.right/-2560.23.2560.1057/0.23.1440.832@0.23.1440.832" timestamp="1598246993260" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/3_Xtesttools$.coverage" NAME="一跑到底判官 Coverage Results" MODIFIED="1598323823338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/自动化" />
-    <SUITE FILE_PATH="coverage/$garbage_classification.coverage" NAME="garbage_classification Coverage Results" MODIFIED="1587031406661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/3_Xtesttools$start.coverage" NAME="start Coverage Results" MODIFIED="1598338751508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/-walle-Python--master" />
+    <SUITE FILE_PATH="coverage/3_Xtesttools$.coverage" NAME="一跑到底判官 Coverage Results" MODIFIED="1598406893915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/自动化" />
     <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 Coverage Results" MODIFIED="1591342914812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3_Xtesttools$_3_X.coverage" NAME="服务器时间工具-疯狂猜成语（3.X） Coverage Results" MODIFIED="1598263708905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/疯狂猜成语" />
+    <SUITE FILE_PATH="coverage/$test.coverage" NAME="计算器 Coverage Results" MODIFIED="1587032300530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$autotest_py.coverage" NAME="autotest.py Coverage Results" MODIFIED="1591257832354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3_Xtesttools$__.coverage" NAME="刷广告(判官) Coverage Results" MODIFIED="1598429726905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/自动化" />
+    <SUITE FILE_PATH="coverage/$garbage_classification.coverage" NAME="garbage_classification Coverage Results" MODIFIED="1587031406661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3_Xtesttools$start.coverage" NAME="start Coverage Results" MODIFIED="1598338751508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/-walle-Python--master" />
     <SUITE FILE_PATH="coverage/3_Xtesttools$channelPKG.coverage" NAME="channelPKG Coverage Results" MODIFIED="1598338975638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/渠道打包" />
     <SUITE FILE_PATH="coverage/$.coverage" NAME="测试 Coverage Results" MODIFIED="1591341249977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$Unittests_in_autotest_py.coverage" NAME="autotest.py Coverage Results" MODIFIED="1591173591596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$test.coverage" NAME="计算器 Coverage Results" MODIFIED="1587032300530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$autotest_py.coverage" NAME="autotest.py Coverage Results" MODIFIED="1591257832354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1575536604117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$3_X.coverage" NAME="疯狂猜成语服务器时间工具（3.X） Coverage Results" MODIFIED="1591345826180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../3.X工具/疯狂猜成语" />
   </component>

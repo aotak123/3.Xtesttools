@@ -21,27 +21,12 @@ capabilities['autoAcceptAlerts'] = 'true'
 # capabilities['autoDismissAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
-
-
-mobile = '15721403717'
 context = ssl._create_unverified_context()
 
-print("服务启动")
-time.sleep(5)
 
 
-# 检查用户协议及隐私条款
-def check_agree():
-    try:
-        time.sleep(3)
-        check_agree = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/tv_agree")  # 三星
-    except NoSuchElementException:
-        print("无隐私条款")
-    else:
-        TouchAction(driver).tap(x=1000, y=2050).perform()  # 点击确定
 
-
-check_agree()
+mobile = "15917449818"
 time.sleep(5)
 
 
@@ -53,10 +38,10 @@ def check_login():
         print("自动登录成功")
     else:
         TouchAction(driver).tap(x=515, y=2300).perform()
-        time.sleep(2)
-        el2 = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
-        el2.send_keys(mobile)
-        time.sleep(2)
+        time.sleep(1)
+        edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
+        edit_mobile.send_keys(mobile)
+        time.sleep(1)
         TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
         time.sleep(2)
         # 获取验证码
@@ -75,11 +60,11 @@ def check_login():
             num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
             logincode = num.decode()
             # print(logincodeurl)
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
-        el4 = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
-        time.sleep(2)
-        el4.send_keys(logincode)
-        time.sleep(2)
+        edit_code.send_keys(logincode)
+        time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
         print("账号登录成功")
 
@@ -91,16 +76,15 @@ time.sleep(15)  # 等待10秒加载进入首页
 def check_signwindows():  # 检查用户签到弹窗
 
     try:
-        check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/v_signin_close")
+        check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
     except NoSuchElementException:
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=1270, y=655).perform()
-        time.sleep(3)
 
 
 check_signwindows()
-time.sleep(3)
+time.sleep(2)
 
 TouchAction(driver).tap(x=707, y=2070).perform()  # 进入接龙页面
 time.sleep(3)
@@ -120,7 +104,7 @@ def check_signtoast():  # 检查是否开启签到提示
 
 
 check_signtoast()
-time.sleep(3)
+time.sleep(2)
 
 TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
 time.sleep(1)
@@ -131,25 +115,25 @@ a = 11
 while a > 0:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
-    time.sleep(5)
+    time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("头条广告")
-        time.sleep(35)
+        print("toutiaosdk广告")
+        time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print(a)
         print("toutiaosdk广告关闭")
     else:
-        print("广点通广告")
-        time.sleep(50)
+        print("GDTsdk广告")
+        time.sleep(55)
         driver.back()  # GDTsdk广告按钮
         print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
 time.sleep(8)
-driver.back() # 判官中回到首页
+driver.back()  # 判官中回到首页
 time.sleep(1)
 driver.back()
 TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
@@ -159,3 +143,6 @@ time.sleep(1)
 TouchAction(driver).tap(x=707, y=2467).perform()
 time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
+time.sleep(1)
+driver.back()
+driver.back()
