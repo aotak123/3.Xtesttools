@@ -341,7 +341,7 @@ if __name__ == '__main__':
              0, 0, 0, 1, 0, 0, 0, 3, 0,
              0, 0, 1, 0, 0, 0, 0, 6, 8,
              0, 0, 8, 5, 0, 0, 0, 1, 0,
-             0, 9, 0, 0, 0, 0, 4, 0, 0],
+             0, 9, 0, 0, 0, 0, 4, 0, 0]
             ]
     # DEBUG INFO WARNING ERROR CRITICAL
     logging.basicConfig(level=logging.WARN,
