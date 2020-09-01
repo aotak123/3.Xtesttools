@@ -1,9 +1,5 @@
 # coding:utf-8
-# python3
-# original: u"杨仕航"
-# modified: @kevinqqnj
 import logging
-
 import numpy as np
 from queue import Queue, LifoQueue
 import time
