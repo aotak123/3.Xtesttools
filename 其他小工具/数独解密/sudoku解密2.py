@@ -354,8 +354,10 @@ if __name__ == '__main__':
     sudo = Sudo(puzzle)
     sudo.sudo_solve_iter()
 
-    logger.warning(f'完成！ 共猜测 {sudo.guess_times} 次, 耗时 {time.time() - t1:.3f}秒')
-    logger.warning(f'\n题目：\n{sudo.puzzle}\n答案：\n{sudo.value}')
+    print(f'完成！ 共猜测 {sudo.guess_times} 次, 耗时 {time.time() - t1:.3f}秒')
+    # logger.warning(f'\n题目：\n{sudo.puzzle}\n答案：\n{sudo.value}')
+    print(f'\n题目：\n{sudo.puzzle}')
+    logger.warning(f'\n答案：\n{sudo.value}')
 
     # except:
     #     logger.error(f'ERROR: {sudo.value}', exc_info=True)

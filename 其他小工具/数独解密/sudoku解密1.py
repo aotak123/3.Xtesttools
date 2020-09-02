@@ -158,7 +158,7 @@ class Sudo:
                                         # 判断移除后，是否剩下一个元素
                                         if len(item) == 1:
                                             self.new_points.put((row, col))
-                                            logger.debug(f'block compare row: answer={self.value[row, col]} at {(row, col)}')
+                                            # logger.debug(f'block compare row: answer={self.value[row, col]} at {(row, col)}')
                                             self.value[row, col] = item[0]
                                             return True
 
@@ -177,7 +177,7 @@ class Sudo:
                                         # 判断移除后，是否剩下一个元素
                                         if len(item) == 1:
                                             self.new_points.put((row, col))
-                                            logger.debug(f'block compare col: answer={self.value[row, col]} at {(row, col)}')
+                                            # logger.debug(f'block compare col: answer={self.value[row, col]} at {(row, col)}')
                                             self.value[row, col] = item[0]
                                             return True
 
@@ -242,7 +242,7 @@ class Sudo:
                 (lists if isinstance(item, list) else nums).append(item)
             if len(set(nums)) != len(nums):
                 # logger.error(f'verify failed. dup in row {r}')
-                logger.debug(f'verify failed. dup in row {r}')
+                # logger.debug(f'verify failed. dup in row {r}')
                 return False  # 数字要不重复
             if len(list(filter(lambda x: len(x) == 0, lists))):
                 return False  # 候选列表不能为空集
@@ -257,7 +257,7 @@ class Sudo:
             for item in col:
                 (lists if isinstance(item, list) else nums).append(item)
             if len(set(nums)) != len(nums):
-                logger.debug(f'verify failed. dup in col {c}')
+                # logger.debug(f'verify failed. dup in col {c}')
                 return False  # 数字要不重复
             if len(list(filter(lambda x: len(x) == 0, lists))):
                 return False  # 候选列表不能为空集
@@ -271,7 +271,7 @@ class Sudo:
             for item in block:
                 (lists if isinstance(item, list) else nums).append(item)
             if len(set(nums)) != len(nums):
-                logger.debug(f'verify failed. dup in block {b_r, b_c}')
+                # logger.debug(f'verify failed. dup in block {b_r, b_c}')
                 return False  # 数字要不重复
             if len(list(filter(lambda x: len(x) == 0, lists))):
                 return False  # 候选列表不能为空集
@@ -286,7 +286,7 @@ class Sudo:
         # recorder.value = self.value.copy() #numpy的copy不行
         recorder.value = copy.deepcopy(self.value)
         self.recorder.put(recorder)
-        logger.debug(f'added to LIFO queue: {[x.point for x in self.recorder.queue]}')
+        # logger.debug(f'added to LIFO queue: {[x.point for x in self.recorder.queue]}')
         self.guess_times += 1  # 记录猜测次数
 
         # 新一轮的排除处理
@@ -294,7 +294,7 @@ class Sudo:
         # assume only 1 in this point
         self.value[point] = item[index]
         self.new_points.put(point)
-        logger.debug(f'guessing: answer={self.value[point]}/{item} @{point}')
+        # logger.debug(f'guessing: answer={self.value[point]}/{item} @{point}')
         self.sudo_exclude()
 
     # 回溯，需要先进后出
@@ -313,34 +313,34 @@ class Sudo:
                 if index < len(item):
                     break
                 # if exceed, pop next recorder
-                logger.debug(f'Recall! Try previous point.')
+                # logger.debug(f'Recall! Try previous point.')
 
-        logger.debug(f'Recall! Try next possible in same point, {item[index]} @{point}')
+        # logger.debug(f'Recall! Try next possible in same point, {item[index]} @{point}')
         self.value = recorder.value
         self.record_guess(point, index)
 
     # Main function 解题
     def sudo_solve(self):
         # 第一次解题，排除法
-        logger.debug('excluding knowning answers')
+        # logger.debug('excluding knowning answers')
         self.sudo_exclude()
-        logger.debug(f'excluded, current result:\n{self.value}')
+        # logger.debug(f'excluded, current result:\n{self.value}')
 
         # 检查有没错误的，有错误的则回溯；没错误却未解开题目，则再猜测
         while True:
             if self.check_value():
                 fixed_answer = self.get_num_count()
-                logger.debug(f'current no. of fixed answers: {fixed_answer}')
+                # logger.debug(f'current no. of fixed answers: {fixed_answer}')
                 if fixed_answer == 81:
                     break
                 else:
                     # 获取最佳猜测点
                     point = self.get_best_point()
-                    logger.debug(f'Adding new guessing in LIFO, {point}')
+                    # logger.debug(f'Adding new guessing in LIFO, {point}')
 
                     # 记录并处理
                     self.record_guess(point)
-                    logger.debug(f'guessed, current result:\n{self.value}')
+                    # logger.debug(f'guessed, current result:\n{self.value}')
             else:
                 # 出错，则回溯，尝试下一个猜测
                 self.recall()
@@ -372,9 +372,9 @@ if __name__ == '__main__':
         sudo.sudo_solve()
         t2 = time.time()
 
-        print(u"完成，猜测了%s次" % sudo.guess_times)
+        print(u"完成，猜测了%s次\n" % sudo.guess_times)
         print(sudo.value)
-        print(u"耗时：%.3fs" % (t2 - t1))
+        print(u"\n耗时：%.3fs" % (t2 - t1))
 
     except Exception as e:
         logger.error(f'{sudo.value}', exc_info=True)
