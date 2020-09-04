@@ -20,7 +20,7 @@ driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连�
 context = ssl._create_unverified_context()
 
 #############################################################################################################################################################
-mobile = "18017700401"
+mobile = "15611828881"
 AA = "\033[1;31mNO.1\033[0m " + mobile + " \033[1;31m开始\033[0m"
 nowtime = time.strftime('%H:%M:%S')
 print(nowtime)
