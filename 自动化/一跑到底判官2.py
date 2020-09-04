@@ -19,13 +19,13 @@ capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 context = ssl._create_unverified_context()
+nowtime1 = "\033[1;31m执行开始\033[0m " + time.strftime('%H:%M:%S')
+print(nowtime1)
 
 #############################################################################################################################################################
 mobile = "18017700401"
 AA = "\033[1;31mNO.1\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -65,7 +65,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -118,16 +117,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -147,8 +145,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700403"
 AA = "\033[1;31mNO.2\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -181,14 +177,12 @@ def check_login():
             response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
             num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
             logincode = num.decode()
-            # print(logincodeurl)
         edit_code = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -241,16 +235,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -269,8 +262,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700403"
 AA = "\033[1;31mNO.2\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -310,7 +301,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -363,16 +353,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -392,8 +381,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700339"
 AA = "\033[1;31mNO.3\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -433,7 +420,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -486,16 +472,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -515,8 +500,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700413"
 AA = "\033[1;31mNO.4\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -556,7 +539,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -609,16 +591,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -638,8 +619,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700414"
 AA = "\033[1;31mNO.5\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -679,7 +658,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -732,16 +710,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -761,8 +738,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700521"
 AA = "\033[1;31mNO.6\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -802,7 +777,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -855,16 +829,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -884,8 +857,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700715"
 AA = "\033[1;31mNO.7\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -925,7 +896,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -978,16 +948,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -1007,8 +976,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18220860324"
 AA = "\033[1;31mNO.8\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1048,7 +1015,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -1101,16 +1067,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -1130,8 +1095,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18116699805"
 AA = "\033[1;31mNO.9\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1171,7 +1134,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -1224,16 +1186,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -1253,8 +1214,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18134508526"
 AA = "\033[1;31mNO.10\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1294,7 +1253,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -1347,16 +1305,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -1376,8 +1333,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18014400369"
 AA = "\033[1;31mNO.11\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1417,7 +1372,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -1470,16 +1424,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -1499,8 +1452,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "15721403717"
 AA = "\033[1;31mNO.12\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1540,7 +1491,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -1593,16 +1543,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -1622,8 +1571,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "15721403717"
 AA = "\033[1;31mNO.13\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1663,7 +1610,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -1716,16 +1662,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -1745,8 +1690,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18321273743"
 AA = "\033[1;31mNO.14\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1786,7 +1729,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -1839,16 +1781,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -1868,8 +1809,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18819123459"
 AA = "\033[1;31mNO.15\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1909,7 +1848,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -1962,16 +1900,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -1991,8 +1928,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "15917449818"
 AA = "\033[1;31mNO.16\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2032,7 +1967,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -2085,16 +2019,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -2114,8 +2047,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "13032337111"
 AA = "\033[1;31mNO.17\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2155,7 +2086,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -2208,16 +2138,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -2237,8 +2166,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "13168867678"
 AA = "\033[1;31mNO.18\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2278,7 +2205,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -2331,16 +2257,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -2360,8 +2285,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "19823637887"
 AA = "\033[1;31mNO.19\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2401,7 +2324,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -2454,16 +2376,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -2483,8 +2404,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "15981831553"
 AA = "\033[1;31mNO.20\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2524,7 +2443,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -2577,16 +2495,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -2606,8 +2523,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "13666088700"
 AA = "\033[1;31mNO.21\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2647,7 +2562,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -2700,16 +2614,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -2729,8 +2642,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "13560736789"
 AA = "\033[1;31mNO.22\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2770,7 +2681,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -2823,16 +2733,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -2852,8 +2761,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "15611828881"
 AA = "\033[1;31mNO.23\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2893,7 +2800,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -2946,16 +2852,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -2975,8 +2880,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "13161057550"
 AA = "\033[1;31mNO.24\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -3016,7 +2919,6 @@ def check_login():
         edit_code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
 
 
 check_login()
@@ -3069,16 +2971,15 @@ while a > 0:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
-        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告print("toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
         print("GDTsdk广告关闭")
     a -= 1
 
@@ -3095,5 +2996,8 @@ time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
 
 #############################################################################################################################################################
+nowtime2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
+print(nowtime2)
 driver.back()
-driver.back() # 关闭app
+driver.back()  # 关闭app
+
