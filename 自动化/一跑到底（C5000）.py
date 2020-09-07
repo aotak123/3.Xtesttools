@@ -118,13 +118,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -235,13 +235,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -352,13 +352,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -469,13 +469,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -586,13 +586,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -703,13 +703,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -820,13 +820,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -937,13 +937,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -1054,13 +1054,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -1171,13 +1171,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -1288,13 +1288,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -1405,13 +1405,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -1522,13 +1522,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -1639,13 +1639,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -1756,13 +1756,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -1873,13 +1873,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -1990,13 +1990,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -2107,13 +2107,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -2224,13 +2224,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -2341,13 +2341,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -2458,13 +2458,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -2575,13 +2575,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -2692,13 +2692,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
@@ -2809,13 +2809,13 @@ while a <= 10:
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
         CC = "\033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
         print(CC)
         time.sleep(55)  # 保证完整看完GTD广告
         driver.back()  # GDTsdk广告关闭
-        print("GDTsdk广告关闭")
+        print("     GDTsdk广告关闭")
     a += 1
 
 time.sleep(7)
