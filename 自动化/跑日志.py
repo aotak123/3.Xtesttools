@@ -11,13 +11,13 @@ while True:
     capabilities['platformVersion'] = '10'
     capabilities['deviceName'] = 'SEA-AL10'
 # 系统手机中的联系人app的包名
-# # 疯狂猜成语
+# 疯狂猜成语
 #     capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'
 #     capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'
-# # 多多守护
+# 多多守护
 #     capabilities['appPackage'] = 'com.xiaoxian.guardian.everyday'
 #     capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'
-# # 看图猜成语
+# 看图猜成语
 #     capabilities['appPackage'] = 'com.xiaoxian.cy.kantu.android'
 #     capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'
 # 天天守护
