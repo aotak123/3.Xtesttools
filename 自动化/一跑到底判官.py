@@ -19,13 +19,13 @@ capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 context = ssl._create_unverified_context()
+nowtime1 = "\033[1;31m执行开始\033[0m " + time.strftime('%H:%M:%S')
+print(nowtime1)
 
 #############################################################################################################################################################
 mobile = "18017700223"
 AA = "\033[1;31mNO.1\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -111,26 +111,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -148,8 +148,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "15606566329"
 AA = "\033[1;31mNO.2\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -234,26 +232,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -271,8 +269,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "17502150079"
 AA = "\033[1;31mNO.3\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -357,26 +353,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -394,8 +390,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700411"
 AA = "\033[1;31mNO.4\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -480,26 +474,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -517,8 +511,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700610"
 AA = "\033[1;31mNO.5\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -603,26 +595,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -640,8 +632,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700716"
 AA = "\033[1;31mNO.6\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -726,26 +716,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -763,8 +753,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18930224047"
 AA = "\033[1;31mNO.7\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -849,26 +837,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -886,8 +874,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700410"
 AA = "\033[1;31mNO.8\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -972,26 +958,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -1009,8 +995,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700717"
 AA = "\033[1;31mNO.9\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1095,26 +1079,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -1132,8 +1116,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700400"
 AA = "\033[1;31mNO.10\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1218,26 +1200,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -1255,8 +1237,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700602"
 AA = "\033[1;31mNO.11\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1341,26 +1321,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -1378,8 +1358,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700601"
 AA = "\033[1;31mNO.12\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1464,26 +1442,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -1501,8 +1479,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700599"
 AA = "\033[1;31mNO.13\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1587,26 +1563,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -1624,8 +1600,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700598"
 AA = "\033[1;31mNO.14\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1710,26 +1684,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -1747,8 +1721,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700597"
 AA = "\033[1;31mNO.15\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1833,26 +1805,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -1870,8 +1842,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700596"
 AA = "\033[1;31mNO.16\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -1956,26 +1926,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -1993,8 +1963,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700550"
 AA = "\033[1;31mNO.17\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2079,26 +2047,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -2116,8 +2084,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700537"
 AA = "\033[1;31mNO.18\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2202,26 +2168,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -2239,8 +2205,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700536"
 AA = "\033[1;31mNO.19\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2325,26 +2289,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -2362,8 +2326,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700540"
 AA = "\033[1;31mNO.20\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2448,26 +2410,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -2485,8 +2447,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700533"
 AA = "\033[1;31mNO.21\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2571,26 +2531,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -2608,8 +2568,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700526"
 AA = "\033[1;31mNO.22\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2694,26 +2652,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -2731,8 +2689,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700516"
 AA = "\033[1;31mNO.23\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2817,26 +2773,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -2854,8 +2810,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700515"
 AA = "\033[1;31mNO.24\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -2940,26 +2894,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -2977,8 +2931,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700475"
 AA = "\033[1;31mNO.25\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -3063,26 +3015,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -3100,8 +3052,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700710"
 AA = "\033[1;31mNO.26\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -3186,26 +3136,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -3223,8 +3173,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700580"
 AA = "\033[1;31mNO.27\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -3309,26 +3257,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -3346,8 +3294,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700530"
 AA = "\033[1;31mNO.28\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -3432,26 +3378,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -3469,8 +3415,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700722"
 AA = "\033[1;31mNO.29\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -3555,26 +3499,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -3592,8 +3536,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700713"
 AA = "\033[1;31mNO.30\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -3678,26 +3620,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -3715,8 +3657,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700595"
 AA = "\033[1;31mNO.31\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -3801,26 +3741,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -3838,8 +3778,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700571"
 AA = "\033[1;31mNO.32\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -3924,26 +3862,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -3961,8 +3899,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700477"
 AA = "\033[1;31mNO.33\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -4047,26 +3983,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -4084,8 +4020,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700608"
 AA = "\033[1;31mNO.34\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -4170,26 +4104,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -4207,8 +4141,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700607"
 AA = "\033[1;31mNO.35\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -4293,26 +4225,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -4330,8 +4262,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700606"
 AA = "\033[1;31mNO.36\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -4416,26 +4346,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -4453,8 +4383,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700605"
 AA = "\033[1;31mNO.37\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -4539,26 +4467,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -4576,8 +4504,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700604"
 AA = "\033[1;31mNO.38\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -4662,26 +4588,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -4699,8 +4625,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700603"
 AA = "\033[1;31mNO.39\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -4785,26 +4709,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -4822,8 +4746,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700600"
 AA = "\033[1;31mNO.40\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -4908,26 +4830,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -4945,8 +4867,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700611"
 AA = "\033[1;31mNO.41\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -5031,26 +4951,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -5067,8 +4987,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700207"
 AA = "\033[1;31mNO.42\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -5153,26 +5071,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -5190,8 +5108,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700478"
 AA = "\033[1;31mNO.43\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -5276,26 +5192,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -5313,8 +5229,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18116688811"
 AA = "\033[1;31mNO.44\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -5399,26 +5313,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -5436,8 +5350,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18220860324"
 AA = "\033[1;31mNO.45\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -5522,26 +5434,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -5559,8 +5471,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18116699805"
 AA = "\033[1;31mNO.46\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -5645,26 +5555,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -5682,8 +5592,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18116688822"
 AA = "\033[1;31mNO.47\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -5768,26 +5676,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -5805,8 +5713,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "18017700535"
 AA = "\033[1;31mNO.48\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -5891,26 +5797,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -5928,8 +5834,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "13402063488"
 AA = "\033[1;31mNO.49\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -6014,26 +5918,26 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -6051,8 +5955,6 @@ TouchAction(driver).tap(x=960, y=1440).perform()
 mobile = "13651711999"
 AA = "\033[1;31mNO.50\033[0m " + mobile + " \033[1;31m开始\033[0m"
 print(AA)
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
 time.sleep(5)
 
 
@@ -6137,8 +6039,8 @@ time.sleep(1)
 TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
 time.sleep(3)
 
-a = 11
-while a > 0:
+a = 1
+while a <= 10:
     time.sleep(8)
     TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
     time.sleep(10)
@@ -6148,15 +6050,14 @@ while a > 0:
         print("toutiaosdk广告")
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
-        print(a)
-        print("toutiaosdk广告关闭")
+        print("     toutiaosdk广告关闭")
     else:
-        print("GDTsdk广告")
+        CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+        print(CC)
         time.sleep(55)
         driver.back()  # GDTsdk广告按钮
-        print(a)
-        print("GDTsdk广告关闭")
-    a -= 1
+        print("     GDTsdk广告关闭")
+    a += 1
 
 time.sleep(8)
 driver.back()  # 判官中回到首页
@@ -6171,7 +6072,7 @@ time.sleep(1)
 TouchAction(driver).tap(x=960, y=1440).perform()
 
 #############################################################################################################################################################
+nowtime2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
+print(nowtime2)
 driver.back()
 driver.back()
-nowtime = time.strftime('%H:%M:%S')
-print(nowtime)
