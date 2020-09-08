@@ -6047,7 +6047,8 @@ while a <= 10:
     try:
         GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
     except NoSuchElementException:
-        print("toutiaosdk广告")
+        BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+        print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
         print("     toutiaosdk广告关闭")
