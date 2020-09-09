@@ -71,7 +71,7 @@ def panguan(mobile):
         TouchAction(driver).tap(x=953, y=551).perform()  # 关闭签到弹窗
     time.sleep(3)
     # 进入接龙主游戏页面
-    TouchAction(driver).tap(x=707, y=2070).perform()  # 进入接龙页面
+    TouchAction(driver).tap(x=525, y=1556).perform()  # 进入接龙页面
     time.sleep(3)
     driver.back()
     time.sleep(3)
