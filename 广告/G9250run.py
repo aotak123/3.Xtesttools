@@ -1,0 +1,193 @@
+# coding=utf-8
+
+from appium import webdriver
+from appium.webdriver.common.touch_action import TouchAction
+from selenium.common.exceptions import NoSuchElementException
+import time
+import urllib.request
+import ssl
+
+capabilities = {}
+capabilities['platformName'] = 'Android'  # Android平台测试
+# 三星
+capabilities['platformVersion'] = '6.0.1'
+capabilities['deviceName'] = 'SM-G9250'
+capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系统手机中的联系人app的包名
+capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
+capabilities['noReset'] = 'true'  # 不重置app
+capabilities['autoAcceptAlerts'] = 'true'
+capabilities['autoWebview'] = 'false'
+driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
+context = ssl._create_unverified_context()
+
+first1 = "\033[1;31m执行开始\033[0m " + time.strftime('%H:%M:%S')
+print(first1)
+
+
+#############################################################################################################################################################
+def panguan(mobile):
+    time.sleep(5)
+    AA = "\033[1;31mNO.\033[0m " + str(mobile) + " \033[1;31m开始\033[0m"
+    print(AA)
+    # 登录模块
+    try:
+        check_login = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/iv_mobile_login")  # 选择手机号登录
+    except NoSuchElementException:
+        print("自动登录成功")
+    else:
+        TouchAction(driver).tap(x=515, y=2300).perform()
+        time.sleep(1)
+        edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
+        edit_mobile.send_keys(mobile)
+        time.sleep(1)
+        TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
+        time.sleep(2)
+        # 获取验证码
+        logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
+            mobile)
+        # print(logincodeurl)
+        request = urllib.request.Request(logincodeurl)  # 构建请求url
+        response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
+        num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
+        logincode = num.decode()
+        if logincode == '查不到！':
+            TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
+            time.sleep(2)  # 获取验证码
+            logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
+                mobile)
+            request = urllib.request.Request(logincodeurl)  # 构建请求url
+            response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
+            num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
+            logincode = num.decode()
+            # print(logincodeurl)
+        edit_code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        time.sleep(1)
+        edit_code.send_keys(logincode)
+        time.sleep(1)
+        TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
+        print("账号登录成功")
+    time.sleep(15)  # 等待10秒加载进入首页
+    # 检查是否弹出签到弹窗
+    try:
+        check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
+    except NoSuchElementException:
+        print("无签到弹窗")
+    else:
+        TouchAction(driver).tap(x=1270, y=655).perform()
+    time.sleep(2)
+    # 进入接龙主游戏页面
+    TouchAction(driver).tap(x=707, y=2070).perform()  # 进入接龙页面
+    time.sleep(3)
+    driver.back()
+    time.sleep(3)
+    # 检查是否弹出签到提示
+    try:
+        check_signtoast = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/iv_checkin_reminder_close")
+    except NoSuchElementException:
+        print("无签到提示")
+    else:
+        TouchAction(driver).tap(x=1228, y=748).perform()
+    time.sleep(2)
+    # 进入判官进行刷广告
+    TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
+    time.sleep(1)
+    TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
+    time.sleep(3)
+    a = 1
+    while a <= 10:
+        time.sleep(8)
+        TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+        time.sleep(10)
+        try:
+            GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
+        except NoSuchElementException:
+            BB = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "toutiaosdk广告"
+            print(BB)
+            time.sleep(40)
+            TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+            print("     toutiaosdk广告关闭")
+        else:
+            CC = "  \033[1;31m第\033[0m " + str(a) + " \033[1;31m次\033[0m " + "GDTsdk广告"
+            print(CC)
+            time.sleep(55)
+            driver.back()  # GDTsdk广告按钮
+            print("     GDTsdk广告关闭")
+        a += 1
+    # 退出广告循环
+    time.sleep(8)
+    driver.back()  # 判官中回到首页
+    time.sleep(1)
+    driver.back()
+    time.sleep(2)
+    # 退出账号
+    TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
+    time.sleep(2)
+    TouchAction(driver).tap(x=1275, y=243).perform()
+    time.sleep(1)
+    TouchAction(driver).tap(x=707, y=2467).perform()
+    time.sleep(1)
+    TouchAction(driver).tap(x=960, y=1440).perform()
+
+
+#############################################################################################################################################################
+
+if __name__ == '__main__':
+    panguan(13402063488)
+    panguan(13651711999)
+    panguan(15606566329)
+    panguan(17502150079)
+    panguan(18017700207)
+    panguan(18017700223)
+    panguan(18017700400)
+    panguan(18017700410)
+    panguan(18017700411)
+    panguan(18017700475)
+    panguan(18017700477)
+    panguan(18017700478)
+    panguan(18017700515)
+    panguan(18017700516)
+    panguan(18017700526)
+    panguan(18017700530)
+    panguan(18017700533)
+    panguan(18017700535)
+    panguan(18017700536)
+    panguan(18017700537)
+    panguan(18017700540)
+    panguan(18017700550)
+    panguan(18017700571)
+    panguan(18017700580)
+    panguan(18017700595)
+    panguan(18017700596)
+    panguan(18017700597)
+    panguan(18017700598)
+    panguan(18017700599)
+    panguan(18017700600)
+    panguan(18017700601)
+    panguan(18017700602)
+    panguan(18017700603)
+    panguan(18017700604)
+    panguan(18017700605)
+    panguan(18017700606)
+    panguan(18017700607)
+    panguan(18017700608)
+    panguan(18017700610)
+    panguan(18017700611)
+    panguan(18017700710)
+    panguan(18017700713)
+    panguan(18017700716)
+    panguan(18017700717)
+    panguan(18017700722)
+    panguan(18116688811)
+    panguan(18116688822)
+    panguan(18116699805)
+    panguan(18220860324)
+    panguan(18930224047)
+
+#############################################################################################################################################################
+finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
+print(finally2)
+driver.back()
+driver.back()
