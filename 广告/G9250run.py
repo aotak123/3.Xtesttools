@@ -97,7 +97,7 @@ def panguan(mobile):
     TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
     time.sleep(3)
     a = 1
-    while a <= 10:
+    while a <= 11:
         time.sleep(8)
         TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
         time.sleep(10)
