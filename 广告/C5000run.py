@@ -69,7 +69,7 @@ def panguan(mobile):
         print("无签到弹窗")
     else:
         TouchAction(driver).tap(x=953, y=551).perform()  # 关闭签到弹窗
-    time.sleep(3)
+        time.sleep(3)
     # 进入接龙主游戏页面
     TouchAction(driver).tap(x=525, y=1556).perform()  # 进入接龙页面
     time.sleep(3)
@@ -89,7 +89,7 @@ def panguan(mobile):
     time.sleep(2)
     TouchAction(driver).tap(x=536, y=1009).perform()  # 选择开始挑战
     time.sleep(3)
-    a = 1
+    a = 10
     while a <= 10:
         time.sleep(8)
         TouchAction(driver).tap(x=503, y=1305).perform()  # 点击查看广告
@@ -128,7 +128,7 @@ def panguan(mobile):
 
 if __name__ == '__main__':
     # panguan(13032337111)  # NO.1
-    # panguan(13062803788)  # NO.2
+    panguan(13062803788)  # NO.2
     # panguan(13161057550)  # NO.3
     # panguan(13161057579)  # NO.4
     # panguan(13168867678)  # NO.5
@@ -136,7 +136,7 @@ if __name__ == '__main__':
     # panguan(13666088700)  # NO.7
     # panguan(15611828881)  # NO.8
     # panguan(15721403717)  # NO.9
-    panguan(15917449818)  # NO.10
+    # panguan(15917449818)  # NO.10
     # panguan(15981831553)  # NO.11
     # panguan(18014400369)  # NO.12
     # panguan(18017700339)  # NO.13
@@ -144,11 +144,11 @@ if __name__ == '__main__':
     # panguan(18017700403)  # NO.15
     # panguan(18017700413)  # NO.16
     # panguan(18017700414)  # NO.17
-    # panguan(18017700521)  # NO.18
-    # panguan(18017700715)  # NO.19
+    panguan(18017700521)  # NO.18
+    panguan(18017700715)  # NO.19
     # panguan(18116699805)  # NO.20
     # panguan(18220860324)  # NO.21
-    # panguan(18321273743)  # NO.22
+    panguan(18321273743)  # NO.22
     # panguan(18819123459)  # NO.23
     # panguan(18918024483)  # NO.24
     # panguan(19823637887)  # NO.25

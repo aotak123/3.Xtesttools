@@ -68,7 +68,7 @@ def panguan(mobile):
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
         print("账号登录成功")
-    time.sleep(15)  # 等待加载进入首页
+        time.sleep(15)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
     try:
         check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
@@ -76,7 +76,7 @@ def panguan(mobile):
         print("无每日签到弹窗")
     else:
         TouchAction(driver).tap(x=1270, y=655).perform()  # 关闭每日签到弹窗
-    time.sleep(2)
+        time.sleep(2)
     # 进入接龙主游戏页面
     TouchAction(driver).tap(x=707, y=2070).perform()  # 进入接龙页面
     time.sleep(3)
@@ -90,7 +90,7 @@ def panguan(mobile):
         print("无签到提示弹窗")
     else:
         TouchAction(driver).tap(x=1228, y=748).perform()
-    time.sleep(2)
+        time.sleep(2)
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
     time.sleep(1)
