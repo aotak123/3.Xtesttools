@@ -9,9 +9,8 @@ import ssl
 
 capabilities = {}
 capabilities['platformName'] = 'Android'  # Android平台测试
-# 三星
-capabilities['platformVersion'] = '6.0.1'
-capabilities['deviceName'] = 'SM-G9250'
+capabilities['platformVersion'] = '8.0.0'
+capabilities['deviceName'] = 'SM-C5000'
 capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系统手机中的联系人app的包名
 capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
 capabilities['noReset'] = 'true'  # 不重置app
@@ -36,47 +35,41 @@ def panguan(mobile):
     except NoSuchElementException:
         print("自动登录成功")
     else:
-        TouchAction(driver).tap(x=515, y=2300).perform()
-        time.sleep(1)
+        TouchAction(driver).tap(x=409, y=1729).perform()  # 点击手机号登录
+        time.sleep(2)
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
         edit_mobile.send_keys(mobile)
-        time.sleep(1)
-        TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
         time.sleep(2)
-        # 获取验证码
-        logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
-            mobile)
-        # print(logincodeurl)
+        TouchAction(driver).tap(x=776, y=615).perform()  # 获取验证码
+        time.sleep(2)
+        logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + mobile
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
         if logincode == '查不到！':
-            TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
+            time.sleep(2)
+            TouchAction(driver).tap(x=776, y=615).perform()  # 获取验证码
             time.sleep(2)  # 获取验证码
-            logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
-                mobile)
             request = urllib.request.Request(logincodeurl)  # 构建请求url
             response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
             num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
             logincode = num.decode()
-            # print(logincodeurl)
-        edit_code = driver.find_element_by_id(
+        edit_Code = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
-        time.sleep(1)
-        edit_code.send_keys(logincode)
-        time.sleep(1)
-        TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
-        print("账号登录成功")
+        time.sleep(2)
+        edit_Code.send_keys(logincode)
+        time.sleep(2)
+        TouchAction(driver).tap(x=529, y=833).perform()  # 确定按钮登录
     time.sleep(15)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
     try:
         check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
     except NoSuchElementException:
-        print("无每日签到弹窗")
+        print("无签到弹窗")
     else:
-        TouchAction(driver).tap(x=1270, y=655).perform()  # 关闭每日签到弹窗
-    time.sleep(2)
+        TouchAction(driver).tap(x=953, y=551).perform()  # 关闭签到弹窗
+    time.sleep(3)
     # 进入接龙主游戏页面
     TouchAction(driver).tap(x=707, y=2070).perform()  # 进入接龙页面
     time.sleep(3)
@@ -85,21 +78,21 @@ def panguan(mobile):
     # 检查是否弹出签到提示
     try:
         check_signtoast = driver.find_element_by_id(
-            "com.kamitu.drawsth.standalone.free.android:id/iv_checkin_reminder_close")
+            "com.kamitu.drawsth.standalone.free.android:id/btn_open_reminder")
     except NoSuchElementException:
-        print("无签到提示弹窗")
+        print("无签到提醒弹窗")
     else:
-        TouchAction(driver).tap(x=1228, y=748).perform()
+        TouchAction(driver).tap(x=870, y=611).perform()  # 关闭签到提示弹窗
     time.sleep(2)
     # 进入判官进行刷广告
-    TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
-    time.sleep(1)
-    TouchAction(driver).tap(x=712, y=1342).perform()  # 选择开始挑战
+    TouchAction(driver).tap(x=323, y=1774).perform()  # 选择进入判官
+    time.sleep(2)
+    TouchAction(driver).tap(x=536, y=1009).perform()  # 选择开始挑战
     time.sleep(3)
     a = 1
     while a <= 10:
         time.sleep(8)
-        TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
+        TouchAction(driver).tap(x=503, y=1305).perform()  # 点击查看广告
         time.sleep(10)
         try:
             GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
@@ -107,7 +100,7 @@ def panguan(mobile):
             BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
             print(BB)
             time.sleep(40)
-            TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
+            TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
             print("     toutiaosdk广告关闭")
         else:
             CC = "  \033[1;31mNO.\033[0m " + str(a) + " GDTsdk广告"
@@ -123,68 +116,42 @@ def panguan(mobile):
     driver.back()
     time.sleep(2)
     # 退出账号
-    TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
+    TouchAction(driver).tap(x=439, y=124).perform()  # 返回进入个人中心
     time.sleep(2)
-    TouchAction(driver).tap(x=1275, y=243).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=707, y=2467).perform()
-    time.sleep(1)
-    TouchAction(driver).tap(x=960, y=1440).perform()
-
+    TouchAction(driver).tap(x=971, y=158).perform()  # 点击设置
+    time.sleep(2)
+    TouchAction(driver).tap(x=534, y=1614).perform()  # 点击退出
+    time.sleep(2)
+    TouchAction(driver).tap(x=690, y=1069).perform()  # 弹窗确定退出
 
 #############################################################################################################################################################
 
 if __name__ == '__main__':
-    panguan(13402063488)  # NO.1
-    panguan(13651711999)  # NO.2
-    panguan(15606566329)  # NO.3
-    panguan(17502150079)  # NO.4
-    panguan(18017700207)  # NO.5
-    panguan(18017700223)  # NO.6
-    panguan(18017700400)  # NO.7
-    panguan(18017700410)  # NO.8
-    panguan(18017700411)  # NO.9
-    panguan(18017700475)  # NO.10
-    panguan(18017700477)  # NO.11
-    panguan(18017700478)  # NO.12
-    panguan(18017700515)  # NO.13
-    panguan(18017700516)  # NO.14
-    panguan(18017700526)  # NO.15
-    panguan(18017700530)  # NO.16
-    panguan(18017700533)  # NO.17
-    panguan(18017700535)  # NO.18
-    panguan(18017700536)  # NO.19
-    panguan(18017700537)  # NO.20
-    panguan(18017700540)  # NO.21
-    panguan(18017700550)  # NO.22
-    panguan(18017700571)  # NO.23
-    panguan(18017700580)  # NO.24
-    panguan(18017700595)  # NO.25
-    panguan(18017700596)  # NO.26
-    panguan(18017700597)  # NO.27
-    panguan(18017700598)  # NO.28
-    panguan(18017700599)  # NO.29
-    panguan(18017700600)  # NO.30
-    panguan(18017700601)  # NO.31
-    panguan(18017700602)  # NO.32
-    panguan(18017700603)  # NO.33
-    panguan(18017700604)  # NO.34
-    panguan(18017700605)  # NO.35
-    panguan(18017700606)  # NO.36
-    panguan(18017700607)  # NO.37
-    panguan(18017700608)  # NO.38
-    panguan(18017700610)  # NO.39
-    panguan(18017700611)  # NO.40
-    panguan(18017700710)  # NO.41
-    panguan(18017700713)  # NO.42
-    panguan(18017700716)  # NO.43
-    panguan(18017700717)  # NO.44
-    panguan(18017700722)  # NO.45
-    panguan(18116688811)  # NO.46
-    panguan(18116688822)  # NO.47
-    panguan(18116699805)  # NO.48
-    panguan(18220860324)  # NO.49
-    panguan(18930224047)  # NO.50
+    # panguan(13032337111)  # NO.1
+    # panguan(13062803788)  # NO.2
+    # panguan(13161057550)  # NO.3
+    # panguan(13161057579)  # NO.4
+    # panguan(13168867678)  # NO.5
+    # panguan(13560736789)  # NO.6
+    # panguan(13666088700)  # NO.7
+    # panguan(15611828881)  # NO.8
+    # panguan(15721403717)  # NO.9
+    panguan(15917449818)  # NO.10
+    # panguan(15981831553)  # NO.11
+    # panguan(18014400369)  # NO.12
+    # panguan(18017700339)  # NO.13
+    # panguan(18017700401)  # NO.14
+    # panguan(18017700403)  # NO.15
+    # panguan(18017700413)  # NO.16
+    # panguan(18017700414)  # NO.17
+    # panguan(18017700521)  # NO.18
+    # panguan(18017700715)  # NO.19
+    # panguan(18116699805)  # NO.20
+    # panguan(18220860324)  # NO.21
+    # panguan(18321273743)  # NO.22
+    # panguan(18819123459)  # NO.23
+    # panguan(18918024483)  # NO.24
+    # panguan(19823637887)  # NO.25
 
 #############################################################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
