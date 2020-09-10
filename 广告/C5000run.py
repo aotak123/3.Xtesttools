@@ -89,13 +89,14 @@ def panguan(mobile):
     time.sleep(2)
     TouchAction(driver).tap(x=536, y=1009).perform()  # 选择开始挑战
     time.sleep(3)
-    a = 10
+    a = 1
     while a <= 11:
         time.sleep(8)
         TouchAction(driver).tap(x=503, y=1305).perform()  # 点击查看广告
         time.sleep(10)
+
         try:
-            GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
+            GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
             BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
             print(BB)
