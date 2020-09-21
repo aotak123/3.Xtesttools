@@ -165,6 +165,8 @@ if __name__ == '__main__':
     panguan(18901156158)  # NO.33
     panguan(17318102888)  # NO.34
     panguan(18929597700)  # NO.35
+    panguan(15850670782)  # NO.36
+    panguan(15823382766)  # NO.37
 
 
 
