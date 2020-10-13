@@ -46,7 +46,6 @@ def panguan(mobile):
         # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
             mobile)
-        # print(logincodeurl)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
@@ -54,13 +53,10 @@ def panguan(mobile):
         if logincode == '查不到！':
             TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
             time.sleep(2)  # 获取验证码
-            logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
-                mobile)
             request = urllib.request.Request(logincodeurl)  # 构建请求url
             response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
             num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
             logincode = num.decode()
-            # print(logincodeurl)
         edit_code = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
@@ -79,9 +75,9 @@ def panguan(mobile):
         time.sleep(2)
     # 进入接龙主游戏页面
     TouchAction(driver).tap(x=707, y=2070).perform()  # 进入接龙页面
-    time.sleep(3)
+    time.sleep(2)
     driver.back()
-    time.sleep(3)
+    time.sleep(2)
     # 检查是否弹出签到提示
     try:
         check_signtoast = driver.find_element_by_id(
@@ -106,7 +102,7 @@ def panguan(mobile):
         except NoSuchElementException:
             BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
             print(BB)
-            time.sleep(40)
+            time.sleep(35)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             print("     toutiaosdk广告关闭")
         else:
