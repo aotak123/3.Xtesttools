@@ -39,9 +39,10 @@ def panguan(mobile):
         time.sleep(2)
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
         edit_mobile.send_keys(mobile)
-        time.sleep(2)
+        time.sleep(1)
         TouchAction(driver).tap(x=776, y=615).perform()  # 获取验证码
         time.sleep(2)
+        # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
             mobile)
         request = urllib.request.Request(logincodeurl)  # 构建请求url
@@ -62,20 +63,21 @@ def panguan(mobile):
         edit_Code.send_keys(logincode)
         time.sleep(2)
         TouchAction(driver).tap(x=529, y=833).perform()  # 确定按钮登录
-    time.sleep(15)  # 等待加载进入首页
+        print("账号登录成功")
+        time.sleep(15)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
     try:
         check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
     except NoSuchElementException:
-        print("无签到弹窗")
+        print("无每日签到弹窗")
     else:
-        TouchAction(driver).tap(x=953, y=551).perform()  # 关闭签到弹窗
-        time.sleep(3)
+        TouchAction(driver).tap(x=953, y=551).perform()  # 关闭每日签到弹窗
+        time.sleep(2)
     # 进入接龙主游戏页面
     TouchAction(driver).tap(x=525, y=1556).perform()  # 进入接龙页面
-    time.sleep(3)
+    time.sleep(2)
     driver.back()
-    time.sleep(3)
+    time.sleep(2)
     # 检查是否弹出签到提示
     try:
         check_signtoast = driver.find_element_by_id(
@@ -84,7 +86,7 @@ def panguan(mobile):
         print("无签到提醒弹窗")
     else:
         TouchAction(driver).tap(x=870, y=611).perform()  # 关闭签到提示弹窗
-    time.sleep(2)
+        time.sleep(2)
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=323, y=1774).perform()  # 选择进入判官
     time.sleep(2)
@@ -95,13 +97,12 @@ def panguan(mobile):
         time.sleep(8)
         TouchAction(driver).tap(x=503, y=1305).perform()  # 点击查看广告
         time.sleep(10)
-
         try:
             GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
             BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
             print(BB)
-            time.sleep(40)
+            time.sleep(35)
             TouchAction(driver).tap(x=979, y=86).perform()  # 关闭toutiao广告
             print("     toutiaosdk广告关闭")
         else:
@@ -170,7 +171,6 @@ if __name__ == '__main__':
     panguan(13255615265)  # NO.38
     panguan(13032337272)  # NO.39
     panguan(17322190031)  # NO.40
-
 
 #############################################################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')

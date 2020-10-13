@@ -36,7 +36,7 @@ def panguan(mobile):
     except NoSuchElementException:
         print("自动登录成功")
     else:
-        TouchAction(driver).tap(x=515, y=2300).perform()
+        TouchAction(driver).tap(x=515, y=2300).perform()  # 点击手机号登录
         time.sleep(1)
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
         edit_mobile.send_keys(mobile)
@@ -51,6 +51,7 @@ def panguan(mobile):
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
         if logincode == '查不到！':
+            time.sleep(2)
             TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
             time.sleep(2)  # 获取验证码
             request = urllib.request.Request(logincodeurl)  # 构建请求url
@@ -85,7 +86,7 @@ def panguan(mobile):
     except NoSuchElementException:
         print("无签到提示弹窗")
     else:
-        TouchAction(driver).tap(x=1228, y=748).perform()
+        TouchAction(driver).tap(x=1228, y=748).perform()  # 关闭签到提示弹窗
         time.sleep(2)
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
@@ -98,7 +99,7 @@ def panguan(mobile):
         TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
         time.sleep(10)
         try:
-            GDT_G = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
+            GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
             BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
             print(BB)
@@ -121,11 +122,11 @@ def panguan(mobile):
     # 退出账号
     TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
     time.sleep(2)
-    TouchAction(driver).tap(x=1275, y=243).perform()
+    TouchAction(driver).tap(x=1275, y=243).perform()  # 点击设置
     time.sleep(1)
-    TouchAction(driver).tap(x=707, y=2467).perform()
+    TouchAction(driver).tap(x=707, y=2467).perform()  # 点击退出
     time.sleep(1)
-    TouchAction(driver).tap(x=960, y=1440).perform()
+    TouchAction(driver).tap(x=960, y=1440).perform()  # 弹窗确定退出
 
 
 #############################################################################################################################################################
@@ -176,8 +177,6 @@ if __name__ == '__main__':
     panguan(13666088773)  # NO.43
     panguan(18616905709)  # NO.44
     panguan(13311936568)  # NO.45
-
-
 
     panguan(13062803788)  # NO.01
     panguan(13161057550)  # NO.02
