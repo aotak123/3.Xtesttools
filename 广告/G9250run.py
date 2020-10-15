@@ -65,7 +65,7 @@ def panguan(mobile):
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
         print("账号登录成功")
-        time.sleep(15)  # 等待加载进入首页
+    time.sleep(15)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
     try:
         check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")

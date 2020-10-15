@@ -64,7 +64,7 @@ def panguan(mobile):
         time.sleep(2)
         TouchAction(driver).tap(x=529, y=833).perform()  # 确定按钮登录
         print("账号登录成功")
-        time.sleep(15)  # 等待加载进入首页
+    time.sleep(15)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
     try:
         check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
@@ -75,7 +75,7 @@ def panguan(mobile):
         time.sleep(2)
     # 进入接龙主游戏页面
     TouchAction(driver).tap(x=525, y=1556).perform()  # 进入接龙页面
-    time.sleep(2)
+    time.sleep(3)
     driver.back()
     time.sleep(2)
     # 检查是否弹出签到提示
@@ -130,47 +130,96 @@ def panguan(mobile):
 
 #############################################################################################################################################################
 
-if __name__ == '__main__':
-    panguan(13062803788)  # NO.01
-    panguan(13161057550)  # NO.02
-    panguan(13161057579)  # NO.03
-    panguan(13168867678)  # NO.04
-    panguan(13402063488)  # NO.05
-    panguan(13666088700)  # NO.06
-    panguan(13666088775)  # NO.07
-    panguan(13683351952)  # NO.08
-    panguan(15173160505)  # NO.09
-    panguan(15721403717)  # NO.10
-    panguan(15823382766)  # NO.11
-    panguan(15850670782)  # NO.12
-    panguan(15981831553)  # NO.13
-    panguan(17318102888)  # NO.14
-    panguan(18017700595)  # NO.15
-    panguan(18017700597)  # NO.16
-    panguan(18017700602)  # NO.17
-    panguan(18017700603)  # NO.18
-    panguan(18017700605)  # NO.19
-    panguan(18017700610)  # NO.20
-    panguan(18017700611)  # NO.21
-    panguan(18017700713)  # NO.22
-    panguan(18017700715)  # NO.23
-    panguan(18017700716)  # NO.24
-    panguan(18017700722)  # NO.25
-    panguan(18027328833)  # NO.26
-    panguan(18116688811)  # NO.27
-    panguan(18116688822)  # NO.28
-    panguan(18116699805)  # NO.29
-    panguan(18180868581)  # NO.30
-    panguan(18321273743)  # NO.31
-    panguan(18819123459)  # NO.32
-    panguan(18901156158)  # NO.33
-    panguan(18920308799)  # NO.34
-    panguan(18929597700)  # NO.35
-    panguan(18145608526)  # NO.36
-    panguan(18930223547)  # NO.37
-    panguan(13255615265)  # NO.38
-    panguan(13032337272)  # NO.39
-    panguan(17322190031)  # NO.40
+b = 1
+while b > 0:
+    if __name__ == '__main__':
+        panguan(13032337111)  # NO.01
+        panguan(13161767110)  # NO.02
+        panguan(13560736789)  # NO.03
+        panguan(13651711999)  # NO.04
+        panguan(15611828881)  # NO.05
+        panguan(15917449818)  # NO.06
+        panguan(15927257999)  # NO.07
+        panguan(17502150079)  # NO.08
+        panguan(18014400369)  # NO.09
+        panguan(18017700207)  # NO.10
+        panguan(18017700223)  # NO.11
+        panguan(18017700339)  # NO.12   阿拉斯加加加加
+        panguan(18017700400)  # NO.13
+        panguan(18017700410)  # NO.14
+        panguan(18017700411)  # NO.15
+        panguan(18017700475)  # NO.16
+        panguan(18017700477)  # NO.17
+        panguan(18017700478)  # NO.18
+        panguan(18017700533)  # NO.19
+        panguan(18017700535)  # NO.20
+        panguan(18017700536)  # NO.21
+        panguan(18017700540)  # NO.22
+        panguan(18017700571)  # NO.23
+        panguan(18017700580)  # NO.24   小糖糖2
+        panguan(18017700596)  # NO.25
+        panguan(18017700598)  # NO.26
+        panguan(18017700600)  # NO.27
+        panguan(18017700601)  # NO.28
+        panguan(18017700604)  # NO.29
+        panguan(18017700606)  # NO.30
+        panguan(18017700710)  # NO.31   治疗失眠陶老师
+        panguan(18503807583)  # NO.32
+        panguan(18918024483)  # NO.33
+        panguan(18930224047)  # NO.34
+        panguan(19823637887)  # NO.35
+        panguan(18017700355)  # NO.36
+        panguan(18134508526)  # NO.37
+        panguan(15611828882)  # NO.38
+        panguan(13161057538)  # NO.39
+        panguan(18085112222)  # NO.40
+        panguan(15300900920)  # NO.41
+        panguan(13164767109)  # NO.42
+        panguan(13666088773)  # NO.43
+        panguan(18616905709)  # NO.44
+        panguan(13311936568)  # NO.45
+
+        panguan(13062803788)  # NO.01
+        panguan(13161057550)  # NO.02
+        panguan(13161057579)  # NO.03
+        panguan(13168867678)  # NO.04
+        panguan(13402063488)  # NO.05
+        panguan(13666088700)  # NO.06
+        panguan(13666088775)  # NO.07
+        panguan(13683351952)  # NO.08
+        panguan(15173160505)  # NO.09
+        panguan(15721403717)  # NO.10
+        panguan(15823382766)  # NO.11
+        panguan(15850670782)  # NO.12
+        panguan(15981831553)  # NO.13
+        panguan(17318102888)  # NO.14
+        panguan(18017700595)  # NO.15
+        panguan(18017700597)  # NO.16
+        panguan(18017700602)  # NO.17
+        panguan(18017700603)  # NO.18
+        panguan(18017700605)  # NO.19
+        panguan(18017700610)  # NO.20
+        panguan(18017700611)  # NO.21
+        panguan(18017700713)  # NO.22
+        panguan(18017700715)  # NO.23
+        panguan(18017700716)  # NO.24
+        panguan(18017700722)  # NO.25
+        panguan(18027328833)  # NO.26
+        panguan(18116688811)  # NO.27
+        panguan(18116688822)  # NO.28
+        panguan(18116699805)  # NO.29
+        panguan(18180868581)  # NO.30
+        panguan(18321273743)  # NO.31
+        panguan(18819123459)  # NO.32
+        panguan(18901156158)  # NO.33
+        panguan(18920308799)  # NO.34
+        panguan(18929597700)  # NO.35
+        panguan(18145608526)  # NO.36
+        panguan(18930223547)  # NO.37
+        panguan(13255615265)  # NO.38
+        panguan(13032337272)  # NO.39
+        panguan(17322190031)  # NO.40
+    b += 1
 
 #############################################################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
