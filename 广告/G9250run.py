@@ -116,13 +116,15 @@ def panguan(mobile):
     # 退出广告循环
     time.sleep(8)
     driver.back()  # 判官中回到首页
-    time.sleep(1)
-    driver.back()
     time.sleep(2)
     # 退出账号
     TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
     time.sleep(2)
     TouchAction(driver).tap(x=1275, y=243).perform()  # 点击设置
+    time.sleep(1)
+    TouchAction(driver).tap(x=723, y=547).perform()  # 点击清理
+    time.sleep(1)
+    TouchAction(driver).tap(x=960, y=1440).perform()  # 弹窗确定清理
     time.sleep(1)
     TouchAction(driver).tap(x=707, y=2467).perform()  # 点击退出
     time.sleep(1)
