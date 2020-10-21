@@ -15,18 +15,18 @@ while True:
     type = input("\033[30m \n 请输入验证码类型：\n 1：测试登录\n 2：测试绑定\n 3：正式登录\n 4：正式绑定 \033[0m\n")
     # 3仅支持input输入，不支持raw_input输入
     if type == "1":  # 测试登录
-        url = "http://test-u-hxxc.tt.cn/login/main_login/testtool"
+        url = "http://test-u-fkccy.happyxiaoxiucai.com/login/main_login/testtool"
 
     if type == "2":  # 测试绑定
-        url = "http://test-u-hxxc.tt.cn/login/main_login/testtool"
+        url = "http://test-u-fkccy.happyxiaoxiucai.com/login/main_login/testtool"
 
     if type == "3":
         type = "1"  # 正式登录
-        url = "https://u.happyxiaoxiucai.com/login/main_login/testtool"
+        url = "https://u-fkccy.happyxiaoxiucai.com/login/main_login/testtool"
 
     if type == "4":
         type = "2"  # 正式绑定
-        url = "https://u.happyxiaoxiucai.com/login/main_login/testtool"
+        url = "https://u-fkccy.happyxiaoxiucai.com/login/main_login/testtool"
 
     while True:  # 无限循环语句
         mobile = input("\033[30m 请输入要查询的手机号\返回请输入:0 \033[0m \n")  # 手机号的输入
