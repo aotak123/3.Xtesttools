@@ -22,7 +22,7 @@ while True:
     if type == "2":
         nowtime = time.strftime('%Y-%m-%d%%20%H:%M:%S')
         fullurl2 = url + "&datetime=" + nowtime
-        print(fullurl2)
+        # print(fullurl2)
         request = urllib.request.Request(fullurl2)
         response = urllib.request.urlopen(request)
         fullurl2bytes = response.read()
