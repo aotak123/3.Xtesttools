@@ -4,13 +4,13 @@ import time
 
 ####################——————tak制作  vol.606——————####################
 
-url = "http://test-task-fkccy.tiantianshuibaobao.com/Update_time/update?f=update"
+url = "http://106.75.7.235/update_time.php?f=update"
 
 while True:
     type = input("\n 请输入数字：\n 1：查询时间\n 2：恢复时间\n 3：修改时间\n")
 
     if type == "1":
-        urls = "http://test-task-fkccy.tiantianshuibaobao.com/Update_time//update?f=get"  # 疯狂猜成语获取服务器时间
+        urls = "http://106.75.7.235/update_time.php?f=get"  # 疯狂猜成语获取服务器时间
         request = urllib.request.Request(urls)
         response = urllib.request.urlopen(request)
         openurl = response.read()
@@ -22,7 +22,7 @@ while True:
     if type == "2":
         nowtime = time.strftime('%Y-%m-%d%%20%H:%M:%S')
         fullurl2 = url + "&datetime=" + nowtime
-        # print(fullurl)
+        print(fullurl2)
         request = urllib.request.Request(fullurl2)
         response = urllib.request.urlopen(request)
         fullurl2bytes = response.read()
