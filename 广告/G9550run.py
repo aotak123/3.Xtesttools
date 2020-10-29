@@ -9,8 +9,8 @@ import ssl
 
 capabilities = {}
 capabilities['platformName'] = 'Android'  # Android平台测试
-capabilities['platformVersion'] = '6.0.1'
-capabilities['deviceName'] = 'SM-C5000'
+capabilities['platformVersion'] = '9.0'
+capabilities['deviceName'] = 'SM-G9550'
 capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系统手机中的联系人app的包名
 capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
 capabilities['noReset'] = 'true'  # 不重置app
@@ -35,12 +35,12 @@ def panguan(mobile):
     except NoSuchElementException:
         print("自动登录成功")
     else:
-        TouchAction(driver).tap(x=409, y=1729).perform()  # 点击手机号登录
+        TouchAction(driver).tap(x=530, y=2541).perform()  # 点击手机号登录
         time.sleep(2)
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
         edit_mobile.send_keys(mobile)
         time.sleep(1)
-        TouchAction(driver).tap(x=786, y=666).perform()  # 获取验证码
+        TouchAction(driver).tap(x=1035, y=899).perform()  # 获取验证码
         time.sleep(2)
         # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
@@ -51,7 +51,7 @@ def panguan(mobile):
         logincode = num.decode()
         if logincode == '查不到！':
             time.sleep(2)
-            TouchAction(driver).tap(x=786, y=666).perform()  # 获取验证码
+            TouchAction(driver).tap(x=1035, y=899).perform()  # 获取验证码
             time.sleep(2)  # 获取验证码
             request = urllib.request.Request(logincodeurl)  # 构建请求url
             response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
@@ -62,7 +62,7 @@ def panguan(mobile):
         time.sleep(2)
         edit_Code.send_keys(logincode)
         time.sleep(2)
-        TouchAction(driver).tap(x=500, y=886).perform()  # 确定按钮登录
+        TouchAction(driver).tap(x=700, y=1184).perform()  # 确定按钮登录
         print("账号登录成功")
     time.sleep(15)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
@@ -71,10 +71,10 @@ def panguan(mobile):
     except NoSuchElementException:
         print("无每日签到弹窗")
     else:
-        TouchAction(driver).tap(x=960, y=550).perform()  # 关闭每日签到弹窗
+        TouchAction(driver).tap(x=1267, y=839).perform()  # 关闭每日签到弹窗
         time.sleep(2)
     # 进入接龙主游戏页面
-    TouchAction(driver).tap(x=533, y=1571).perform()  # 进入接龙页面
+    TouchAction(driver).tap(x=702, y=2291).perform()  # 进入接龙页面
     time.sleep(3)
     driver.back()
     time.sleep(2)
@@ -85,17 +85,17 @@ def panguan(mobile):
     except NoSuchElementException:
         print("无签到提醒弹窗")
     else:
-        TouchAction(driver).tap(x=882, y=606).perform()  # 关闭签到提示弹窗
+        TouchAction(driver).tap(x=720, y=1839).perform()  # 关闭签到提示弹窗
         time.sleep(2)
     # 进入判官进行刷广告
-    TouchAction(driver).tap(x=315, y=1777).perform()  # 选择进入判官
+    TouchAction(driver).tap(x=446, y=2588).perform()  # 选择进入判官
     time.sleep(2)
-    TouchAction(driver).tap(x=526, y=1026).perform()  # 选择开始挑战
+    TouchAction(driver).tap(x=720, y=1458).perform()  # 选择开始挑战
     time.sleep(3)
     a = 1
     while a <= 11:
         time.sleep(8)
-        TouchAction(driver).tap(x=518, y=1330).perform()  # 点击查看广告
+        TouchAction(driver).tap(x=684, y=1857).perform()  # 点击查看广告
         time.sleep(10)
         try:
             GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
@@ -103,7 +103,7 @@ def panguan(mobile):
             BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
             print(BB)
             time.sleep(35)
-            TouchAction(driver).tap(x=972, y=91).perform()  # 关闭toutiao广告
+            TouchAction(driver).tap(x=1303, y=113).perform()  # 关闭toutiao广告
             print("     toutiaosdk广告关闭")
         else:
             CC = "  \033[1;31mNO.\033[0m " + str(a) + " GDTsdk广告"
@@ -117,17 +117,17 @@ def panguan(mobile):
     driver.back()  # 判官中回到首页
     time.sleep(2)
     # 退出账号
-    TouchAction(driver).tap(x=428, y=124).perform()  # 返回进入个人中心
+    TouchAction(driver).tap(x=583, y=208).perform()  # 返回进入个人中心
     time.sleep(2)
-    TouchAction(driver).tap(x=970, y=168).perform()  # 点击设置
+    TouchAction(driver).tap(x=1291, y=214).perform()  # 点击设置
     time.sleep(1)
-    TouchAction(driver).tap(x=535, y=367).perform()  # 点击清理
+    TouchAction(driver).tap(x=708, y=476).perform()  # 点击清理
     time.sleep(1)
-    TouchAction(driver).tap(x=731, y=1073).perform()  # 弹窗确定清理
+    TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定清理
     time.sleep(1)
-    TouchAction(driver).tap(x=527, y=1633).perform()  # 点击退出
+    TouchAction(driver).tap(x=708, y=2154).perform()  # 点击退出
     time.sleep(1)
-    TouchAction(driver).tap(x=731, y=1073).perform()  # 弹窗确定退出
+    TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定退出
 
 
 #############################################################################################################################################################
