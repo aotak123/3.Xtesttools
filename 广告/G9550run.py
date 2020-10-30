@@ -86,9 +86,9 @@ def panguan(mobile):
     time.sleep(3)
     a = 1
     while a <= 11:
-        time.sleep(8)
+        time.sleep(7)
         TouchAction(driver).tap(x=684, y=1857).perform()  # 点击查看广告
-        time.sleep(10)
+        time.sleep(5)
         try:
             GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -105,7 +105,7 @@ def panguan(mobile):
             print("     GDTsdk广告关闭")
         a += 1
     # 退出广告循环
-    time.sleep(8)
+    time.sleep(7)
     driver.back()  # 判官中回到首页
     time.sleep(2)
     # 检查是否弹出签到提示

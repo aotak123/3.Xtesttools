@@ -95,9 +95,9 @@ def panguan(mobile):
     time.sleep(3)
     a = 1
     while a <= 11:
-        time.sleep(8)
+        time.sleep(7)
         TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
-        time.sleep(10)
+        time.sleep(5)
         try:
             GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -114,7 +114,7 @@ def panguan(mobile):
             print("     GDTsdk广告关闭")
         a += 1
     # 退出广告循环
-    time.sleep(8)
+    time.sleep(7)
     driver.back()  # 判官中回到首页
     time.sleep(2)
     # 退出账号
@@ -122,10 +122,10 @@ def panguan(mobile):
     time.sleep(2)
     TouchAction(driver).tap(x=1275, y=243).perform()  # 点击设置
     time.sleep(1)
-    TouchAction(driver).tap(x=723, y=547).perform()  # 点击清理
-    time.sleep(1)
-    TouchAction(driver).tap(x=960, y=1440).perform()  # 弹窗确定清理
-    time.sleep(1)
+    # TouchAction(driver).tap(x=723, y=547).perform()  # 点击清理
+    # time.sleep(1)
+    # TouchAction(driver).tap(x=960, y=1440).perform()  # 弹窗确定清理
+    # time.sleep(1)
     TouchAction(driver).tap(x=707, y=2467).perform()  # 点击退出
     time.sleep(1)
     TouchAction(driver).tap(x=960, y=1440).perform()  # 弹窗确定退出
