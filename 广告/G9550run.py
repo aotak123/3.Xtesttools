@@ -74,19 +74,11 @@ def panguan(mobile):
         TouchAction(driver).tap(x=1267, y=839).perform()  # 关闭每日签到弹窗
         time.sleep(2)
     # 进入接龙主游戏页面
-    TouchAction(driver).tap(x=702, y=2291).perform()  # 进入接龙页面
-    time.sleep(3)
-    driver.back()
-    time.sleep(2)
-    # 检查是否弹出签到提示
-    try:
-        check_signtoast = driver.find_element_by_id(
-            "com.kamitu.drawsth.standalone.free.android:id/btn_open_reminder")
-    except NoSuchElementException:
-        print("无签到提醒弹窗")
-    else:
-        TouchAction(driver).tap(x=720, y=1839).perform()  # 关闭签到提示弹窗
-        time.sleep(2)
+    # TouchAction(driver).tap(x=702, y=2291).perform()  # 进入接龙页面
+    # time.sleep(3)
+    # driver.back()
+    # time.sleep(2)
+
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=446, y=2588).perform()  # 选择进入判官
     time.sleep(2)
@@ -116,14 +108,23 @@ def panguan(mobile):
     time.sleep(8)
     driver.back()  # 判官中回到首页
     time.sleep(2)
+    # 检查是否弹出签到提示
+    try:
+        check_signtoast = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/btn_open_reminder")
+    except NoSuchElementException:
+        print("无签到提醒弹窗")
+    else:
+        TouchAction(driver).tap(x=720, y=1839).perform()  # 关闭签到提示弹窗
+        time.sleep(2)
     # 退出账号
     TouchAction(driver).tap(x=583, y=208).perform()  # 返回进入个人中心
     time.sleep(2)
     TouchAction(driver).tap(x=1291, y=214).perform()  # 点击设置
-    time.sleep(1)
-    TouchAction(driver).tap(x=708, y=476).perform()  # 点击清理
-    time.sleep(1)
-    TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定清理
+    # time.sleep(1)
+    # TouchAction(driver).tap(x=708, y=476).perform()  # 点击清理
+    # time.sleep(1)
+    # TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定清理
     time.sleep(1)
     TouchAction(driver).tap(x=708, y=2154).perform()  # 点击退出
     time.sleep(1)
