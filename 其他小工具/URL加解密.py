@@ -1,5 +1,5 @@
 # coding=utf-8
-import urllib
+import urllib.parse
 
 ####################——————tak制作  vol.605——————####################
 ####################——————tak制作移植 2.X版——————####################
@@ -12,7 +12,7 @@ while True:
         if note1 == "0":  # 返回请输入:0
             continue
         else:
-            A = urllib.quote(note1)  # url加密
+            A = urllib.parse.quote(note1)  # url加密
             print(A)
 
     if type == "2":
@@ -20,7 +20,7 @@ while True:
         if note2 == "0":  # 返回请输入:0
             continue
         else:
-            B = urllib.unquote(note2)  # url解密
+            B = urllib.parse.unquote(note2)  # url解密
             print(B)
 
 ####################——————tak制作  vol.605——————####################
