@@ -5,11 +5,12 @@ import re
 import ssl
 import time
 
-####################——————tak制作  vol.605——————####################
+####################——————tak制作  vol.201102——————####################
 
 key = "sLQq2_jaKLknsqAwZ"  # 后台使用的key
 testmobile = '/Users/aotak/Documents/测试手机号名单.xlsx'  # 测试记录文件的地址
 realmobile = '/Users/aotak/Documents/正式手机号名单.xlsx'  # 正式记录文件的地址
+context = ssl._create_unverified_context()  # ssl证书免验证，python3需要验证https证书
 
 while True:
     type = input("\033[30m \n 请输入验证码类型：\n 1：测试登录\n 2：测试绑定\n 3：正式登录\n 4：正式绑定 \033[0m\n")
@@ -30,7 +31,6 @@ while True:
 
     while True:  # 无限循环语句
         mobile = input("\033[30m 请输入要查询的手机号\返回请输入:0 \033[0m \n")  # 手机号的输入
-        context = ssl._create_unverified_context()  # ssl证书免验证，python3需要验证https证书
         right = re.match(r"^1[35789]\d{9}$", mobile)
         # 手机号都为11位，所以必须限定匹配的数字的位数，通过$来限定以9位数字结尾，又因为手机号都以1开头，所以通过^1限定以1开头，
         # 然后手机号第二位貌似只有3,5,6,7,8,这几个数字，所以通过[3,5,7,8,9]来匹配其中的任一数字，后续推出新的号段，需在这里做添加
@@ -60,7 +60,7 @@ while True:
                         print("该手机号已在表内|" + " \033[1;31m 您的验证码： \033[0m" + sss)
                     else:
                         print("该手机号为新账号|" + " \033[1;31m 您的验证码： \033[0m" + sss)
-                if  sss == '查不到！':  # 如果接口没有返回没有查到则不记录
+                if sss == '查不到！':  # 如果接口没有返回没有查到则不记录
                     continue
                 else:
                     with open(testmobile, 'r+') as file_object:  # 打开记录记录文件
@@ -100,7 +100,7 @@ while True:
         else:
             print("\033[1;31m！！!手机号码错误，请重新输入！！!\033[0m")
 
-####################——————tak制作  vol.605——————####################
+####################——————tak制作  vol.1102——————####################
 
 # 臀邀请码：437664355
 # 我邀请码：220427868
