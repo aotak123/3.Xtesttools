@@ -24,7 +24,7 @@ context = ssl._create_unverified_context()
 #############################################################################################################################################################
 def panguan(mobile):
     time.sleep(5)
-    print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m" + time.strftime('%H:%M:%S'))
+    print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m : " + time.strftime('%H:%M:%S'))
     # 登录模块
     try:
         check_login = driver.find_element_by_id(
