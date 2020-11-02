@@ -19,15 +19,11 @@ capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 context = ssl._create_unverified_context()
 
-first1 = "\033[1;31m执行开始\033[0m " + time.strftime('%H:%M:%S')
-print(first1)
-
 
 #############################################################################################################################################################
 def panguan(mobile):
     time.sleep(5)
-    AA = "\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m"
-    print(AA)
+    print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m" + time.strftime('%H:%M:%S'))
     # 登录模块
     try:
         check_login = driver.find_element_by_id(
@@ -36,7 +32,7 @@ def panguan(mobile):
         print("自动登录成功")
     else:
         TouchAction(driver).tap(x=530, y=2541).perform()  # 点击手机号登录
-        time.sleep(2)
+        time.sleep(1)
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
         edit_mobile.send_keys(mobile)
         time.sleep(1)
@@ -59,9 +55,9 @@ def panguan(mobile):
             logincode = num.decode()
         edit_Code = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
-        time.sleep(2)
+        time.sleep(1)
         edit_Code.send_keys(logincode)
-        time.sleep(2)
+        time.sleep(1)
         TouchAction(driver).tap(x=700, y=1184).perform()  # 确定按钮登录
         print("账号登录成功")
     time.sleep(15)  # 等待加载进入首页
@@ -88,7 +84,7 @@ def panguan(mobile):
     while a <= 11:
         time.sleep(7)
         TouchAction(driver).tap(x=684, y=1857).perform()  # 点击查看广告
-        time.sleep(5)
+        time.sleep(8)
         try:
             GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -96,17 +92,17 @@ def panguan(mobile):
             print(BB)
             time.sleep(35)
             TouchAction(driver).tap(x=1303, y=113).perform()  # 关闭toutiao广告
-            print("     toutiaosdk广告关闭")
+            # print("     toutiaosdk广告关闭")
         else:
             CC = "  \033[1;31mNO.\033[0m " + str(a) + " GDTsdk广告"
             print(CC)
             time.sleep(55)
             driver.back()  # GDTsdk广告按钮
-            print("     GDTsdk广告关闭")
+            # print("     GDTsdk广告关闭")
         a += 1
     # 退出广告循环
     time.sleep(7)
-    driver.back()  # 判官中回到首页
+    driver.back()  # 判官回到首页
     time.sleep(2)
     # 检查是否弹出签到提示
     try:
@@ -178,6 +174,21 @@ if __name__ == '__main__':
     panguan(18116699805)  # NO.42
     panguan(18575823673)  # NO.43
     panguan(18022503751)  # NO.44
+    panguan(18180868581)  # NO.45
+    panguan(18017700403)  # NO.46
+    panguan(18017700401)  # NO.47
+    panguan(18017700521)  # NO.48
+    panguan(18017700530)  # NO.49
+    panguan(18017700516)  # NO.50
+    panguan(18017700515)  # NO.51
+    panguan(18017700550)  # NO.52
+    panguan(18017700608)  # NO.53
+    panguan(18017700607)  # NO.54
+    panguan(18017700537)  # NO.55
+    panguan(19882152576)  # NO.56
+    panguan(15528939076)  # NO.57
+
+
 
 #############################################################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
