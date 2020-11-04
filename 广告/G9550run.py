@@ -82,9 +82,9 @@ def panguan(mobile):
     time.sleep(3)
     a = 1
     while a <= 11:
-        time.sleep(7)
-        TouchAction(driver).tap(x=684, y=1857).perform()  # 点击查看广告
         time.sleep(8)
+        TouchAction(driver).tap(x=684, y=1857).perform()  # 点击查看广告
+        time.sleep(10)
         try:
             GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
@@ -121,7 +121,7 @@ def panguan(mobile):
     # TouchAction(driver).tap(x=708, y=476).perform()  # 点击清理
     # time.sleep(1)
     # TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定清理
-    time.sleep(1)
+    time.sleep(2)
     TouchAction(driver).tap(x=708, y=2154).perform()  # 点击退出
     time.sleep(1)
     TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定退出
