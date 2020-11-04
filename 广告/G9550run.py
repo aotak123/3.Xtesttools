@@ -187,7 +187,64 @@ if __name__ == '__main__':
     panguan(18017700537)  # NO.55
     panguan(19882152576)  # NO.56
     panguan(15528939076)  # NO.57
+    panguan(18681025732)  # NO.58
+    panguan(15353993082)  # NO.59
 
+    panguan(13032337111)  # NO.01
+    panguan(13161767110)  # NO.02
+    panguan(13560736789)  # NO.03
+    panguan(13651711999)  # NO.04
+    panguan(15611828881)  # NO.05
+    panguan(15917449818)  # NO.06
+    panguan(15927257999)  # NO.07
+    panguan(17502150079)  # NO.08
+    panguan(18014400369)  # NO.09
+    panguan(18017700207)  # NO.10
+    panguan(18017700223)  # NO.11
+    panguan(18017700339)  # NO.12   阿拉斯加加加加
+    panguan(18017700400)  # NO.13
+    panguan(18017700410)  # NO.14
+    panguan(18017700411)  # NO.15
+    panguan(18017700475)  # NO.16
+    panguan(18017700477)  # NO.17
+    panguan(18017700478)  # NO.18
+    panguan(18017700533)  # NO.19
+    panguan(18017700535)  # NO.20
+    panguan(18017700536)  # NO.21
+    panguan(18017700540)  # NO.22
+    panguan(18017700571)  # NO.23
+    panguan(18017700580)  # NO.24   小糖糖2
+    panguan(18017700596)  # NO.25
+    panguan(18017700598)  # NO.26
+    panguan(18017700600)  # NO.27
+    panguan(18017700601)  # NO.28
+    panguan(18017700604)  # NO.29
+    panguan(18017700606)  # NO.30
+    panguan(18017700710)  # NO.31   治疗失眠陶老师
+    panguan(18503807583)  # NO.32
+    panguan(18918024483)  # NO.33
+    panguan(18930224047)  # NO.34
+    panguan(19823637887)  # NO.35
+    panguan(18017700355)  # NO.36
+    panguan(18134508526)  # NO.37
+    panguan(15611828882)  # NO.38
+    panguan(13161057538)  # NO.39
+    panguan(18085112222)  # NO.40
+    panguan(13164767109)  # NO.41
+    panguan(13666088773)  # NO.42
+    panguan(18616905709)  # NO.43
+    panguan(13311936568)  # NO.44
+    panguan(18601608165)  # NO.45
+    panguan(18601608371)  # NO.46
+    panguan(17710032752)  # NO.47
+    panguan(18519880503)  # NO.48
+    panguan(13520010705)  # NO.49
+    panguan(13920051605)  # NO.50
+    panguan(18622077306)  # NO.51
+    panguan(18933207305)  # NO.52
+    panguan(18007610419)  # NO.53
+    panguan(18127209865)  # NO.54
+    panguan(18782323016)  # NO.55
 
 
 #############################################################################################################################################################
