@@ -90,7 +90,7 @@ def panguan(mobile):
         except NoSuchElementException:
             BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
             print(BB)
-            time.sleep(35)
+            time.sleep(38)
             TouchAction(driver).tap(x=1303, y=113).perform()  # 关闭toutiao广告
             # print("     toutiaosdk广告关闭")
         else:
@@ -101,7 +101,7 @@ def panguan(mobile):
             # print("     GDTsdk广告关闭")
         a += 1
     # 退出广告循环
-    time.sleep(7)
+    time.sleep(8)
     driver.back()  # 判官回到首页
     time.sleep(2)
     # 检查是否弹出签到提示
