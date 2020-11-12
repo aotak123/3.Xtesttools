@@ -4,13 +4,13 @@ import time
 
 ####################——————tak制作  vol.1112——————####################
 
-url = "http://test-p.shootplane.com/update_time.php?f=update"
+url = "http://123.59.149.96/update_time.php?f=update"
 
 while True:
     type = input("\n 请输入数字：\n 1：查询时间\n 2：恢复时间\n 3：修改时间\n")
 
     if type == "1":
-        urls = "http://test-p.shootplane.com/update_time.php?f=get"  # 获取服务器时间
+        urls = "http://123.59.149.96/update_time.php?f=get"  # 获取服务器时间
         request = urllib.request.Request(urls)
         response = urllib.request.urlopen(request)
         openurl = response.read()
