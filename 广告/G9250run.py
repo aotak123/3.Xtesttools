@@ -23,7 +23,7 @@ context = ssl._create_unverified_context()
 
 #############################################################################################################################################################
 def panguan(mobile):
-    time.sleep(5)
+    time.sleep(3)
     print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m : " + time.strftime('%H:%M:%S'))
     # 登录模块
     try:
@@ -61,7 +61,7 @@ def panguan(mobile):
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
         print("账号登录成功")
-    time.sleep(15)  # 等待加载进入首页
+    time.sleep(10)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
     try:
         check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")

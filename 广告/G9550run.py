@@ -60,7 +60,7 @@ def panguan(mobile):
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1184).perform()  # 确定按钮登录
         print("账号登录成功")
-    time.sleep(15)  # 等待加载进入首页
+    time.sleep(10)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
     try:
         check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
@@ -90,7 +90,7 @@ def panguan(mobile):
         except NoSuchElementException:
             BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
             print(BB)
-            time.sleep(38)
+            time.sleep(35)
             TouchAction(driver).tap(x=1303, y=113).perform()  # 关闭toutiao广告
             # print("     toutiaosdk广告关闭")
         else:
@@ -101,7 +101,7 @@ def panguan(mobile):
             # print("     GDTsdk广告关闭")
         a += 1
     # 退出广告循环
-    time.sleep(8)
+    time.sleep(7)
     driver.back()  # 判官回到首页
     time.sleep(2)
     # 检查是否弹出签到提示
