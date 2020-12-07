@@ -3,6 +3,7 @@
 import pygame
 from pygame.locals import * 
 from random import randint
+
 pygame.init()
 fenetre = pygame.display.set_mode((600,600))
 shape = [] # current shape displayed on the screen
