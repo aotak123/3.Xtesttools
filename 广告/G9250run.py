@@ -61,15 +61,16 @@ def panguan(mobile):
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
         print("账号登录成功")
-    time.sleep(10)  # 等待加载进入首页
+    time.sleep(8)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
-    try:
-        check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
-    except NoSuchElementException:
-        print("无每日签到弹窗")
-    else:
-        TouchAction(driver).tap(x=1270, y=655).perform()  # 关闭每日签到弹窗
-        time.sleep(2)
+    #抓包工具黑名单地址https://sign.crazyccy.com/index/index
+    # try:
+    #     check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
+    # except NoSuchElementException:
+    #     print("无每日签到弹窗")
+    # else:
+    #     TouchAction(driver).tap(x=1270, y=655).perform()  # 关闭每日签到弹窗
+    #     time.sleep(2)
     # 进入接龙主游戏页面
     # TouchAction(driver).tap(x=707, y=2070).perform()  # 进入接龙页面
     # time.sleep(2)
