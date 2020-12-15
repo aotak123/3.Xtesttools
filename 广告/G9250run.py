@@ -94,19 +94,19 @@ def panguan(mobile):
     while a <= 11:
         time.sleep(8)
         TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
-        time.sleep(10)
+        time.sleep(5)
         try:
             GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
         except NoSuchElementException:
             BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
             print(BB)
-            time.sleep(35)
+            time.sleep(32)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             # print("     toutiaosdk广告关闭")
         else:
             CC = "  \033[1;31mNO.\033[0m " + str(a) + " GDTsdk广告"
             print(CC)
-            time.sleep(55)
+            time.sleep(50)
             driver.back()  # GDTsdk广告按钮
             # print("     GDTsdk广告关闭")
         a += 1

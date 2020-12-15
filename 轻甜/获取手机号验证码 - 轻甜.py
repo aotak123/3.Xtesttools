@@ -18,15 +18,15 @@ while True:
         url = "http://test-qtzb-u.tt.cn/login/main_login/testtool"
 
     if type == "2":  # 测试绑定
-        url = "http://test-u.tiantianshouhu.com/login/main_login/testtool"
+        url = "http://test-qtzb-u.tt.cn/login/main_login/testtool"
 
     if type == "3":
         type = "1"  # 正式登录
-        # url = "https://uc.crazyccy.com/login/main_login/testtool"
+        url = "https://qtzb-u.tt.cn/login/main_login/testtool"
 
     if type == "4":
         type = "2"  # 正式绑定
-        # url = "https://uc.crazyccy.com/login/main_login/testtool"
+        url = "https://qtzb-u.tt.cn/login/main_login/testtool"
 
     while True:  # 无限循环语句
         mobile = input("\033[30m 请输入要查询的手机号\返回请输入:0 \033[0m \n")  # 手机号的输入
