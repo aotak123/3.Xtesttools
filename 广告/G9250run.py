@@ -100,7 +100,7 @@ def panguan(mobile):
         except NoSuchElementException:
             BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
             print(BB)
-            time.sleep(32)
+            time.sleep(35)
             TouchAction(driver).tap(x=1285, y=139).perform()  # 关闭toutiao广告
             # print("     toutiaosdk广告关闭")
         else:
