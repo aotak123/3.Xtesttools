@@ -36,7 +36,7 @@ def panguan(mobile):
         time.sleep(1)
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
         edit_mobile.send_keys(mobile)
-        time.sleep(1)
+        time.sleep(2)
         TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
         time.sleep(2)
         # 获取验证码
