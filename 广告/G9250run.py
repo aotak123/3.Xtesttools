@@ -106,7 +106,7 @@ def panguan(mobile):
         else:
             CC = "  \033[1;31mNO.\033[0m " + str(a) + " GDTsdk广告"
             print(CC)
-            time.sleep(50)
+            time.sleep(55)
             driver.back()  # GDTsdk广告按钮
             # print("     GDTsdk广告关闭")
         a += 1
