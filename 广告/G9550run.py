@@ -19,6 +19,9 @@ capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 context = ssl._create_unverified_context()
 
+'''
+block list添加 https://sign.crazyccy.com:443/index/index
+'''
 
 #############################################################################################################################################################
 def panguan(mobile):

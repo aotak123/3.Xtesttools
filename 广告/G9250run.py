@@ -20,6 +20,9 @@ capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 context = ssl._create_unverified_context()
 
+'''
+block list添加 https://sign.crazyccy.com:443/index/index
+'''
 
 #############################################################################################################################################################
 def panguan(mobile):
@@ -115,14 +118,14 @@ def panguan(mobile):
     driver.back()  # 判官回到首页
     time.sleep(2)
     # 检查是否弹出签到提示
-    try:
-        check_signtoast = driver.find_element_by_id(
-            "com.kamitu.drawsth.standalone.free.android:id/iv_checkin_reminder_close")
-    except NoSuchElementException:
-        print("无签到提示弹窗")
-    else:
-        TouchAction(driver).tap(x=1228, y=748).perform()  # 关闭签到提示弹窗
-        time.sleep(2)
+    # try:
+    #     check_signtoast = driver.find_element_by_id(
+    #         "com.kamitu.drawsth.standalone.free.android:id/iv_checkin_reminder_close")
+    # except NoSuchElementException:
+    #     print("无签到提示弹窗")
+    # else:
+    #     TouchAction(driver).tap(x=1228, y=748).perform()  # 关闭签到提示弹窗
+    #     time.sleep(2)
     # 退出账号
     TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
     time.sleep(2)
