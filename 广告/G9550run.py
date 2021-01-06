@@ -63,7 +63,7 @@ def panguan(mobile):
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1184).perform()  # 确定按钮登录
         print("账号登录成功")
-    time.sleep(8)  # 等待加载进入首页
+    time.sleep(10)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
     #抓包工具黑名单地址https://sign.crazyccy.com/index/index
     # try:
