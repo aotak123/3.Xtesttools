@@ -108,9 +108,9 @@ def panguan(mobile):
             # print("     GDTsdk广告关闭")
         a += 1
     # 退出广告循环
-    time.sleep(8)
+    time.sleep(10)
     driver.back()  # 判官回到首页
-    time.sleep(2)
+    time.sleep(3)
     # 检查是否弹出签到提示
     # try:
     #     check_signtoast = driver.find_element_by_id(
