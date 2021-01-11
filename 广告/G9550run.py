@@ -59,7 +59,7 @@ def panguan(mobile):
     time.sleep(10)  # 等待加载进入首页
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=446, y=2588).perform()  # 选择进入判官
-    time.sleep(2)
+    time.sleep(3)
     TouchAction(driver).tap(x=720, y=1458).perform()  # 选择开始挑战
     time.sleep(3)
     a = 1

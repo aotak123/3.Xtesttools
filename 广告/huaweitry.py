@@ -37,6 +37,7 @@ def panguan(mobile):
     else:
         TouchAction(driver).tap(x=391, y=1591).perform()  # 点击手机号登录
         time.sleep(1)
+        # edit_mobile = TouchAction(driver).tap(x=414, y=406).perform() # 点击手机号码输入
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
         edit_mobile.send_keys(mobile)
         time.sleep(1)
@@ -59,7 +60,7 @@ def panguan(mobile):
     time.sleep(10)  # 等待加载进入首页
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=321, y=1665).perform()  # 选择进入判官
-    time.sleep(2)
+    time.sleep(3)
     TouchAction(driver).tap(x=546, y=941).perform()  # 选择开始挑战
     time.sleep(3)
     a = 1
