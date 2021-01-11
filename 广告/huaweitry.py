@@ -19,6 +19,10 @@ capabilities['autoWebview'] = 'false'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 context = ssl._create_unverified_context()
 
+'''
+block list添加 https://sign.crazyccy.com:443/index/index
+'''
+
 
 #############################################################################################################################################################
 def panguan(mobile):
@@ -26,7 +30,8 @@ def panguan(mobile):
     print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m : " + time.strftime('%H:%M:%S'))
     # 登录模块
     try:
-        check_login = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_mobile_login")  # 选择手机号登录
+        check_login = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/iv_mobile_login")  # 选择手机号登录
     except NoSuchElementException:
         print("自动登录成功")
     else:
@@ -44,14 +49,6 @@ def panguan(mobile):
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        if logincode == '查不到！':
-            time.sleep(2)
-            TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
-            time.sleep(2)  # 获取验证码
-            request = urllib.request.Request(logincodeurl)  # 构建请求url
-            response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
-            num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
-            logincode = num.decode()
         edit_code = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
@@ -60,28 +57,6 @@ def panguan(mobile):
         TouchAction(driver).tap(x=530, y=844).perform()  # 确定按钮登录
         print("账号登录成功")
     time.sleep(10)  # 等待加载进入首页
-    # 检查是否弹出每日签到弹窗
-    # try:
-    #     check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
-    # except NoSuchElementException:
-    #     print("无每日签到弹窗")
-    # else:
-    #     TouchAction(driver).tap(x=1270, y=655).perform()  # 关闭每日签到弹窗
-    #     time.sleep(2)
-    # 进入接龙主游戏页面
-    # TouchAction(driver).tap(x=707, y=2070).perform()  # 进入接龙页面
-    # time.sleep(2)
-    # driver.back()
-    # time.sleep(2)
-    # # 检查是否弹出签到提示
-    # try:
-    #     check_signtoast = driver.find_element_by_id(
-    #         "com.kamitu.drawsth.standalone.free.android:id/iv_checkin_reminder_close")
-    # except NoSuchElementException:
-    #     print("无签到提示弹窗")
-    # else:
-    #     TouchAction(driver).tap(x=1228, y=748).perform()  # 关闭签到提示弹窗
-    #     time.sleep(2)
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=321, y=1665).perform()  # 选择进入判官
     time.sleep(2)
@@ -111,20 +86,12 @@ def panguan(mobile):
     time.sleep(10)
     driver.back()  # 判官回到首页
     time.sleep(2)
-    # 检查是否弹出签到提示
-    # try:
-    #     check_signtoast = driver.find_element_by_id(
-    #         "com.kamitu.drawsth.standalone.free.android:id/iv_checkin_reminder_close")
-    # except NoSuchElementException:
-    #     print("无签到提示弹窗")
-    # else:
-    #     TouchAction(driver).tap(x=1228, y=748).perform()  # 关闭签到提示弹窗
-    #     time.sleep(2)
     # 退出账号
     TouchAction(driver).tap(x=422, y=120).perform()  # 返回进入个人中心
     time.sleep(2)
     TouchAction(driver).tap(x=960, y=186).perform()  # 点击设置
     time.sleep(2)
+    # 退出前清理缓存
     # TouchAction(driver).tap(x=723, y=547).perform()  # 点击清理
     # time.sleep(1)
     # TouchAction(driver).tap(x=960, y=1440).perform()  # 弹窗确定清理
@@ -132,6 +99,7 @@ def panguan(mobile):
     TouchAction(driver).tap(x=492, y=1777).perform()  # 点击退出
     time.sleep(2)
     TouchAction(driver).tap(x=712, y=1014).perform()  # 弹窗确定退出
+
 
 #############################################################################################################################################################
 

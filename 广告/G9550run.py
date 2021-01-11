@@ -23,9 +23,10 @@ context = ssl._create_unverified_context()
 block list添加 https://sign.crazyccy.com:443/index/index
 '''
 
+
 #############################################################################################################################################################
 def panguan(mobile):
-    time.sleep(5)
+    time.sleep(3)
     print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m : " + time.strftime('%H:%M:%S'))
     # 登录模块
     try:
@@ -48,14 +49,6 @@ def panguan(mobile):
         response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
         num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
         logincode = num.decode()
-        if logincode == '查不到！':
-            time.sleep(2)
-            TouchAction(driver).tap(x=1035, y=899).perform()  # 获取验证码
-            time.sleep(2)  # 获取验证码
-            request = urllib.request.Request(logincodeurl)  # 构建请求url
-            response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
-            num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
-            logincode = num.decode()
         edit_Code = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
@@ -64,21 +57,6 @@ def panguan(mobile):
         TouchAction(driver).tap(x=700, y=1184).perform()  # 确定按钮登录
         print("账号登录成功")
     time.sleep(10)  # 等待加载进入首页
-    # 检查是否弹出每日签到弹窗
-    #抓包工具黑名单地址https://sign.crazyccy.com/index/index
-    # try:
-    #     check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
-    # except NoSuchElementException:
-    #     print("无每日签到弹窗")
-    # else:
-    #     TouchAction(driver).tap(x=1267, y=839).perform()  # 关闭每日签到弹窗
-    #     time.sleep(2)
-    # 进入接龙主游戏页面
-    # TouchAction(driver).tap(x=702, y=2291).perform()  # 进入接龙页面
-    # time.sleep(3)
-    # driver.back()
-    # time.sleep(2)
-
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=446, y=2588).perform()  # 选择进入判官
     time.sleep(2)
@@ -105,25 +83,17 @@ def panguan(mobile):
         #     print(CC)
         #     time.sleep(55)
         #     driver.back()  # GDTsdk广告按钮
-            # print("     GDTsdk广告关闭")
+        # print("     GDTsdk广告关闭")
         a += 1
     # 退出广告循环
     time.sleep(10)
     driver.back()  # 判官回到首页
     time.sleep(3)
-    # 检查是否弹出签到提示
-    # try:
-    #     check_signtoast = driver.find_element_by_id(
-    #         "com.kamitu.drawsth.standalone.free.android:id/btn_open_reminder")
-    # except NoSuchElementException:
-    #     print("无签到提醒弹窗")
-    # else:
-    #     TouchAction(driver).tap(x=720, y=1839).perform()  # 关闭签到提示弹窗
-    #     time.sleep(2)
     # 退出账号
     TouchAction(driver).tap(x=583, y=208).perform()  # 返回进入个人中心
     time.sleep(2)
     TouchAction(driver).tap(x=1291, y=214).perform()  # 点击设置
+    # 退出前清理缓存
     # time.sleep(1)
     # TouchAction(driver).tap(x=708, y=476).perform()  # 点击清理
     # time.sleep(1)
