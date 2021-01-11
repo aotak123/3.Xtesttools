@@ -59,7 +59,7 @@ def panguan(mobile):
         time.sleep(1)
         TouchAction(driver).tap(x=530, y=844).perform()  # 确定按钮登录
         print("账号登录成功")
-    time.sleep(8)  # 等待加载进入首页
+    time.sleep(10)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
     # try:
     #     check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
@@ -108,7 +108,7 @@ def panguan(mobile):
             # print("     GDTsdk广告关闭")
         a += 1
     # 退出广告循环
-    time.sleep(8)
+    time.sleep(10)
     driver.back()  # 判官回到首页
     time.sleep(2)
     # 检查是否弹出签到提示
@@ -130,7 +130,7 @@ def panguan(mobile):
     # TouchAction(driver).tap(x=960, y=1440).perform()  # 弹窗确定清理
     # time.sleep(1)
     TouchAction(driver).tap(x=492, y=1777).perform()  # 点击退出
-    time.sleep(1)
+    time.sleep(2)
     TouchAction(driver).tap(x=712, y=1014).perform()  # 弹窗确定退出
 
 #############################################################################################################################################################
