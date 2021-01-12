@@ -24,7 +24,7 @@ block list添加 https://sign.crazyccy.com:443/index/index
 '''
 
 
-#############################################################################################################################################################
+########################################################################################################################
 def panguan(mobile):
     time.sleep(3)
     print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m : " + time.strftime('%H:%M:%S'))
@@ -37,8 +37,8 @@ def panguan(mobile):
     else:
         TouchAction(driver).tap(x=391, y=1591).perform()  # 点击手机号登录
         time.sleep(1)
-        # edit_mobile = TouchAction(driver).tap(x=414, y=406).perform() # 点击手机号码输入
-        edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
+        # 选择手机号输入框
+        edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
         time.sleep(1)
         TouchAction(driver).tap(x=825, y=588).perform()  # 获取验证码
@@ -102,86 +102,60 @@ def panguan(mobile):
     TouchAction(driver).tap(x=712, y=1014).perform()  # 弹窗确定退出
 
 
-#############################################################################################################################################################
-
+########################################################################################################################
 if __name__ == '__main__':
-    panguan(13032337111)  # NO.01
-    panguan(13161057538)  # NO.02
-    panguan(13161767110)  # NO.03
-    panguan(13164767109)  # NO.04
-    panguan(13311936568)  # NO.05
-    panguan(13520010705)  # NO.06
-    panguan(13560736789)  # NO.07
-    panguan(13651711999)  # NO.08
-    panguan(13666088773)  # NO.09
-    panguan(13920051605)  # NO.10
-    panguan(15611828881)  # NO.11
-    panguan(15611828882)  # NO.12
-    panguan(15917449818)  # NO.13
-    panguan(15927257999)  # NO.14
-    panguan(17502150079)  # NO.15
-    panguan(17710032752)  # NO.16
-    panguan(18007610419)  # NO.17
-    panguan(18014400369)  # NO.18
-    panguan(18017700207)  # NO.19
-    panguan(18017700223)  # NO.20
-    panguan(18017700339)  # NO.21   阿拉斯加加加加
-    panguan(18017700355)  # NO.22
-    panguan(18017700400)  # NO.23
-    panguan(18017700410)  # NO.24
-    panguan(18017700411)  # NO.25
-    panguan(18017700475)  # NO.26
-    panguan(18017700477)  # NO.27
-    panguan(18017700478)  # NO.28
-    panguan(18017700533)  # NO.29
-    panguan(18017700535)  # NO.30
-    panguan(18017700536)  # NO.31
-    panguan(18017700540)  # NO.32
-    panguan(18017700571)  # NO.33
-    panguan(18017700580)  # NO.34   小糖糖2
-    panguan(18017700596)  # NO.35
-    panguan(18017700598)  # NO.36
-    panguan(18017700600)  # NO.37
-    panguan(18017700601)  # NO.38
-    panguan(18017700604)  # NO.39
-    panguan(18017700606)  # NO.40
-    panguan(18017700710)  # NO.41   治疗失眠陶老师
-    panguan(18085112222)  # NO.42
-    panguan(18127209865)  # NO.43
-    panguan(18134508526)  # NO.44
-    panguan(18503807583)  # NO.45
-    panguan(18519880503)  # NO.46
-    panguan(18601608165)  # NO.47
-    panguan(18601608371)  # NO.48
-    panguan(18616905709)  # NO.49
-    panguan(18622077306)  # NO.50
-    panguan(18782323016)  # NO.51
-    panguan(18918024483)  # NO.52
-    panguan(18930224047)  # NO.53
-    panguan(18933207305)  # NO.54
-    panguan(19823637887)  # NO.55
-    panguan(19850838555)  # NO.56
-    panguan(19850000111)  # NO.57
-    panguan(15237371035)  # NO.58
-    panguan(18508071757)  # NO.59
-    panguan(18600007007)  # NO.60
-    panguan(18600007117)  # NO.61
-    panguan(18780000008)  # NO.62
-    panguan(18637605801)  # NO.63
-    panguan(17752939592)  # NO.64
-    panguan(18131526059)  # NO.65
-    panguan(15660925537)  # NO.66
-    panguan(17538253260)  # NO.67
-    panguan(19825052192)  # NO.68
-    panguan(19825805208)  # NO.69
-    panguan(13122027777)  # NO.70
-    panguan(18222851111)  # NO.71
-    panguan(18222222222)  # NO.72
-    panguan(19876543210)  # NO.73
-    panguan(18234567890)  # NO.74
-    panguan(17857577938)  # NO.75
+    panguan(18600007117)  # NO.01
+    panguan(18780000008)  # NO.02
+    panguan(18637605801)  # NO.03
+    panguan(17752939592)  # NO.04
+    panguan(18131526059)  # NO.05
+    panguan(15660925537)  # NO.06
+    panguan(17538253260)  # NO.07
+    panguan(19825052192)  # NO.08
+    panguan(19825805208)  # NO.09
+    panguan(13122027777)  # NO.10
+    panguan(18222851111)  # NO.11
+    panguan(18222222222)  # NO.12
+    panguan(19876543210)  # NO.13
+    panguan(18234567890)  # NO.14
+    panguan(17857577938)  # NO.15
+    panguan(18321273743)  # NO.16
+    panguan(18519820628)  # NO.17
+    panguan(18575823673)  # NO.18
+    panguan(18681025732)  # NO.19
+    panguan(18819123459)  # NO.20
+    panguan(18901156158)  # NO.21
+    panguan(18920308799)  # NO.22
+    panguan(18929597700)  # NO.23
+    panguan(18930223547)  # NO.24
+    panguan(19882152576)  # NO.25
+    panguan(15895663333)  # NO.26
+    panguan(13918122777)  # NO.27
+    panguan(13223986738)  # NO.28
+    panguan(17767380753)  # NO.29
+    panguan(13200500500)  # NO.30
+    panguan(13200500001)  # NO.31
+    panguan(13079188626)  # NO.32
+    panguan(17260878175)  # NO.33
+    panguan(19813758251)  # NO.34
+    panguan(17261803056)  # NO.35
+    panguan(19529759329)  # NO.36
+    panguan(17538519737)  # NO.37
+    panguan(13529021576)  # NO.38
+    panguan(18987872800)  # NO.39
+    panguan(18917779999)  # NO.40
+    panguan(13761113333)  # NO.41
+    panguan(13985622222)  # NO.42
+    panguan(13763333333)  # NO.43
+    panguan(13698521470)  # NO.44
+    panguan(13760000001)  # NO.45
+    panguan(17729152205)  # NO.46
+    panguan(19850838555)  # NO.47
+    panguan(19850000111)  # NO.48
+    panguan(15237371035)  # NO.49
+    panguan(18508071757)  # NO.50
 
-#############################################################################################################################################################
+########################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
 print(finally2)
 driver.back()

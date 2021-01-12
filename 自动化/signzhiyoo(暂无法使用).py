@@ -32,10 +32,10 @@ headers = \
     "Content-Length":"25",
     "Connection":"keep-alive"
   }
-body = \
+data = \
   {
     "formhash": "5f07febd",
     "qdxq": "nu"
   }
-r = requests.post(loginurl,headers=headers,data=json.dumps(body))
+r = requests.post(loginurl,headers=headers,data=json.dumps(data))
 print(r.text)

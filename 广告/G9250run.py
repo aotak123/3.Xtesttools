@@ -24,7 +24,8 @@ context = ssl._create_unverified_context()
 block list添加 https://sign.crazyccy.com:443/index/index
 '''
 
-#############################################################################################################################################################
+
+########################################################################################################################
 def panguan(mobile):
     time.sleep(3)
     print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m : " + time.strftime('%H:%M:%S'))
@@ -37,7 +38,8 @@ def panguan(mobile):
     else:
         TouchAction(driver).tap(x=515, y=2300).perform()  # 点击手机号登录
         time.sleep(1)
-        edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
+        # 选择手机号输入框
+        edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
         time.sleep(2)
         TouchAction(driver).tap(x=1100, y=870).perform()  # 获取验证码
@@ -66,7 +68,7 @@ def panguan(mobile):
         print("账号登录成功")
     time.sleep(8)  # 等待加载进入首页
     # 检查是否弹出每日签到弹窗
-    #抓包工具黑名单地址https://sign.crazyccy.com/index/index
+    # 抓包工具黑名单地址https://sign.crazyccy.com/index/index
     # try:
     #     check_signwindows = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_signin_get")
     # except NoSuchElementException:
@@ -140,8 +142,7 @@ def panguan(mobile):
     TouchAction(driver).tap(x=960, y=1440).perform()  # 弹窗确定退出
 
 
-#############################################################################################################################################################
-
+########################################################################################################################
 if __name__ == '__main__':
     panguan(13032337111)  # NO.01
     panguan(13161057538)  # NO.02
@@ -198,28 +199,8 @@ if __name__ == '__main__':
     panguan(18930224047)  # NO.53
     panguan(18933207305)  # NO.54
     panguan(19823637887)  # NO.55
-    panguan(19850838555)  # NO.56
-    panguan(19850000111)  # NO.57
-    panguan(15237371035)  # NO.58
-    panguan(18508071757)  # NO.59
-    panguan(18600007007)  # NO.60
-    panguan(18600007117)  # NO.61
-    panguan(18780000008)  # NO.62
-    panguan(18637605801)  # NO.63
-    panguan(17752939592)  # NO.64
-    panguan(18131526059)  # NO.65
-    panguan(15660925537)  # NO.66
-    panguan(17538253260)  # NO.67
-    panguan(19825052192)  # NO.68
-    panguan(19825805208)  # NO.69
-    panguan(13122027777)  # NO.70
-    panguan(18222851111)  # NO.71
-    panguan(18222222222)  # NO.72
-    panguan(19876543210)  # NO.73
-    panguan(18234567890)  # NO.74
-    panguan(17857577938)  # NO.75
 
-#############################################################################################################################################################
+########################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
 print(finally2)
 driver.back()

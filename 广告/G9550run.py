@@ -24,7 +24,7 @@ block list添加 https://sign.crazyccy.com:443/index/index
 '''
 
 
-#############################################################################################################################################################
+########################################################################################################################
 def panguan(mobile):
     time.sleep(3)
     print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m : " + time.strftime('%H:%M:%S'))
@@ -37,7 +37,8 @@ def panguan(mobile):
     else:
         TouchAction(driver).tap(x=530, y=2541).perform()  # 点击手机号登录
         time.sleep(1)
-        edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")  # 选择手机号输入框
+        # 选择手机号输入框
+        edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
         time.sleep(1)
         TouchAction(driver).tap(x=1035, y=899).perform()  # 获取验证码
@@ -104,8 +105,7 @@ def panguan(mobile):
     TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定退出
 
 
-#############################################################################################################################################################
-
+########################################################################################################################
 if __name__ == '__main__':
     panguan(13032337272)  # NO.01
     panguan(13062803788)  # NO.02
@@ -156,39 +156,9 @@ if __name__ == '__main__':
     panguan(18116699805)  # NO.47
     panguan(18145608526)  # NO.48
     panguan(18180868581)  # NO.49
-    panguan(18321273743)  # NO.50
-    panguan(18519820628)  # NO.51
-    panguan(18575823673)  # NO.52
-    panguan(18681025732)  # NO.53
-    panguan(18819123459)  # NO.54
-    panguan(18901156158)  # NO.55
-    panguan(18920308799)  # NO.56
-    panguan(18929597700)  # NO.57
-    panguan(18930223547)  # NO.58
-    panguan(19882152576)  # NO.59
-    panguan(15895663333)  # NO.60
-    panguan(13918122777)  # NO.61
-    panguan(13223986738)  # NO.62
-    panguan(17767380753)  # NO.63
-    panguan(13200500500)  # NO.64
-    panguan(13200500001)  # NO.65
-    panguan(13079188626)  # NO.66
-    panguan(17260878175)  # NO.67
-    panguan(19813758251)  # NO.68
-    panguan(17261803056)  # NO.69
-    panguan(19529759329)  # NO.70
-    panguan(17538519737)  # NO.71
-    panguan(13529021576)  # NO.72
-    panguan(18987872800)  # NO.73
-    panguan(18917779999)  # NO.74
-    panguan(13761113333)  # NO.75
-    panguan(13985622222)  # NO.76
-    panguan(13763333333)  # NO.77
-    panguan(13698521470)  # NO.78
-    panguan(13760000001)  # NO.79
-    panguan(17729152205)  # NO.80
+    panguan(18600007007)  # NO.50
 
-#############################################################################################################################################################
+########################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
 print(finally2)
 driver.back()
