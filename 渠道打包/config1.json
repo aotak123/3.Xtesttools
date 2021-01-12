@@ -1,0 +1,36 @@
+{
+  //extraInfo 不要出现以`channel`为key的情况
+  /*
+  不声明extraInfo的channel默认使用的extraInfo
+  如果没有此项则没有默认extraInfo
+  */
+  "defaultExtraInfo": {
+    "CHANNEL_LABEL": ""
+  },
+  "channelInfoList": [
+    {
+      "channel": "xiaomi",
+      "extraInfo": {
+        "CHANNEL_LABEL": ""
+      }
+    },
+    {
+      "channel": "txyyb"
+    },
+	 {
+      "channel": "baidusjzs"
+    },
+	 {
+      "channel": "test"
+    },
+	 {
+      "channel": "oppo"
+    },
+	{
+      "channel": "vivo"
+    },
+    {
+      "channel": "huawei"
+    }
+  ]
+}
