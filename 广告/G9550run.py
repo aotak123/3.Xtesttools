@@ -6,6 +6,7 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 import urllib.request
 import ssl
+import os
 
 capabilities = {}
 capabilities['platformName'] = 'Android'  # Android平台测试
@@ -33,7 +34,39 @@ def panguan(mobile):
         check_login = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/iv_mobile_login")  # 选择手机号登录
     except NoSuchElementException:
-        print("自动登录成功")
+        print("当前为自动登录...退出账号")
+        time.sleep(8)  # 等待加载进入首页
+        TouchAction(driver).tap(x=583, y=208).perform()  # 返回进入个人中心
+        time.sleep(2)
+        TouchAction(driver).tap(x=1291, y=214).perform()  # 点击设置
+        time.sleep(2)
+        TouchAction(driver).tap(x=708, y=2154).perform()  # 点击退出
+        time.sleep(1)
+        TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定退出
+        time.sleep(3)
+        print("退出账号成功...重新进入登录")
+        TouchAction(driver).tap(x=530, y=2541).perform()  # 点击手机号登录
+        time.sleep(1)
+        # 选择手机号输入框
+        edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
+        edit_mobile.send_keys(mobile)
+        time.sleep(1)
+        TouchAction(driver).tap(x=1035, y=899).perform()  # 获取验证码
+        time.sleep(2)
+        # 获取验证码
+        logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
+            mobile)
+        request = urllib.request.Request(logincodeurl)  # 构建请求url
+        response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context# 打开请求url链接
+        num = response.read()  # 读取页面返回信息，python3返回数据为bytes类型的对象 (即b为前缀, bytes类型)
+        logincode = num.decode()
+        edit_Code = driver.find_element_by_id(
+            "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
+        time.sleep(1)
+        edit_Code.send_keys(logincode)
+        time.sleep(1)
+        TouchAction(driver).tap(x=700, y=1184).perform()  # 确定按钮登录
+        print("账号登录成功")
     else:
         TouchAction(driver).tap(x=530, y=2541).perform()  # 点击手机号登录
         time.sleep(1)
@@ -93,16 +126,27 @@ def panguan(mobile):
     # 退出账号
     TouchAction(driver).tap(x=583, y=208).perform()  # 返回进入个人中心
     time.sleep(2)
-    TouchAction(driver).tap(x=1291, y=214).perform()  # 点击设置
-    # 退出前清理缓存
-    # time.sleep(1)
-    # TouchAction(driver).tap(x=708, y=476).perform()  # 点击清理
-    # time.sleep(1)
-    # TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定清理
-    time.sleep(2)
-    TouchAction(driver).tap(x=708, y=2154).perform()  # 点击退出
-    time.sleep(1)
-    TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定退出
+    try:
+        set = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
+    except NoSuchElementException:
+        os.popen("adb shell am force-stop com.kamitu.drawsth.standalone.free.android")
+        time.sleep(2)
+        os.popen(
+            "adb shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+        time.sleep(10)  # 等待加载进入首页
+        TouchAction(driver).tap(x=583, y=208).perform()  # 返回进入个人中心
+        time.sleep(2)
+        TouchAction(driver).tap(x=1291, y=214).perform()  # 点击设置
+        time.sleep(2)
+        TouchAction(driver).tap(x=708, y=2154).perform()  # 点击退出
+        time.sleep(1)
+        TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定退出
+    else:
+        TouchAction(driver).tap(x=1291, y=214).perform()  # 点击设置
+        time.sleep(2)
+        TouchAction(driver).tap(x=708, y=2154).perform()  # 点击退出
+        time.sleep(1)
+        TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定退出
 
 
 ########################################################################################################################
