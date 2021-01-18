@@ -148,56 +148,39 @@ def panguan(mobile):
 
 ########################################################################################################################
 if __name__ == '__main__':
-    panguan(18600007117)  # NO.01
-    panguan(18780000008)  # NO.02
-    panguan(18637605801)  # NO.03
-    panguan(17752939592)  # NO.04
-    panguan(18131526059)  # NO.05
-    panguan(15660925537)  # NO.06
-    panguan(17538253260)  # NO.07
-    panguan(19825052192)  # NO.08
-    panguan(19825805208)  # NO.09
-    panguan(13122027777)  # NO.10
-    panguan(18222851111)  # NO.11
-    panguan(18222222222)  # NO.12
-    panguan(19876543210)  # NO.13
-    panguan(18234567890)  # NO.14
-    panguan(17857577938)  # NO.15
-    panguan(18321273743)  # NO.16
-    panguan(18519820628)  # NO.17
-    panguan(18575823673)  # NO.18
-    panguan(18681025732)  # NO.19
-    panguan(18819123459)  # NO.20
-    panguan(18901156158)  # NO.21
-    panguan(18920308799)  # NO.22
-    panguan(18929597700)  # NO.23
-    panguan(18930223547)  # NO.24 末凉
-    panguan(19882152576)  # NO.25
-    panguan(15895663333)  # NO.26
-    panguan(13918122777)  # NO.27
-    panguan(13223986738)  # NO.28
-    panguan(17767380753)  # NO.29
-    panguan(13200500500)  # NO.30
-    panguan(13200500001)  # NO.31
-    panguan(13079188626)  # NO.32
-    panguan(17260878175)  # NO.33
-    panguan(19813758251)  # NO.34
-    panguan(17261803056)  # NO.35
-    panguan(19529759329)  # NO.36
-    panguan(17538519737)  # NO.37
-    panguan(13529021576)  # NO.38
-    panguan(18987872800)  # NO.39
-    panguan(18917779999)  # NO.40
-    panguan(13761113333)  # NO.41
-    panguan(13985622222)  # NO.42
-    panguan(13763333333)  # NO.43
-    panguan(13698521470)  # NO.44
-    panguan(13760000001)  # NO.45
-    panguan(17729152205)  # NO.46
-    panguan(19850838555)  # NO.47
-    panguan(19850000111)  # NO.48
-    panguan(15237371035)  # NO.49
-    panguan(18508071757)  # NO.50
+    panguan(18321273743)
+    panguan(18519820628)
+    panguan(18575823673)
+    panguan(18681025732)
+    panguan(18819123459)
+    panguan(18901156158)
+    panguan(18920308799)
+    panguan(18929597700)
+    panguan(18930223547)  # 末凉
+    panguan(19882152576)
+    panguan(15895663333)
+    panguan(13918122777)
+    panguan(13223986738)
+    panguan(17767380753)
+    panguan(13200500500)
+    panguan(13200500001)
+    panguan(13079188626)
+    panguan(17260878175)
+    panguan(19813758251)
+    panguan(17261803056)
+    panguan(19529759329)
+    panguan(17538519737)
+    panguan(13529021576)
+    panguan(18987872800)
+    panguan(18917779999)
+    panguan(13761113333)
+    panguan(13985622222)
+    panguan(13763333333)
+    panguan(13698521470)
+    panguan(13760000001)
+    panguan(17729152205)
+    panguan(14017700111)
+    panguan(16016000001)
 
 ########################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')

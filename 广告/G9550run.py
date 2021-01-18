@@ -151,56 +151,55 @@ def panguan(mobile):
 
 ########################################################################################################################
 if __name__ == '__main__':
-    panguan(13032337272)  # NO.01
-    panguan(13062803788)  # NO.02
-    panguan(13161057550)  # NO.03
-    panguan(13161057579)  # NO.04
-    panguan(13168867678)  # NO.05
-    panguan(13255615265)  # NO.06
-    panguan(13402063488)  # NO.07
-    panguan(13666088700)  # NO.08
-    panguan(13666088775)  # NO.09
-    panguan(13683351952)  # NO.10
-    panguan(13720031029)  # NO.11
-    panguan(15173160505)  # NO.12
-    panguan(15353993082)  # NO.13
-    panguan(15528939076)  # NO.14
-    panguan(15721403717)  # NO.15
-    panguan(15823382766)  # NO.16
-    panguan(15850670782)  # NO.17
-    panguan(15981831553)  # NO.18
-    panguan(17318102888)  # NO.19
-    panguan(17322190031)  # NO.20
-    panguan(18017700401)  # NO.21
-    panguan(18017700403)  # NO.22
-    panguan(18017700515)  # NO.23
-    panguan(18017700516)  # NO.24
-    panguan(18017700521)  # NO.25
-    panguan(18017700530)  # NO.26
-    panguan(18017700537)  # NO.27
-    panguan(18017700550)  # NO.28
-    panguan(18017700595)  # NO.29
-    panguan(18017700597)  # NO.30
-    panguan(18017700602)  # NO.31
-    panguan(18017700603)  # NO.32
-    panguan(18017700605)  # NO.33
-    panguan(18017700607)  # NO.34
-    panguan(18017700608)  # NO.35
-    panguan(18017700610)  # NO.36
-    panguan(18017700611)  # NO.37
-    panguan(18017700713)  # NO.38
-    panguan(18017700715)  # NO.39
-    panguan(18017700716)  # NO.40
-    panguan(18017700722)  # NO.41
-    panguan(18022503751)  # NO.42
-    panguan(18027328833)  # NO.43
-    panguan(18116688811)  # NO.44
-    panguan(18116688822)  # NO.45
-    panguan(18116699000)  # NO.46
-    panguan(18116699805)  # NO.47
-    panguan(18145608526)  # NO.48
-    panguan(18180868581)  # NO.49
-    panguan(18600007007)  # NO.50
+    panguan(13032337272)
+    panguan(13062803788)
+    panguan(13161057550)
+    panguan(13161057579)
+    panguan(13168867678)
+    panguan(13255615265)
+    panguan(13402063488)
+    panguan(13666088700)
+    panguan(13666088775)
+    panguan(13683351952)
+    panguan(13720031029)
+    panguan(15173160505)
+    panguan(15353993082)
+    panguan(15528939076)
+    panguan(15721403717)
+    panguan(15823382766)
+    panguan(15850670782)
+    panguan(15981831553)
+    panguan(17318102888)
+    panguan(17322190031)
+    panguan(18017700401)
+    panguan(18017700403)
+    panguan(18017700515)
+    panguan(18017700516)
+    panguan(18017700521)
+    panguan(18017700530)
+    panguan(18017700537)
+    panguan(18017700550)
+    panguan(18017700595)
+    panguan(18017700597)
+    panguan(18017700602)
+    panguan(18017700603)
+    panguan(18017700605)
+    panguan(18017700607)
+    panguan(18017700608)
+    panguan(18017700610)
+    panguan(18017700611)
+    panguan(18017700713)
+    panguan(18017700715)
+    panguan(18017700716)
+    panguan(18017700722)
+    panguan(18022503751)
+    panguan(18027328833)
+    panguan(18116688811)
+    panguan(18116688822)
+    panguan(18116699000)
+    panguan(18116699805)
+    panguan(18145608526)
+    panguan(18180868581)
 
 ########################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')

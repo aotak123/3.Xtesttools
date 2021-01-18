@@ -190,65 +190,84 @@ def panguan(mobile):
 
 ########################################################################################################################
 if __name__ == '__main__':
-    panguan(13032337111)  # NO.01
-    panguan(13161057538)  # NO.02
-    panguan(13161767110)  # NO.03
-    panguan(13164767109)  # NO.04
-    panguan(13311936568)  # NO.05
-    panguan(13520010705)  # NO.06
-    panguan(13560736789)  # NO.07
-    panguan(13651711999)  # NO.08
-    panguan(13666088773)  # NO.09
-    panguan(13920051605)  # NO.10
-    panguan(15611828881)  # NO.11
-    panguan(15611828882)  # NO.12
-    panguan(15917449818)  # NO.13
-    panguan(15927257999)  # NO.14
-    panguan(17502150079)  # NO.15
-    panguan(17710032752)  # NO.16
-    panguan(18007610419)  # NO.17
-    panguan(18014400369)  # NO.18
-    panguan(18017700207)  # NO.19
-    panguan(18017700223)  # NO.20
-    panguan(18017700339)  # NO.21   阿拉斯加加加加
-    panguan(18017700355)  # NO.22
-    panguan(18017700400)  # NO.23
-    panguan(18017700410)  # NO.24
-    panguan(18017700411)  # NO.25
-    panguan(18017700475)  # NO.26
-    panguan(18017700477)  # NO.27
-    panguan(18017700478)  # NO.28
-    panguan(18017700533)  # NO.29
-    panguan(18017700535)  # NO.30
-    panguan(18017700536)  # NO.31
-    panguan(18017700540)  # NO.32
-    panguan(18017700571)  # NO.33
-    panguan(18017700580)  # NO.34   小糖糖2
-    panguan(18017700596)  # NO.35
-    panguan(18017700598)  # NO.36
-    panguan(18017700600)  # NO.37
-    panguan(18017700601)  # NO.38
-    panguan(18017700604)  # NO.39
-    panguan(18017700606)  # NO.40
-    panguan(18017700710)  # NO.41   治疗失眠陶老师
-    panguan(18085112222)  # NO.42
-    panguan(18127209865)  # NO.43
-    panguan(18134508526)  # NO.44
-    panguan(18503807583)  # NO.45
-    panguan(18519880503)  # NO.46
-    panguan(18601608165)  # NO.47
-    panguan(18601608371)  # NO.48
-    panguan(18616905709)  # NO.49
-    panguan(18622077306)  # NO.50
-    panguan(18782323016)  # NO.51
-    panguan(18918024483)  # NO.52
-    panguan(18930224047)  # NO.53
-    panguan(18933207305)  # NO.54
-    panguan(19823637887)  # NO.55
-    panguan(18500071700)  # NO.56
-    panguan(18050071007)  # NO.57
-    panguan(14017700111)  # NO.58
-    panguan(16016000001)  # NO.59
+    panguan(13032337111)
+    panguan(13161057538)
+    panguan(13161767110)
+    panguan(13164767109)
+    panguan(13311936568)
+    panguan(13520010705)
+    panguan(13560736789)
+    panguan(13651711999)
+    panguan(13666088773)
+    panguan(13920051605)
+    panguan(15611828881)
+    panguan(15611828882)
+    panguan(15917449818)
+    panguan(15927257999)
+    panguan(17502150079)  # 小糖糖
+    panguan(17710032752)
+    panguan(18007610419)
+    panguan(18014400369)
+    panguan(18017700207)
+    panguan(18017700223)
+    panguan(18017700339)  # 阿拉斯加加加加
+    panguan(18017700355)
+    panguan(18017700400)
+    panguan(18017700410)
+    panguan(18017700411)
+    panguan(18017700475)
+    panguan(18017700477)
+    panguan(18017700478)
+    panguan(18017700533)
+    panguan(18017700535)
+    panguan(18017700536)
+    panguan(18017700540)
+    panguan(18017700571)
+    panguan(18017700580)  # 小糖糖2
+    panguan(18017700596)
+    panguan(18017700598)
+    panguan(18017700600)
+    panguan(18017700601)
+    panguan(18017700604)
+    panguan(18017700606)
+    panguan(18017700710)  # 治疗失眠陶老师
+    panguan(18085112222)
+    panguan(18127209865)
+    panguan(18134508526)
+    panguan(18503807583)
+    panguan(18519880503)
+    panguan(18601608165)
+    panguan(18601608371)
+    panguan(18616905709)
+    panguan(18622077306)
+    panguan(18782323016)
+    panguan(18918024483)
+    panguan(18930224047)
+    panguan(18933207305)
+    panguan(19823637887)
+    panguan(18500071700)
+    panguan(18050071007)
+    panguan(16015012345)
+    panguan(18600007117)
+    panguan(18780000008)
+    panguan(18637605801)
+    panguan(18131526059)
+    panguan(19850838555)
+    panguan(19850000111)
+    panguan(15237371035)
+    panguan(18508071757)
+    panguan(18600007007)
+    panguan(15660925537)
+    panguan(17538253260)
+    panguan(19825052192)
+    panguan(19825805208)
+    panguan(13122027777)
+    panguan(18222851111)
+    panguan(18222222222)
+    panguan(18234567890)
+    panguan(19876543210)
+    panguan(17857577938)
+    panguan(17752939592)
 
 ########################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
