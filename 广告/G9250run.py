@@ -10,7 +10,6 @@ import os
 
 capabilities = {}
 capabilities['platformName'] = 'Android'  # Android平台测试
-# 三星
 capabilities['platformVersion'] = '6.0.1'
 capabilities['deviceName'] = 'SM-G9250'
 capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系统手机中的联系人app的包名
