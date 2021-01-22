@@ -34,7 +34,7 @@ def panguan(mobile):
         check_login = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/iv_mobile_login")  # 选择手机号登录
     except NoSuchElementException:
-        print("当前为自动登录...退出账号")
+        print("当前为自动登录模式...正在退出账号重新进行登录")
         time.sleep(8)  # 等待加载进入首页
         TouchAction(driver).tap(x=583, y=208).perform()  # 返回进入个人中心
         time.sleep(2)
@@ -44,7 +44,6 @@ def panguan(mobile):
         time.sleep(1)
         TouchAction(driver).tap(x=916, y=1535).perform()  # 弹窗确定退出
         time.sleep(3)
-        print("退出账号成功...重新进入登录")
         TouchAction(driver).tap(x=530, y=2541).perform()  # 点击手机号登录
         time.sleep(1)
         # 选择手机号输入框
@@ -66,7 +65,7 @@ def panguan(mobile):
         edit_Code.send_keys(logincode)
         time.sleep(1)
         TouchAction(driver).tap(x=700, y=1184).perform()  # 确定按钮登录
-        print("账号登录成功")
+        print("...账号登录成功")
     else:
         TouchAction(driver).tap(x=530, y=2541).perform()  # 点击手机号登录
         time.sleep(1)
