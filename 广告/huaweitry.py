@@ -188,7 +188,6 @@ if __name__ == '__main__':
     panguan(14170004437)
     panguan(14180005326)
     panguan(14190006235)
-    panguan(18222851111)
     panguan(18222222222)
     panguan(18234567890)
     panguan(19876543210)
