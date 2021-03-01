@@ -163,6 +163,12 @@ if __name__ == '__main__':
     panguan(14988883508)
     panguan(14988884417)
     panguan(14988885326)
+    panguan(14130006143)
+    panguan(14030001372)
+    panguan(14040002483)
+    panguan(14050003594)
+    panguan(14060004605)
+    panguan(18222851111)
     panguan(14988886235)  # tak
     panguan(14017700111)
     panguan(18100011111)
