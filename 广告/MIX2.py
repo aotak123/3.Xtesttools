@@ -44,7 +44,7 @@ def panguan(mobile):
         time.sleep(1)
         TouchAction(driver).tap(x=687, y=1132).perform()  # 弹窗确定退出
         time.sleep(3)
-        TouchAction(driver).tap(x=515, y=2300).perform()  # 点击手机号登录
+        TouchAction(driver).tap(x=384, y=1847).perform()  # 点击手机号登录
         time.sleep(1)
         # 选择手机号输入框
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
@@ -167,8 +167,12 @@ def panguan(mobile):
 
 ########################################################################################################################
 if __name__ == '__main__':
-    panguan(16015012345)
-
+    panguan(18007610419)
+    panguan(18600007117)
+    panguan(18918024483)
+    panguan(19850838555)
+    panguan(19850000111)
+    panguan(18933207305)
 
 ########################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
