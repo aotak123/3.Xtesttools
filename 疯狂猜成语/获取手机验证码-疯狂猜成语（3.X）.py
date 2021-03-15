@@ -60,7 +60,7 @@ while True:
                         print("该手机号已在表内|" + " \033[1;31m 您的验证码： \033[0m" + sss)
                     else:
                         print("该手机号为新账号|" + " \033[1;31m 您的验证码： \033[0m" + sss)
-                        remark = input("\033[30m 备注师傅信息: \033[0m \n")  # 手机号的输入
+                        remark = input("\033[30m 备注师傅信息: \033[0m")  # 手机号的输入
                         if remark == "0":
                             master = "无"
                         if remark == "1":
@@ -80,7 +80,7 @@ while True:
                         else:
                             nowtime = time.strftime('%Y-%m-%d% %H:%M:%S')  # 获取当前时间
                             file_object.write(mobile + "\t")  # \t = tab  \n = 换行
-                            file_object.write(nowtime + "\n")
+                            file_object.write(nowtime + "\t")
                             file_object.write(master + "\n")
 
             if url == "https://uc.crazyccy.com/login/main_login/testtool":  # 正式环境写入手机号纪录
@@ -92,7 +92,7 @@ while True:
                         print("该手机号已在表内|" + " \033[1;31m 您的验证码： \033[0m" + sss)
                     else:
                         print("该手机号为新账号|" + " \033[1;31m 您的验证码： \033[0m" + sss)
-                        remark = input("\033[30m 备注师傅信息: \033[0m \n")  # 手机号的输入
+                        remark = input("\033[30m 备注师傅信息: \033[0m")  # 手机号的输入
                         if remark == "0":
                             master = "无"
                         if remark == "1":
@@ -112,7 +112,7 @@ while True:
                         else:
                             nowtime = time.strftime('%Y-%m-%d% %H:%M:%S')  # 获取当前时间
                             file_object.write(mobile + "\t")  # \t = tab  \n = 换行
-                            file_object.write(nowtime + "\n")
+                            file_object.write(nowtime + "\t")
                             file_object.write(master + "\n")
         else:
             print("\033[1;31m！！!手机号码错误，请重新输入！！!\033[0m")
