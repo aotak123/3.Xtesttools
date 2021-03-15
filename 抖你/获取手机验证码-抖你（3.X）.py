@@ -43,7 +43,6 @@ while True:
         if right:
             # print ("检验通过")    #手机号校验打印
             fullurl = url + "?key=" + key + "&type=" + type + "&mobile=86" + mobile  # 拼接完整请求url
-            # print(fullurl)       #打印拼接url
             request = urllib.request.Request(fullurl)  # 构建请求url
             response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context
             # 打开请求url链接
@@ -116,8 +115,3 @@ while True:
             #                 file_object.write(master + "\n")
         else:
             print("\033[1;31m！！!手机号码错误，请重新输入！！!\033[0m")
-
-####################——————tak制作  vol.1102——————####################
-
-# 臀邀请码：437664355
-# 我邀请码：220427868
