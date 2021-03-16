@@ -42,7 +42,7 @@ while True:
         #     continue
         if right:
             # print ("检验通过")    #手机号校验打印
-            fullurl = url + "?key=" + key + "&type=" + type + "&mobile=86" + mobile  # 拼接完整请求url
+            fullurl = url + "?key=" + key + "&type=" + type + "&mobile=" + mobile  # 拼接完整请求url
             request = urllib.request.Request(fullurl)  # 构建请求url
             response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context
             # 打开请求url链接
