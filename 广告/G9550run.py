@@ -172,6 +172,8 @@ if __name__ == '__main__':
     panguan(14988886235)  # tak
     panguan(14987650098)  # 3/16新增tak
     panguan(14987651909)  # 3/16新增tak
+    panguan(14987652810)  # 3/17新增tak
+    panguan(14987653729)  # 3/17新增tak
     panguan(14017700111)
     panguan(18100011111)
     panguan(14100099991)
