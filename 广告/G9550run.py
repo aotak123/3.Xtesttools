@@ -12,6 +12,7 @@ capabilities = {}
 capabilities['platformName'] = 'Android'  # Android平台测试
 capabilities['platformVersion'] = '9.0'
 capabilities['deviceName'] = 'SM-G9550'
+capabilities['udid'] = '98899a463539333854'
 capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系统手机中的联系人app的包名
 capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
 capabilities['noReset'] = 'true'  # 不重置app
@@ -136,10 +137,10 @@ def panguan(mobile):
     try:
         set = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
     except NoSuchElementException:
-        os.popen("adb shell am force-stop com.kamitu.drawsth.standalone.free.android")
+        os.popen("adb -s 98899a463539333854 shell am force-stop com.kamitu.drawsth.standalone.free.android")
         time.sleep(2)
         os.popen(
-            "adb shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+            "adb -s 98899a463539333854 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
         time.sleep(10)  # 等待加载进入首页
         TouchAction(driver).tap(x=583, y=208).perform()  # 返回进入个人中心
         time.sleep(2)
