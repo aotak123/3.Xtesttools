@@ -21,7 +21,15 @@ driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连�
 context = ssl._create_unverified_context()
 
 '''
-block list添加 https://sign.crazyccy.com:443/index/index
+###一台主机多台设备###
+1.请配置不同的服务端号
+2.参数配置需要添加udid
+3.python配置同意并行运行
+4.启动多个appiumsever端
+
+###block list###
+https://sign.crazyccy.com:443/index/index
+https://update.crazyccy.com/androidupdate/android
 '''
 
 
@@ -150,32 +158,6 @@ def panguan(mobile):
 
 ########################################################################################################################
 if __name__ == '__main__':
-    panguan(13122027777)
-    panguan(19825805208)
-    panguan(19825052192)
-    panguan(17538253260)
-    panguan(14111007144)
-    panguan(14112008053)
-    panguan(14113009962)
-    panguan(14114000871)
-    panguan(14115001780)
-    panguan(14988882699)
-    panguan(14988883508)
-    panguan(14988884417)
-    panguan(14988885326)
-    panguan(14130006143)
-    panguan(14030001372)
-    panguan(14040002483)
-    panguan(14050003594)
-    panguan(14060004605)
-    panguan(18222851111)
-    panguan(14988886235)  # tak
-    panguan(14987650098)  # 3/16新增tak
-    panguan(14987651909)  # 3/16新增tak
-    panguan(14987652810)  # 3/17新增tak
-    panguan(14987653729)  # 3/17新增tak
-    panguan(14987654638)  # 3/18新增tak
-    panguan(14987655547)  # 3/18新增tak
     panguan(14017700111)
     panguan(18100011111)
     panguan(14100099991)

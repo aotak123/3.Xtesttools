@@ -12,6 +12,7 @@ capabilities = {}
 capabilities['platformName'] = 'Android'  # Android平台测试
 capabilities['platformVersion'] = '6.0.1'
 capabilities['deviceName'] = 'SM-G9250'
+capabilities['udid'] = '02157df2c8865716'
 capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系统手机中的联系人app的包名
 capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
 capabilities['noReset'] = 'true'  # 不重置app
@@ -21,7 +22,15 @@ driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连�
 context = ssl._create_unverified_context()
 
 '''
-block list添加 https://sign.crazyccy.com:443/index/index
+###一台主机多台设备###
+1.请配置不同的服务端号
+2.参数配置需要添加udid
+3.python配置同意并行运行
+4.启动多个appiumsever端
+
+###block list###
+https://sign.crazyccy.com:443/index/index
+https://update.crazyccy.com/androidupdate/android
 '''
 
 
@@ -165,10 +174,10 @@ def panguan(mobile):
     try:
         set = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
     except NoSuchElementException:
-        os.popen("adb shell am force-stop com.kamitu.drawsth.standalone.free.android")
+        os.popen("adb -s 02157df2c8865716 shell am force-stop com.kamitu.drawsth.standalone.free.android")
         time.sleep(2)
         os.popen(
-            "adb shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+            "adb -s 02157df2c8865716 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
         time.sleep(10)  # 等待加载进入首页
         TouchAction(driver).tap(x=588, y=186).perform()  # 返回进入个人中心
         time.sleep(2)
@@ -248,18 +257,18 @@ if __name__ == '__main__':
     panguan(17710032752)
     panguan(18519880503)
     panguan(13920051605)
-    panguan(14988887144)  # 3/1新增tak
-    panguan(14988888053)  # 3/1新增tak
-    panguan(14988889962)  # 3/3新增tak
-    panguan(14988887871)  # 3/3新增tak
-    panguan(14988888780)  # 3/5新增tak
-    panguan(14988889699)  # 3/5新增tak
-    panguan(14987654444)  # 3/9新增tak
-    panguan(14987655533)  # 3/9新增tak
-    panguan(14987656424)  # 3/11新增tak
-    panguan(14987657315)  # 3/11新增tak
-    panguan(14987658206)  # 3/15新增tak
-    panguan(14987659197)  # 3/15新增tak
+    panguan(14988887144)
+    panguan(14988888053)
+    panguan(14988889962)
+    panguan(14988887871)
+    panguan(14988888780)
+    panguan(14988889699)
+    panguan(14987654444)
+    panguan(14987655533)
+    panguan(14987656424)
+    panguan(14987657315)
+    panguan(14987658206)
+    panguan(14987659197)
     panguan(14987656456)  # 3/19新增tak
     panguan(14987657365)  # 3/19新增tak
 

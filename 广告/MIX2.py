@@ -12,16 +12,25 @@ capabilities = {}
 capabilities['platformName'] = 'Android'  # Android平台测试
 capabilities['platformVersion'] = '8.0.0'
 capabilities['deviceName'] = 'Mi MIX 2'
+capabilities['udid'] = '26385389'
 capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系统手机中的联系人app的包名
 capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
 capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
+driver = webdriver.Remote('http://127.0.0.1:4725/wd/hub', capabilities, )  # 连接测试所在服务器
 context = ssl._create_unverified_context()
 
 '''
-block list添加 https://sign.crazyccy.com:443/index/index
+###一台主机多台设备###
+1.请配置不同的服务端号
+2.参数配置需要添加udid
+3.python配置同意并行运行
+4.启动多个appiumsever端
+
+###block list###
+https://sign.crazyccy.com:443/index/index
+https://update.crazyccy.com/androidupdate/android
 '''
 
 
@@ -144,10 +153,10 @@ def panguan(mobile):
     try:
         set = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
     except NoSuchElementException:
-        os.popen("adb shell am force-stop com.kamitu.drawsth.standalone.free.android")
+        os.popen("adb -s 26385389 shell am  force-stop com.kamitu.drawsth.standalone.free.android")
         time.sleep(2)
         os.popen(
-            "adb shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+            "adb -s 26385389 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
         time.sleep(10)  # 等待加载进入首页
         TouchAction(driver).tap(x=454, y=142).perform()  # 返回进入个人中心
         time.sleep(2)
@@ -167,8 +176,52 @@ def panguan(mobile):
 
 ########################################################################################################################
 if __name__ == '__main__':
-    panguan(14987654444)  # 3/9新增tak
-    panguan(14987655533)  # 3/9新增tak
+    panguan(18222222222)
+    panguan(18600007007)
+    panguan(17857577938)
+    panguan(19876543210)
+    panguan(18622077306)
+    panguan(18933207305)
+    panguan(18007610419)
+    panguan(18127209865)
+    panguan(18782323016)
+    panguan(19850838555)
+    panguan(19850000111)
+    panguan(18500071700)
+    panguan(18508071757)
+    panguan(18600007117)
+    panguan(14060019638)
+    panguan(14120012351)
+    panguan(14010000158)
+    panguan(14020000269)
+    panguan(14012341472)
+    panguan(18234567890)
+    panguan(13122027777)
+    panguan(19825805208)
+    panguan(19825052192)
+    panguan(17538253260)
+    panguan(14111007144)
+    panguan(14112008053)
+    panguan(14113009962)
+    panguan(14114000871)
+    panguan(14115001780)
+    panguan(14988882699)
+    panguan(14988883508)
+    panguan(14988884417)
+    panguan(14988885326)
+    panguan(14130006143)
+    panguan(14030001372)
+    panguan(14040002483)
+    panguan(14050003594)
+    panguan(14060004605)
+    panguan(18222851111)
+    panguan(14988886235)
+    panguan(14987650098)
+    panguan(14987651909)
+    panguan(14987652810)
+    panguan(14987653729)
+    panguan(14987654638)  # 3/18新增tak
+    panguan(14987655547)  # 3/18新增tak
 
 ########################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')

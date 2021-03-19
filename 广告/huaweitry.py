@@ -12,6 +12,7 @@ capabilities = {}
 capabilities['platformName'] = 'Android'  # Android平台测试
 capabilities['platformVersion'] = '8.0.0'
 capabilities['deviceName'] = 'EVA-AL10'
+capabilities['udid'] = 'KWG5T16928033201'
 capabilities['appPackage'] = 'com.kamitu.drawsth.standalone.free.android'  # 系统手机中的联系人app的包名
 capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
 capabilities['noReset'] = 'true'  # 不重置app
@@ -21,7 +22,15 @@ driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连�
 context = ssl._create_unverified_context()
 
 '''
-block list添加 https://sign.crazyccy.com:443/index/index
+###一台主机多台设备###
+1.请配置不同的服务端号
+2.参数配置需要添加udid
+3.python配置同意并行运行
+4.启动多个appiumsever端
+
+###block list###
+https://sign.crazyccy.com:443/index/index
+https://update.crazyccy.com/androidupdate/android
 '''
 
 
@@ -125,10 +134,10 @@ def panguan(mobile):
     try:
         set = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
     except NoSuchElementException:
-        os.popen("adb shell am force-stop com.kamitu.drawsth.standalone.free.android")
+        os.popen("adb -s KWG5T16928033201 shell am force-stop com.kamitu.drawsth.standalone.free.android")
         time.sleep(2)
         os.popen(
-            "adb shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+            "adb -s KWG5T16928033201 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
         time.sleep(10)  # 等待加载进入首页
         TouchAction(driver).tap(x=422, y=120).perform()  # 返回进入个人中心
         time.sleep(2)
@@ -147,26 +156,6 @@ def panguan(mobile):
 
 ########################################################################################################################
 if __name__ == '__main__':
-    panguan(18222222222)
-    panguan(18600007007)
-    panguan(17857577938)
-    panguan(19876543210)
-    panguan(18622077306)
-    panguan(18933207305)
-    panguan(18007610419)
-    panguan(18127209865)
-    panguan(18782323016)
-    panguan(19850838555)
-    panguan(19850000111)
-    panguan(18500071700)
-    panguan(18508071757)
-    panguan(18600007117)
-    panguan(14060019638)
-    panguan(14120012351)
-    panguan(14010000158)
-    panguan(14020000269)
-    panguan(14012341472)
-    panguan(18234567890)  # tak
     panguan(18017700401)
     panguan(18017700403)
     panguan(18017700515)
