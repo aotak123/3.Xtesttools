@@ -119,13 +119,11 @@ def panguan(mobile):
         #     print(BB)
         #     time.sleep(35)
         #     TouchAction(driver).tap(x=1303, y=113).perform()  # 关闭toutiao广告
-        #     # print("     toutiaosdk广告关闭")
         # else:
         #     CC = "  \033[1;31mNO.\033[0m " + str(a) + " GDTsdk广告"
         #     print(CC)
         #     time.sleep(55)
         #     driver.back()  # GDTsdk广告按钮
-        # print("     GDTsdk广告关闭")
         a += 1
     # 退出广告循环
     time.sleep(10)
