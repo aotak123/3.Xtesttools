@@ -60,17 +60,16 @@ while True:
                         print("该手机号已在表内|" + " \033[1;31m 您的验证码： \033[0m" + sss)
                     else:
                         print("该手机号为新账号|" + " \033[1;31m 您的验证码： \033[0m" + sss)
-
+                        remark = input("\033[30m 备注师傅信息: \033[0m")  # 手机号的输入
+                        if remark == "0":
+                            master = "无"
+                        if remark == "1":
+                            master = "18817762560"
+                        if remark == "2":
+                            master = "13401139442"
                 if sss == '查不到！':  # 如果接口没有返回没有查到则不记录
                     continue  # 表内不做写入
                 else:
-                    remark = input("\033[30m 备注师傅信息: \033[0m")  # 手机号的输入
-                    if remark == "0":
-                        master = "无"
-                    if remark == "1":
-                        master = "18817762560"
-                    if remark == "2":
-                        master = "13401139442"
                     with open(testmobile, 'r+', encoding="utf-8") as file_object:  # 打开记录记录文件
                         pi_string = ''
                         for lines in file_object:
@@ -92,17 +91,17 @@ while True:
                         print("该手机号已在表内|" + " \033[1;31m 您的验证码： \033[0m" + sss)
                     else:
                         print("该手机号为新账号|" + " \033[1;31m 您的验证码： \033[0m" + sss)
+                        remark = input("\033[30m 备注师傅信息: \033[0m")  # 手机号的输入
+                        if remark == "0":
+                            master = "无"
+                        if remark == "1":
+                            master = "18817762560"
+                        if remark == "2":
+                            master = "13401139442"
 
                 if sss == '查不到！':  # 如果接口没有返回没有查到则不记录
                     continue  # 在表内不做写入
                 else:
-                    remark = input("\033[30m 备注师傅信息: \033[0m")  # 手机号的输入
-                    if remark == "0":
-                        master = "无"
-                    if remark == "1":
-                        master = "18817762560"
-                    if remark == "2":
-                        master = "13401139442"
                     with open(realmobile, 'r+', encoding="utf-8") as file_object:  # 打开记录execl文件
                         pi_string = ''
                         for lines in file_object:
