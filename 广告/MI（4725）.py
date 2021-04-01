@@ -112,8 +112,6 @@ def panguan(mobile):
         print(BB)
         time.sleep(40)
         TouchAction(driver).tap(x=985, y=89).perform()  # 关闭toutiao广告
-        # time.sleep(8)
-        # TouchAction(driver).tap(x=515, y=1383).perform()  # 点击查看广告
         # time.sleep(5)
         # try:
         #     GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
