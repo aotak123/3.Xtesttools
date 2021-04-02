@@ -18,7 +18,7 @@ capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系
 capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
-driver = webdriver.Remote('http://127.0.0.1:4724/wd/hub', capabilities)  # 连接测试所在服务器
+driver = webdriver.Remote('http://127.0.0.1:4725/wd/hub', capabilities)  # 连接测试所在服务器
 context = ssl._create_unverified_context()
 
 '''
@@ -33,8 +33,9 @@ https://sign.crazyccy.com:443/index/index
 https://update.crazyccy.com/androidupdate/android
 '''
 
-
 ########################################################################################################################
+
+
 def panguan(mobile):
     time.sleep(3)
     print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m : " + time.strftime('%H:%M:%S'))
