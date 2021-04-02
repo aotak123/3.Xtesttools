@@ -203,10 +203,10 @@ if __name__ == '__main__':
     panguan(14987657364)
     panguan(14987658273)
     panguan(14987659182)
-    panguan(14987651991)  # 3/30新增tak
-    panguan(14987652002)  # 3/30新增tak
-    panguan(16994779810)  # 3/31新增tak
-    panguan(19367984833)  # 3/31新增tak
+    panguan(14987651991)
+    panguan(14987652002)
+    panguan(16994779810)
+    panguan(19367984833)
     panguan(17455039213)  # 4/2新增tak
     panguan(19458371424)  # 4/2新增tak
 
