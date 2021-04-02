@@ -33,9 +33,8 @@ https://sign.crazyccy.com:443/index/index
 https://update.crazyccy.com/androidupdate/android
 '''
 
+
 ########################################################################################################################
-
-
 def panguan(mobile):
     time.sleep(3)
     print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m : " + time.strftime('%H:%M:%S'))
