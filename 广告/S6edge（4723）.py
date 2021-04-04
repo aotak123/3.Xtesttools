@@ -98,7 +98,7 @@ def panguan(mobile):
         time.sleep(2)
         TouchAction(driver).tap(x=700, y=1200).perform()  # 确定按钮登录
         print("账号登录成功")
-    time.sleep(8)  # 等待加载进入首页
+    time.sleep(15)  # 等待加载进入首页
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=439, y=2379).perform()  # 选择进入判官
     time.sleep(3)
