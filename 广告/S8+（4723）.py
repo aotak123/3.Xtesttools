@@ -72,7 +72,7 @@ def panguan(mobile):
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_Code.send_keys(logincode)
-        time.sleep(1)
+        time.sleep(2)
         TouchAction(driver).tap(x=700, y=1184).perform()  # 确定按钮登录
         print("...账号登录成功")
     else:
@@ -95,7 +95,7 @@ def panguan(mobile):
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
         time.sleep(1)
         edit_Code.send_keys(logincode)
-        time.sleep(1)
+        time.sleep(2)
         TouchAction(driver).tap(x=700, y=1184).perform()  # 确定按钮登录
         print("账号登录成功")
     time.sleep(10)  # 等待加载进入首页
@@ -108,9 +108,12 @@ def panguan(mobile):
     while a <= 11:
         time.sleep(8)
         TouchAction(driver).tap(x=684, y=1857).perform()  # 点击查看广告
+        time.sleep(5)
         BB = "  \033[1;31mNO.\033[0m " + str(a) + " 次广告"
         print(BB)
-        time.sleep(40)
+        os.popen(
+            "adb -s 98899a463539333854 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+        time.sleep(35)
         TouchAction(driver).tap(x=1303, y=113).perform()  # 关闭toutiao广告
         # time.sleep(8)
         # try:
