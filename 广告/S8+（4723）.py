@@ -111,8 +111,8 @@ def panguan(mobile):
         time.sleep(5)
         BB = "  \033[1;31mNO.\033[0m " + str(a) + " 次广告"
         print(BB)
-        os.popen(
-            "adb -s 98899a463539333854 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+        # os.popen(
+        #     "adb -s 98899a463539333854 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
         time.sleep(35)
         TouchAction(driver).tap(x=1303, y=113).perform()  # 关闭toutiao广告
         # time.sleep(8)
@@ -177,7 +177,9 @@ if __name__ == '__main__':
     panguan(19850838555)
     panguan(19850000111)
     panguan(14987655547)
-    panguan(18500071700)  # tak
+    panguan(18500071700)
+    panguan(14376463070)  # 4/6新增tak
+    panguan(16728141023)  # 4/6新增tak
     panguan(14017700111)
     panguan(18100011111)
     panguan(14100099991)
