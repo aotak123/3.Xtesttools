@@ -14,11 +14,14 @@ appPackage = "com.shakeyou.app"
 3.运行money
 """
 os.popen("adb push " + monkeyjar + " /sdcard/")
+print("推送monkeyjar到手机根目录 - 完成")
 time.sleep(2)
 os.popen("adb push " + frameworkjar + " /sdcard/")
+print("推送monkeyjar到手机根目录 - 完成")
 time.sleep(2)
 os.popen(
     "adb shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p " + appPackage + " --uiautomatormix --running-minutes 60")
+print("服务启动，等待60分钟后自动结束")
 
 """参数说明：
 1.tv.panda.test.monkey.Monkey 主调入口  无需修改
