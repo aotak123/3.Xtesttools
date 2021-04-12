@@ -4,13 +4,13 @@ import time
 
 ####################——————tak制作  vol.605——————####################
 
-url = "http://test-zhangyu3.zhihuizhangyu.cn/spring-boot-update-time/timeOper/updateTime?date="
+url = "http://test-task-fkccy.tiantianshuibaobao.com/Update_time//update?f=update"
 
 while True:
     type = input("\n 请输入数字：\n 1：查询时间\n 2：恢复时间\n 3：修改时间\n")
 
     if type == "1":
-        urls = "http://test-zhangyu3.zhihuizhangyu.cn/spring-boot-update-time/timeOper/getTime"  # 疯狂猜成语获取服务器时间
+        urls = "http://test-task-fkccy.tiantianshuibaobao.com/Update_time//update?f=get"  # 疯狂猜成语获取服务器时间
         request = urllib.request.Request(urls)
         response = urllib.request.urlopen(request)
         openurl = response.read()
@@ -22,7 +22,7 @@ while True:
     if type == "2":
         nowtime = time.strftime('%Y-%m-%d%%20%H:%M:%S')
         fullurl2 = url + "&datetime=" + nowtime
-        # print fullurl
+        # print(fullurl)
         request = urllib.request.Request(fullurl2)
         response = urllib.request.urlopen(request)
         fullurl2bytes = response.read()
@@ -40,7 +40,7 @@ while True:
             if yeartime == "0":
                 nowtime = time.strftime('%Y-%m-%d%%20%H:%M:%S')
                 nowtimeurl = url + "&datetime=" + nowtime
-                # print nowtimeurl
+                print(nowtimeurl)
                 request = urllib.request.Request(nowtimeurl)
                 response = urllib.request.urlopen(request)
                 nowtimeurlbytes = response.read()
@@ -50,7 +50,7 @@ while True:
 
             else:
                 fullurl3 = url + "&datetime=" + yeartime
-                # print fullurl3
+                print(fullurl3)
                 request = urllib.request.Request(fullurl3)
                 response = urllib.request.urlopen(request)
                 fullurl3bytes = response.read()
