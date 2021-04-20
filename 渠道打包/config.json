@@ -6,7 +6,7 @@
    /     "channel": "cyceshi",
   */
   "defaultExtraInfo": {
-    "CHANNEL_LABEL": ""
+    "CHANNEL_LABEL": "test"
   },
   "channelInfoList": [
     {

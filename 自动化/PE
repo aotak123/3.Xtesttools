@@ -1,6 +1,14 @@
+# 章鱼输入法
+appPackage = "com.komoxo.octopusime"
+appActivity = "com.komoxo.chocolateime.splash.WelcomeActivity"
+
+# 抖你
+appPackage = "com.shakeyou.app"
+appActivity = "com.shakeyou.app.welcome.WelcomeActivity"
+
 # 疯狂猜成语
-appPackage = "com.kamitu.drawsth.standalone.free.android"  # 疯狂猜成语appPackage
-appActivity = "com.qsmy.busniess.welcome.WelcomeActivity"  # 疯狂猜成语appActivity
+appPackage = "com.kamitu.drawsth.standalone.free.android"
+appActivity = "com.qsmy.busniess.welcome.WelcomeActivity"
 
 # 这个我看过
 appPackage = "com.xiaoxian.isawit"
@@ -25,7 +33,3 @@ appActivity = "com.qsmy.busniess.ktccy.activity.MainActivity"
 # 水宝宝
 appPackage = "com.songmeng.shuibaobao"
 appActivity = "com.songmeng.busniess.welcome.WelcomeActivity"
-
-# 抖你
-appPackage = "com.shakeyou.app"
-appActivity = "com.shakeyou.app.welcome.WelcomeActivity"
