@@ -108,26 +108,26 @@ def panguan(mobile):
     while a <= 11:
         time.sleep(8)
         TouchAction(driver).tap(x=503, y=1254).perform()  # 点击查看广告
-        time.sleep(5)
-        BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
-        print(BB)
-        os.popen(
-            "adb -s KWG5T16928033201 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
-        time.sleep(35)
-        TouchAction(driver).tap(x=964, y=101).perform()  # 关闭toutiao广告
         # time.sleep(5)
-        # try:
-        #     GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
-        # except NoSuchElementException:
-        #     BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
-        #     print(BB)
-        #     time.sleep(40)
-        #     TouchAction(driver).tap(x=964, y=101).perform()  # 关闭toutiao广告
-        # else:
-        #     CC = "  \033[1;31mNO.\033[0m " + str(a) + " GDTsdk广告"
-        #     print(CC)
-        #     time.sleep(55)
-        #     driver.back()  # GDTsdk广告按钮
+        # BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
+        # print(BB)
+        # os.popen(
+        #     "adb -s KWG5T16928033201 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+        # time.sleep(35)
+        # TouchAction(driver).tap(x=964, y=101).perform()  # 关闭toutiao广告
+        time.sleep(5)
+        try:
+            GDT = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:xml/gdt_file_path")
+        except NoSuchElementException:
+            BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
+            print(BB)
+            time.sleep(40)
+            TouchAction(driver).tap(x=964, y=101).perform()  # 关闭toutiao广告
+        else:
+            CC = "  \033[1;31mNO.\033[0m " + str(a) + " GDTsdk广告"
+            print(CC)
+            time.sleep(55)
+            driver.back()  # GDTsdk广告按钮
         a += 1
     # 退出广告循环
     time.sleep(10)
