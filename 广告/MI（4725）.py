@@ -18,7 +18,7 @@ capabilities['appActivity'] = 'com.qsmy.busniess.welcome.WelcomeActivity'  # 系
 capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
-driver = webdriver.Remote('http://127.0.0.1:4725/wd/hub', capabilities, )  # 连接测试所在服务器
+driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities, )  # 连接测试所在服务器
 context = ssl._create_unverified_context()
 
 '''
@@ -100,7 +100,8 @@ def panguan(mobile):
         print("账号登录成功")
     time.sleep(13)  # 等待加载进入首页
     # 进入判官进行刷广告
-    TouchAction(driver).tap(x=313, y=1924).perform()  # 选择进入判官
+    # TouchAction(driver).tap(x=313, y=1924).perform()  # 选择进入判官
+    TouchAction(driver).tap(x=111, y=1689).perform()  # 选择进入判官
     time.sleep(3)
     TouchAction(driver).tap(x=539, y=1078).perform()  # 选择开始挑战
     time.sleep(3)
