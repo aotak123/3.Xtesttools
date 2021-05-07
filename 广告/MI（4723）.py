@@ -100,10 +100,9 @@ def panguan(mobile):
         print("账号登录成功")
     time.sleep(13)  # 等待加载进入首页
     # 进入判官进行刷广告
-    # TouchAction(driver).tap(x=313, y=1924).perform()  # 选择进入判官
-    TouchAction(driver).tap(x=111, y=1689).perform()  # 选择进入判官
+    TouchAction(driver).tap(x=313, y=1924).perform()  # 选择进入判官
     time.sleep(3)
-    TouchAction(driver).tap(x=539, y=1078).perform()  # 选择开始挑战
+    TouchAction(driver).tap(x=529, y=1073).perform()  # 选择开始挑战
     time.sleep(3)
     a = 1
     while a <= 11:
@@ -112,8 +111,8 @@ def panguan(mobile):
         time.sleep(5)
         BB = "  \033[1;31mNO.\033[0m " + str(a) + " 次广告"
         print(BB)
-        os.popen(
-            "adb -s 26385389 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+        # os.popen(
+        #     "adb -s 26385389 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
         time.sleep(35)
         TouchAction(driver).tap(x=985, y=89).perform()  # 关闭toutiao广告
         # time.sleep(5)

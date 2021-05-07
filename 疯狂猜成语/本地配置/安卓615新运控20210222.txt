@@ -15,7 +15,7 @@
 					"group": "def",
 					"level": "3",
 					"logicType": "0",
-					"numbers": "1",
+					"numbers": "1",951753
 					"tagid": "1081717720355093",
 					"weights": "330000"
 				}, {
