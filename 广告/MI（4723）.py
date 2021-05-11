@@ -190,6 +190,8 @@ if __name__ == '__main__':
     panguan(17938136012)
     panguan(19791239757)  # 5/10新增tak
     panguan(17445218012)  # 5/10新增tak
+    panguan(16934710574)  # 5/11新增tak
+    panguan(19492460960)  # 5/11新增tak
     panguan(14017700111)
     panguan(18100011111)
     panguan(14100099991)
@@ -218,7 +220,6 @@ if __name__ == '__main__':
     panguan(13760000001)
     panguan(17729152205)
     panguan(16016000001)
-    panguan(17538519737)
     panguan(18681025732)
     panguan(18930223547)  # 末凉
     panguan(18017700602)
