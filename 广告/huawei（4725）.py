@@ -204,6 +204,7 @@ if __name__ == '__main__':
     panguan(14221102560)
     panguan(14110000038)
     panguan(14110003238)
+    panguan(18920308799)
     panguan(14120006233)
     panguan(14140001001)
     panguan(14150002649)
