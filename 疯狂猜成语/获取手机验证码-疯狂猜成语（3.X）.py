@@ -62,11 +62,11 @@ while True:
                         print("该手机号为新账号|" + " \033[1;31m 您的验证码： \033[0m" + sss)
                         remark = input("\033[30m 备注师傅信息: \033[0m")  # 手机号的输入
                         if remark == "0":
-                            master = "无"
+                            remark = "无"
                         if remark == "1":
-                            master = "18817762560"
+                            remark = "18817762560"
                         if remark == "2":
-                            master = "13401139442"
+                            remark = "13401139442"
                 if sss == '查不到！':  # 如果接口没有返回没有查到则不记录
                     continue  # 表内不做写入
                 else:
@@ -80,7 +80,7 @@ while True:
                             nowtime = time.strftime('%Y-%m-%d% %H:%M:%S')  # 获取当前时间
                             file_object.write(mobile + "\t")  # \t = tab  \n = 换行
                             file_object.write(nowtime + "\t")
-                            file_object.write(master + "\n")
+                            file_object.write(remark + "\n")
 
             if url == "https://uc.crazyccy.com/login/main_login/testtool":  # 正式环境写入手机号纪录
                 with open(realmobile, 'r+', encoding="utf-8") as file_object:  # 打开记录execl文件
@@ -93,11 +93,11 @@ while True:
                         print("该手机号为新账号|" + " \033[1;31m 您的验证码： \033[0m" + sss)
                         remark = input("\033[30m 备注师傅信息: \033[0m")  # 手机号的输入
                         if remark == "0":
-                            master = "无"
+                            remark = "无"
                         if remark == "1":
-                            master = "18817762560"
+                            remark = "18817762560"
                         if remark == "2":
-                            master = "13401139442"
+                            remark = "13401139442"
 
                 if sss == '查不到！':  # 如果接口没有返回没有查到则不记录
                     continue  # 在表内不做写入
@@ -112,7 +112,7 @@ while True:
                             nowtime = time.strftime('%Y-%m-%d% %H:%M:%S')  # 获取当前时间
                             file_object.write(mobile + "\t")  # \t = tab  \n = 换行
                             file_object.write(nowtime + "\t")
-                            file_object.write(master + "\n")
+                            file_object.write(remark + "\n")
         else:
             print("\033[1;31m！！!手机号码错误，请重新输入！！!\033[0m")
 
