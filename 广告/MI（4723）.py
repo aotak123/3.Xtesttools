@@ -59,7 +59,7 @@ def panguan(mobile):
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
         time.sleep(2)
-        TouchAction(driver).tap(x=803, y=642).perform()  # 获取验证码
+        TouchAction(driver).tap(x=799, y=807).perform()  # 获取验证码
         time.sleep(2)
         # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
@@ -73,7 +73,7 @@ def panguan(mobile):
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(2)
-        TouchAction(driver).tap(x=499, y=879).perform()  # 确定按钮登录
+        TouchAction(driver).tap(x=519, y=1032).perform()  # 确定按钮登录
         print("...账号登录成功")
     else:
         TouchAction(driver).tap(x=384, y=1847).perform()  # 点击手机号登录
@@ -82,7 +82,7 @@ def panguan(mobile):
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
         time.sleep(2)
-        TouchAction(driver).tap(x=803, y=642).perform()  # 获取验证码
+        TouchAction(driver).tap(x=799, y=807).perform()  # 获取验证码
         time.sleep(2)
         # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
@@ -96,7 +96,7 @@ def panguan(mobile):
         time.sleep(1)
         edit_code.send_keys(logincode)
         time.sleep(2)
-        TouchAction(driver).tap(x=499, y=879).perform()  # 确定按钮登录
+        TouchAction(driver).tap(x=519, y=1032).perform()  # 确定按钮登录
         print("账号登录成功")
     time.sleep(13)  # 等待加载进入首页
     # 进入判官进行刷广告
