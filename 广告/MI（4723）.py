@@ -188,12 +188,13 @@ if __name__ == '__main__':
     panguan(17476070492)
     panguan(16833601539)
     panguan(17938136012)
-    panguan(19791239757)  # 5/10新增tak
-    panguan(17445218012)  # 5/10新增tak
-    panguan(16934710574)  # 5/11新增tak
-    panguan(19492460960)  # 5/11新增tak
+    panguan(19791239757)
+    panguan(17445218012)
+    panguan(16934710574)
+    panguan(19492460960)
     panguan(16188856230)  # 5/12新增tak
     panguan(17927666394)  # 5/12新增tak
+    panguan(16873572639)  # 5/24新增tak
     panguan(14017700111)
     panguan(18100011111)
     panguan(14100099991)
