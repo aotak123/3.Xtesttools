@@ -162,6 +162,19 @@ def panguan(mobile):
 if __name__ == '__main__':
     panguan(18017700571)
     panguan(18017700475)
+    panguan(16021343601)
+    panguan(17412349761)
+    panguan(14024038791)
+    panguan(19425524436)
+    panguan(16974415657)
+    panguan(19724282179)
+    panguan(17929260172)
+    panguan(17939699208)
+    panguan(19367241617)
+    panguan(17476070492)
+    panguan(16833601539)
+    panguan(17938136012)
+    panguan(19791239757)
     panguan(18017700533)
     panguan(18017700535)
     panguan(18017700477)
@@ -223,6 +236,9 @@ if __name__ == '__main__':
     panguan(14987656424)
     panguan(14987657315)
     panguan(14987658206)
+    panguan(16188856230)  # 5/12新增tak
+    panguan(17927666394)  # 5/12新增tak
+    panguan(16873572639)  # 5/24新增tak
     panguan(14987659197)
     panguan(14987656456)
     panguan(14987657365)
