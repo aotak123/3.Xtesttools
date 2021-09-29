@@ -111,8 +111,8 @@ def panguan(mobile):
         time.sleep(5)
         BB = "  \033[1;31mNO.\033[0m " + str(a) + " 次广告"
         print(BB)
-        # os.popen(
-        #     "adb -s 26385389 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+        os.popen(
+            "adb -s 26385389 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
         time.sleep(38)
         TouchAction(driver).tap(x=985, y=89).perform()  # 关闭toutiao广告
         # time.sleep(5)
