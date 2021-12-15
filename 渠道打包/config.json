@@ -6,11 +6,11 @@
    /     "channel": "cyceshi",
   */
   "defaultExtraInfo": {
-    "CHANNEL_LABEL": "test"
+    "CHANNEL_LABEL": "dnxt11"
   },
   "channelInfoList": [
     {
-	  "channel": "test",
+	  "channel": "dnxt11",
       "extraInfo": {
         "CHANNEL_LABEL": ""
       }
