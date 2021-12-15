@@ -50,11 +50,11 @@ def panguan(mobile):
         TouchAction(driver).tap(x=950, y=150).perform()  # 点击设置
         time.sleep(2)
         TouchAction(driver).tap(x=536, y=1734).perform()  # 点击退出
-        time.sleep(1)
+        time.sleep(2)
         TouchAction(driver).tap(x=687, y=1132).perform()  # 弹窗确定退出
         time.sleep(3)
         TouchAction(driver).tap(x=384, y=1847).perform()  # 点击手机号登录
-        time.sleep(1)
+        time.sleep(2)
         # 选择手机号输入框
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
@@ -70,14 +70,14 @@ def panguan(mobile):
         logincode = num.decode()
         edit_code = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
-        time.sleep(1)
+        time.sleep(2)
         edit_code.send_keys(logincode)
         time.sleep(2)
         TouchAction(driver).tap(x=519, y=1032).perform()  # 确定按钮登录
         print("...账号登录成功")
     else:
         TouchAction(driver).tap(x=384, y=1847).perform()  # 点击手机号登录
-        time.sleep(1)
+        time.sleep(2)
         # 选择手机号输入框
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
@@ -93,12 +93,12 @@ def panguan(mobile):
         logincode = num.decode()
         edit_code = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
-        time.sleep(1)
+        time.sleep(2)
         edit_code.send_keys(logincode)
         time.sleep(2)
         TouchAction(driver).tap(x=519, y=1032).perform()  # 确定按钮登录
         print("账号登录成功")
-    time.sleep(13)  # 等待加载进入首页
+    time.sleep(15)  # 等待加载进入首页
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=313, y=1924).perform()  # 选择进入判官
     time.sleep(3)
@@ -106,7 +106,7 @@ def panguan(mobile):
     time.sleep(3)
     a = 1
     while a <= 11:
-        time.sleep(8)
+        time.sleep(10)
         TouchAction(driver).tap(x=515, y=1383).perform()  # 点击查看广告
         time.sleep(5)
         BB = "  \033[1;31mNO.\033[0m " + str(a) + " 次广告"
@@ -149,13 +149,13 @@ def panguan(mobile):
         TouchAction(driver).tap(x=950, y=150).perform()  # 点击设置
         time.sleep(2)
         TouchAction(driver).tap(x=536, y=1734).perform()  # 点击退出
-        time.sleep(1)
+        time.sleep(2)
         TouchAction(driver).tap(x=687, y=1132).perform()  # 弹窗确定退出
     else:
         TouchAction(driver).tap(x=950, y=150).perform()  # 点击设置
         time.sleep(2)
         TouchAction(driver).tap(x=536, y=1734).perform()  # 点击退出
-        time.sleep(1)
+        time.sleep(2)
         TouchAction(driver).tap(x=687, y=1132).perform()  # 弹窗确定退出
 
 
