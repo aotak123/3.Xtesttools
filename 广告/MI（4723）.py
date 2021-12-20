@@ -58,7 +58,7 @@ def panguan(mobile):
         # 选择手机号输入框
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
-        time.sleep(2)
+        time.sleep(3)
         TouchAction(driver).tap(x=799, y=807).perform()  # 获取验证码
         time.sleep(2)
         # 获取验证码
@@ -70,7 +70,7 @@ def panguan(mobile):
         logincode = num.decode()
         edit_code = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
-        time.sleep(2)
+        time.sleep(3)
         edit_code.send_keys(logincode)
         time.sleep(2)
         TouchAction(driver).tap(x=519, y=1032).perform()  # 确定按钮登录
@@ -81,7 +81,7 @@ def panguan(mobile):
         # 选择手机号输入框
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
-        time.sleep(2)
+        time.sleep(3)
         TouchAction(driver).tap(x=799, y=807).perform()  # 获取验证码
         time.sleep(2)
         # 获取验证码
@@ -93,7 +93,7 @@ def panguan(mobile):
         logincode = num.decode()
         edit_code = driver.find_element_by_id(
             "com.kamitu.drawsth.standalone.free.android:id/edit_identifyCode")  # 选择验证码输入框
-        time.sleep(2)
+        time.sleep(3)
         edit_code.send_keys(logincode)
         time.sleep(2)
         TouchAction(driver).tap(x=519, y=1032).perform()  # 确定按钮登录
