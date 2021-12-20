@@ -58,9 +58,9 @@ def panguan(mobile):
         # 选择手机号输入框
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
-        time.sleep(3)
-        TouchAction(driver).tap(x=799, y=807).perform()  # 获取验证码
         time.sleep(2)
+        TouchAction(driver).tap(x=799, y=807).perform()  # 获取验证码
+        time.sleep(3)
         # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
             mobile)
@@ -81,9 +81,9 @@ def panguan(mobile):
         # 选择手机号输入框
         edit_mobile = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/edit_phone")
         edit_mobile.send_keys(mobile)
-        time.sleep(3)
-        TouchAction(driver).tap(x=799, y=807).perform()  # 获取验证码
         time.sleep(2)
+        TouchAction(driver).tap(x=799, y=807).perform()  # 获取验证码
+        time.sleep(3)
         # 获取验证码
         logincodeurl = "https://uc.crazyccy.com/login/main_login/testtool?key=sLQq2_jaKLknsqAwZ&type=1&mobile=" + str(
             mobile)
