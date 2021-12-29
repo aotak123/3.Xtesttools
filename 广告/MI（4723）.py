@@ -113,7 +113,7 @@ def panguan(mobile):
         print(BB)
         os.popen(
             "adb -s 26385389 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
-        time.sleep(38)
+        time.sleep(45)
         TouchAction(driver).tap(x=985, y=89).perform()  # 关闭toutiao广告
         # time.sleep(5)
         # try:
