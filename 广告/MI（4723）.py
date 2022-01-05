@@ -36,7 +36,7 @@ https://update.crazyccy.com/androidupdate/android
 
 ########################################################################################################################
 def panguan(mobile):
-    time.sleep(3)
+    time.sleep(5)
     print("\033[1;31mProject.\033[0m " + str(mobile) + " \033[1;31mSTART\033[0m : " + time.strftime('%H:%M:%S'))
     # 登录模块
     try:
@@ -44,7 +44,7 @@ def panguan(mobile):
             "com.kamitu.drawsth.standalone.free.android:id/iv_mobile_login")  # 选择手机号登录
     except NoSuchElementException:
         print("当前为自动登录模式...正在退出账号重新进行登录")
-        time.sleep(8)  # 等待加载进入首页
+        time.sleep(10)  # 等待加载进入首页
         TouchAction(driver).tap(x=454, y=142).perform()  # 返回进入个人中心
         time.sleep(2)
         TouchAction(driver).tap(x=950, y=150).perform()  # 点击设置
@@ -98,7 +98,7 @@ def panguan(mobile):
         time.sleep(2)
         TouchAction(driver).tap(x=519, y=1032).perform()  # 确定按钮登录
         print("账号登录成功")
-    time.sleep(15)  # 等待加载进入首页
+    time.sleep(20)  # 等待加载进入首页
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=313, y=1924).perform()  # 选择进入判官
     time.sleep(3)
