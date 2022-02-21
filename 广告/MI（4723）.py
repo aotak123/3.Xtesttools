@@ -108,12 +108,12 @@ def panguan(mobile):
     while a <= 11:
         time.sleep(10)
         TouchAction(driver).tap(x=515, y=1383).perform()  # 点击查看广告
-        time.sleep(5)
+        time.sleep(8)
         BB = "  \033[1;31mNO.\033[0m " + str(a) + " 次广告"
         print(BB)
         os.popen(
             "adb -s 26385389 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
-        time.sleep(45)
+        time.sleep(42)
         TouchAction(driver).tap(x=985, y=89).perform()  # 关闭toutiao广告
         # time.sleep(5)
         # try:
@@ -163,62 +163,6 @@ def panguan(mobile):
 if __name__ == '__main__':
     b = 1
     while b <= 2:
-        # tak
-        panguan(18017700571)
-        panguan(18017700475)
-        panguan(16021343601)
-        panguan(17412349761)
-        panguan(14024038791)
-        panguan(19425524436)
-        panguan(16974415657)
-        panguan(19724282179)
-        panguan(17929260172)
-        panguan(17939699208)
-        panguan(19367241617)
-        panguan(17476070492)
-        panguan(16833601539)
-        panguan(17938136012)
-        panguan(19791239757)
-        panguan(18017700533)
-        panguan(18017700535)
-        panguan(18017700477)
-        panguan(18017700580)  # 小糖糖2
-        panguan(18918024483)
-        panguan(18017700596)
-        panguan(18017700598)
-        panguan(18017700600)
-        panguan(18017700601)
-        panguan(18017700604)
-        panguan(18017700606)
-        panguan(18017700710)  # 治疗失眠陶老师
-        panguan(18017700223)
-        panguan(17502150079)  # 小糖糖
-        panguan(18017700339)  # 阿拉斯加加加加
-        panguan(18017700400)
-        panguan(18017700410)
-        panguan(18017700411)
-        panguan(18017700207)
-        panguan(18017700478)
-        panguan(18014400369)
-        panguan(13651711999)
-        panguan(15917449818)
-        panguan(13032337111)
-        panguan(19823637887)
-        panguan(18017700355)
-        panguan(13161767110)
-        panguan(13161057538)
-        panguan(13164767109)
-        panguan(18601608165)
-        # tuntun
-        panguan(19529759329)
-        panguan(13529021576)
-        panguan(18987872800)
-        panguan(18917779999)
-        panguan(13761113333)
-        panguan(13985622222)
-        panguan(13763333333)
-        panguan(13698521470)
-        panguan(13760000001)
         panguan(17729152205)
         panguan(16016000001)
         panguan(18681025732)
@@ -239,7 +183,18 @@ if __name__ == '__main__':
         panguan(18017700715)
         panguan(18017700537)
         panguan(18017700550)
-    b += 1
+        panguan(14987654444)
+        panguan(14987655533)
+        panguan(14987656424)
+        panguan(18017700571)
+        panguan(18017700475)
+        panguan(16021343601)
+        panguan(17412349761)
+        panguan(14024038791)
+        panguan(19425524436)
+        panguan(16974415657)
+        panguan(19724282179)
+        panguan(17929260172)
 
 ########################################################################################################################
 finally2 = "\033[1;31m全部执行完毕：\033[0m " + time.strftime('%H:%M:%S')
