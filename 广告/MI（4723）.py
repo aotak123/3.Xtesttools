@@ -158,43 +158,10 @@ def panguan(mobile):
         time.sleep(2)
         TouchAction(driver).tap(x=687, y=1132).perform()  # 弹窗确定退出
 
-
 ########################################################################################################################
 if __name__ == '__main__':
     b = 1
     while b <= 2:
-        panguan(17729152205)
-        panguan(16016000001)
-        panguan(18681025732)
-        panguan(18930223547)  # 末凉
-        panguan(18017700602)
-        panguan(18017700722)
-        panguan(18819123459)
-        panguan(13168867678)
-        panguan(15981831553)
-        panguan(18017700401)
-        panguan(18017700403)
-        panguan(18017700515)
-        panguan(18017700516)
-        panguan(18017700521)
-        panguan(18017700530)
-        panguan(18017700595)
-        panguan(18017700597)
-        panguan(18017700715)
-        panguan(18017700537)
-        panguan(18017700550)
-        panguan(14987654444)
-        panguan(14987655533)
-        panguan(14987656424)
-        panguan(18017700571)
-        panguan(18017700475)
-        panguan(16021343601)
-        panguan(17412349761)
-        panguan(14024038791)
-        panguan(19425524436)
-        panguan(16974415657)
-        panguan(19724282179)
-        panguan(17929260172)
         # tak
         panguan(18508071757)
         panguan(18600007117)
