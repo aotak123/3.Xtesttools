@@ -111,8 +111,8 @@ def panguan(mobile):
         time.sleep(8)
         BB = "  \033[1;31mNO.\033[0m " + str(a) + " toutiaosdk广告"
         print(BB)
-        os.popen(
-            "adb -s KWG5T16928033201 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+        # os.popen(
+        #     "adb -s KWG5T16928033201 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
         time.sleep(42)
         TouchAction(driver).tap(x=964, y=101).perform()  # 关闭toutiao广告
         # time.sleep(5)
@@ -139,10 +139,10 @@ def panguan(mobile):
     try:
         set = driver.find_element_by_id("com.kamitu.drawsth.standalone.free.android:id/iv_setting")
     except NoSuchElementException:
-        os.popen("adb -s KWG5T16928033201 shell am force-stop com.kamitu.drawsth.standalone.free.android")
+        # os.popen("adb -s KWG5T16928033201 shell am force-stop com.kamitu.drawsth.standalone.free.android")
         time.sleep(2)
-        os.popen(
-            "adb -s KWG5T16928033201 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
+        # os.popen(
+        #     "adb -s KWG5T16928033201 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
         time.sleep(10)  # 等待加载进入首页
         TouchAction(driver).tap(x=422, y=120).perform()  # 返回进入个人中心
         time.sleep(2)
@@ -161,8 +161,8 @@ def panguan(mobile):
 
 ########################################################################################################################
 if __name__ == '__main__':
-    b = 1
-    while b <= 2:
+    # b = 1
+    # while b <= 2:
         panguan(17729152205)
         panguan(16016000001)
         panguan(18681025732)
