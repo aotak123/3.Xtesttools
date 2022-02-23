@@ -163,6 +163,20 @@ def panguan(mobile):
 if __name__ == '__main__':
     b = 1
     while b <= 2:
+        # tun
+        panguan(13200500001)
+        panguan(19813758251)
+        panguan(17261803056)
+        panguan(19529759329)
+        panguan(13529021576)
+        panguan(18987872800)
+        panguan(18917779999)
+        panguan(13761113333)
+        panguan(13985622222)
+        panguan(13763333333)
+        panguan(13698521470)
+        panguan(13760000001)
+        # tun
         # tak
         panguan(18508071757)
         panguan(18600007117)
