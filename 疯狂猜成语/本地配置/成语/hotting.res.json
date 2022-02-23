@@ -1,0 +1,35 @@
+{
+	"groups": [
+		{
+			"keys": "onlytestforload_png",
+			"name": "hotpreload"
+		}
+	],
+	"resources": [
+		{
+			"url": "hotAssets/onlytestforload.png",
+			"type": "image",
+			"name": "onlytestforload_png"
+		},		
+		{
+			"url": "hotAssets/dpk_recrewardbg.png",
+			"type": "image",
+			"name": "dpk_recrewardbg_png"
+		},
+		{
+			"url": "hotAssets/dpk_greenbtnbg.png",
+			"type": "image",
+			"name": "dpk_greenbtnbg_png"
+		},
+		{
+			"url": "hotAssets/dpk_checkbox.png",
+			"type": "image",
+			"name": "dpk_checkbox_png"
+		},
+		{
+			"url": "hotAssets/dpk_checkboxbg.png",
+			"type": "image",
+			"name": "dpk_checkboxbg_png"
+		}
+	]
+}

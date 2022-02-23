@@ -1,0 +1,1849 @@
+{
+	"groups": [
+		{
+			"keys": "roundthumb_png,track_sb_png,viewpage_json,redeff_json,menuover_json,judgegame_json,judgebg_png,idiomcene_json,guessgame_json,groundbg_png,glvlbg_png,bg_png,judgesky_png,puzzle_json,dispelPk_json,dpkvsbg_jpg,pkgamebg_jpg,pkresultbg_jpg,yibai_json,yibai_png,newredeff_json,new_box_json",
+			"name": "preload"
+		},
+		{
+			"keys": "NewProject_tex_png,anniutiaodong_tex_png,guangquan3_tex_png,houmian_tex_png,huodeshenshou_tex_png,longgugou_tex_png,qianmian_tex_png,shengjijianzhu_tex_png,shou3_tex_png,zhiwuguang_tex_png,anniutiaodong_tex_json,NewProject_tex_json,guangquan3_ske_json,guangquan3_tex_json,houmian_ske_json,anniutiaodong_ske_json,NewProject_ske_json,huodeshenshou_ske_json,houmian_tex_json,huodeshenshou_tex_json,qianmian_ske_json,longgugou_tex_json,longgugou_ske_json,shengjijianzhu_ske_json,qianmian_tex_json,shengjijianzhu_tex_json,shou3_tex_json,zhiwuguang_tex_json,zhiwuguang_ske_json,shou3_ske_json,shenglile_ske_json,shenglile_tex_json,shenglile_tex_png,shibai_ske_json,shibai_tex_json,shibai_tex_png,bisai_ske_json,bisai_tex_json,bisai_tex_png,pingshou_ske_json,pingshou_tex_json,pingshou_tex_png,baohuzhao_ske_json,baohuzhao_tex_json,baohuzhao_tex_png,dabaohuzhao_tex_png,dabaohuzhao_ske_json,dabaohuzhao_tex_json,qiaogu_ske_json,qiaogu_tex_json,qiaogu_tex_png,paoguang_ske_json,paoguang_tex_json,paoguang_tex_png,anniutiaodong3_ske_json,anniutiaodong3_tex_json,anniutiaodong3_tex_png",
+			"name": "dragonbones"
+		},
+		{
+			"keys": "cjrk_png,cloudb_png,coineff_png,coinlight_png,dicemc_png,jifuka_png,kantucai_png,panguan_png,qdsp_png,selectedeff_png,ssjiasu_png,xinpintu_png,coineff_json,cjrk_json,cloudb_json,coinlight_json,dicemc_json,jifuka_json,kantucai_json,ssjiasu_json,panguan_json,qdsp_json,selectedeff_json,xinpintu_json,kaibtn_json,kaibtn_png,yibai_json,yibai_png",
+			"name": "animations"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/animations/cjrk.png",
+			"type": "image",
+			"name": "cjrk_png"
+		},
+		{
+			"url": "assets/animations/cloudb.png",
+			"type": "image",
+			"name": "cloudb_png"
+		},
+		{
+			"url": "assets/animations/coineff.png",
+			"type": "image",
+			"name": "coineff_png"
+		},
+		{
+			"url": "assets/animations/coinlight.png",
+			"type": "image",
+			"name": "coinlight_png"
+		},
+		{
+			"url": "assets/animations/dicemc.png",
+			"type": "image",
+			"name": "dicemc_png"
+		},
+		{
+			"url": "assets/animations/jifuka.png",
+			"type": "image",
+			"name": "jifuka_png"
+		},
+		{
+			"url": "assets/animations/kantucai.png",
+			"type": "image",
+			"name": "kantucai_png"
+		},
+		{
+			"url": "assets/animations/panguan.png",
+			"type": "image",
+			"name": "panguan_png"
+		},
+		{
+			"url": "assets/animations/qdsp.png",
+			"type": "image",
+			"name": "qdsp_png"
+		},
+		{
+			"url": "assets/animations/selectedeff.png",
+			"type": "image",
+			"name": "selectedeff_png"
+		},
+		{
+			"url": "assets/animations/ssjiasu.png",
+			"type": "image",
+			"name": "ssjiasu_png"
+		},
+		{
+			"url": "assets/animations/xinpintu.png",
+			"type": "image",
+			"name": "xinpintu_png"
+		},
+		{
+			"url": "assets/animations/coineff.json",
+			"type": "json",
+			"name": "coineff_json"
+		},
+		{
+			"url": "assets/animations/cjrk.json",
+			"type": "json",
+			"name": "cjrk_json"
+		},
+		{
+			"url": "assets/animations/cloudb.json",
+			"type": "json",
+			"name": "cloudb_json"
+		},
+		{
+			"url": "assets/animations/coinlight.json",
+			"type": "json",
+			"name": "coinlight_json"
+		},
+		{
+			"url": "assets/animations/dicemc.json",
+			"type": "json",
+			"name": "dicemc_json"
+		},
+		{
+			"url": "assets/animations/jifuka.json",
+			"type": "json",
+			"name": "jifuka_json"
+		},
+		{
+			"url": "assets/animations/kantucai.json",
+			"type": "json",
+			"name": "kantucai_json"
+		},
+		{
+			"url": "assets/animations/ssjiasu.json",
+			"type": "json",
+			"name": "ssjiasu_json"
+		},
+		{
+			"url": "assets/animations/panguan.json",
+			"type": "json",
+			"name": "panguan_json"
+		},
+		{
+			"url": "assets/animations/qdsp.json",
+			"type": "json",
+			"name": "qdsp_json"
+		},
+		{
+			"url": "assets/animations/selectedeff.json",
+			"type": "json",
+			"name": "selectedeff_json"
+		},
+		{
+			"url": "assets/animations/xinpintu.json",
+			"type": "json",
+			"name": "xinpintu_json"
+		},
+		{
+			"url": "assets/dragbones/NewProject_tex.png",
+			"type": "image",
+			"name": "NewProject_tex_png"
+		},
+		{
+			"url": "assets/dragbones/anniutiaodong_tex.png",
+			"type": "image",
+			"name": "anniutiaodong_tex_png"
+		},
+		{
+			"url": "assets/dragbones/guangquan3_tex.png",
+			"type": "image",
+			"name": "guangquan3_tex_png"
+		},
+		{
+			"url": "assets/dragbones/houmian_tex.png",
+			"type": "image",
+			"name": "houmian_tex_png"
+		},
+		{
+			"url": "assets/dragbones/huodeshenshou_tex.png",
+			"type": "image",
+			"name": "huodeshenshou_tex_png"
+		},
+		{
+			"url": "assets/dragbones/longgugou_tex.png",
+			"type": "image",
+			"name": "longgugou_tex_png"
+		},
+		{
+			"url": "assets/dragbones/qianmian_tex.png",
+			"type": "image",
+			"name": "qianmian_tex_png"
+		},
+		{
+			"url": "assets/dragbones/shengjijianzhu_tex.png",
+			"type": "image",
+			"name": "shengjijianzhu_tex_png"
+		},
+		{
+			"url": "assets/dragbones/shou3_tex.png",
+			"type": "image",
+			"name": "shou3_tex_png"
+		},
+		{
+			"url": "assets/dragbones/zhiwuguang_tex.png",
+			"type": "image",
+			"name": "zhiwuguang_tex_png"
+		},
+		{
+			"url": "assets/dragbones/anniutiaodong_tex.json",
+			"type": "json",
+			"name": "anniutiaodong_tex_json"
+		},
+		{
+			"url": "assets/dragbones/NewProject_tex.json",
+			"type": "json",
+			"name": "NewProject_tex_json"
+		},
+		{
+			"url": "assets/dragbones/guangquan3_ske.json",
+			"type": "json",
+			"name": "guangquan3_ske_json"
+		},
+		{
+			"url": "assets/dragbones/guangquan3_tex.json",
+			"type": "json",
+			"name": "guangquan3_tex_json"
+		},
+		{
+			"url": "assets/dragbones/houmian_ske.json",
+			"type": "json",
+			"name": "houmian_ske_json"
+		},
+		{
+			"url": "assets/dragbones/anniutiaodong_ske.json",
+			"type": "json",
+			"name": "anniutiaodong_ske_json"
+		},
+		{
+			"url": "assets/dragbones/NewProject_ske.json",
+			"type": "json",
+			"name": "NewProject_ske_json"
+		},
+		{
+			"url": "assets/dragbones/huodeshenshou_ske.json",
+			"type": "json",
+			"name": "huodeshenshou_ske_json"
+		},
+		{
+			"url": "assets/dragbones/houmian_tex.json",
+			"type": "json",
+			"name": "houmian_tex_json"
+		},
+		{
+			"url": "assets/dragbones/huodeshenshou_tex.json",
+			"type": "json",
+			"name": "huodeshenshou_tex_json"
+		},
+		{
+			"url": "assets/dragbones/qianmian_ske.json",
+			"type": "json",
+			"name": "qianmian_ske_json"
+		},
+		{
+			"url": "assets/dragbones/longgugou_tex.json",
+			"type": "json",
+			"name": "longgugou_tex_json"
+		},
+		{
+			"url": "assets/dragbones/longgugou_ske.json",
+			"type": "json",
+			"name": "longgugou_ske_json"
+		},
+		{
+			"url": "assets/dragbones/shengjijianzhu_ske.json",
+			"type": "json",
+			"name": "shengjijianzhu_ske_json"
+		},
+		{
+			"url": "assets/dragbones/qianmian_tex.json",
+			"type": "json",
+			"name": "qianmian_tex_json"
+		},
+		{
+			"url": "assets/dragbones/shengjijianzhu_tex.json",
+			"type": "json",
+			"name": "shengjijianzhu_tex_json"
+		},
+		{
+			"url": "assets/dragbones/shou3_tex.json",
+			"type": "json",
+			"name": "shou3_tex_json"
+		},
+		{
+			"url": "assets/dragbones/zhiwuguang_tex.json",
+			"type": "json",
+			"name": "zhiwuguang_tex_json"
+		},
+		{
+			"url": "assets/dragbones/zhiwuguang_ske.json",
+			"type": "json",
+			"name": "zhiwuguang_ske_json"
+		},
+		{
+			"url": "assets/dragbones/shou3_ske.json",
+			"type": "json",
+			"name": "shou3_ske_json"
+		},
+		{
+			"url": "assets/cards/cai_zi_0.png",
+			"type": "image",
+			"name": "cai_zi_0_png"
+		},
+		{
+			"url": "assets/cards/cai_zi_1.png",
+			"type": "image",
+			"name": "cai_zi_1_png"
+		},
+		{
+			"url": "assets/cards/cai_zi_2.png",
+			"type": "image",
+			"name": "cai_zi_2_png"
+		},
+		{
+			"url": "assets/cards/cai_zi_3.png",
+			"type": "image",
+			"name": "cai_zi_3_png"
+		},
+		{
+			"url": "assets/cards/hong_lou_0.png",
+			"type": "image",
+			"name": "hong_lou_0_png"
+		},
+		{
+			"url": "assets/cards/hong_lou_1.png",
+			"type": "image",
+			"name": "hong_lou_1_png"
+		},
+		{
+			"url": "assets/cards/hong_lou_2.png",
+			"type": "image",
+			"name": "hong_lou_2_png"
+		},
+		{
+			"url": "assets/cards/hong_lou_3.png",
+			"type": "image",
+			"name": "hong_lou_3_png"
+		},
+		{
+			"url": "assets/cards/hong_lou_4.png",
+			"type": "image",
+			"name": "hong_lou_4_png"
+		},
+		{
+			"url": "assets/cards/long_0.png",
+			"type": "image",
+			"name": "long_0_png"
+		},
+		{
+			"url": "assets/cards/long_1.png",
+			"type": "image",
+			"name": "long_1_png"
+		},
+		{
+			"url": "assets/cards/long_2.png",
+			"type": "image",
+			"name": "long_2_png"
+		},
+		{
+			"url": "assets/cards/long_3.png",
+			"type": "image",
+			"name": "long_3_png"
+		},
+		{
+			"url": "assets/cards/long_4.png",
+			"type": "image",
+			"name": "long_4_png"
+		},
+		{
+			"url": "assets/cards/long_5.png",
+			"type": "image",
+			"name": "long_5_png"
+		},
+		{
+			"url": "assets/cards/long_6.png",
+			"type": "image",
+			"name": "long_6_png"
+		},
+		{
+			"url": "assets/cards/long_7.png",
+			"type": "image",
+			"name": "long_7_png"
+		},
+		{
+			"url": "assets/cards/long_8.png",
+			"type": "image",
+			"name": "long_8_png"
+		},
+		{
+			"url": "assets/cards/san_guo_0.png",
+			"type": "image",
+			"name": "san_guo_0_png"
+		},
+		{
+			"url": "assets/cards/san_guo_1.png",
+			"type": "image",
+			"name": "san_guo_1_png"
+		},
+		{
+			"url": "assets/cards/san_guo_2.png",
+			"type": "image",
+			"name": "san_guo_2_png"
+		},
+		{
+			"url": "assets/cards/san_guo_3.png",
+			"type": "image",
+			"name": "san_guo_3_png"
+		},
+		{
+			"url": "assets/cards/san_guo_4.png",
+			"type": "image",
+			"name": "san_guo_4_png"
+		},
+		{
+			"url": "assets/cards/shen_hua_0.png",
+			"type": "image",
+			"name": "shen_hua_0_png"
+		},
+		{
+			"url": "assets/cards/shen_hua_1.png",
+			"type": "image",
+			"name": "shen_hua_1_png"
+		},
+		{
+			"url": "assets/cards/shen_hua_2.png",
+			"type": "image",
+			"name": "shen_hua_2_png"
+		},
+		{
+			"url": "assets/cards/shen_hua_3.png",
+			"type": "image",
+			"name": "shen_hua_3_png"
+		},
+		{
+			"url": "assets/cards/shen_hua_4.png",
+			"type": "image",
+			"name": "shen_hua_4_png"
+		},
+		{
+			"url": "assets/cards/shen_hua_5.png",
+			"type": "image",
+			"name": "shen_hua_5_png"
+		},
+		{
+			"url": "assets/cards/shen_hua_6.png",
+			"type": "image",
+			"name": "shen_hua_6_png"
+		},
+		{
+			"url": "assets/cards/shen_hua_7.png",
+			"type": "image",
+			"name": "shen_hua_7_png"
+		},
+		{
+			"url": "assets/cards/shen_shou_0.png",
+			"type": "image",
+			"name": "shen_shou_0_png"
+		},
+		{
+			"url": "assets/cards/shen_shou_1.png",
+			"type": "image",
+			"name": "shen_shou_1_png"
+		},
+		{
+			"url": "assets/cards/shen_shou_2.png",
+			"type": "image",
+			"name": "shen_shou_2_png"
+		},
+		{
+			"url": "assets/cards/shen_shou_3.png",
+			"type": "image",
+			"name": "shen_shou_3_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_0.png",
+			"type": "image",
+			"name": "sheng_xiao_0_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_1.png",
+			"type": "image",
+			"name": "sheng_xiao_1_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_10.png",
+			"type": "image",
+			"name": "sheng_xiao_10_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_11.png",
+			"type": "image",
+			"name": "sheng_xiao_11_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_2.png",
+			"type": "image",
+			"name": "sheng_xiao_2_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_3.png",
+			"type": "image",
+			"name": "sheng_xiao_3_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_4.png",
+			"type": "image",
+			"name": "sheng_xiao_4_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_5.png",
+			"type": "image",
+			"name": "sheng_xiao_5_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_6.png",
+			"type": "image",
+			"name": "sheng_xiao_6_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_7.png",
+			"type": "image",
+			"name": "sheng_xiao_7_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_8.png",
+			"type": "image",
+			"name": "sheng_xiao_8_png"
+		},
+		{
+			"url": "assets/cards/sheng_xiao_9.png",
+			"type": "image",
+			"name": "sheng_xiao_9_png"
+		},
+		{
+			"url": "assets/cards/shui_hu_0.png",
+			"type": "image",
+			"name": "shui_hu_0_png"
+		},
+		{
+			"url": "assets/cards/shui_hu_1.png",
+			"type": "image",
+			"name": "shui_hu_1_png"
+		},
+		{
+			"url": "assets/cards/shui_hu_2.png",
+			"type": "image",
+			"name": "shui_hu_2_png"
+		},
+		{
+			"url": "assets/cards/shui_hu_3.png",
+			"type": "image",
+			"name": "shui_hu_3_png"
+		},
+		{
+			"url": "assets/cards/shui_hu_4.png",
+			"type": "image",
+			"name": "shui_hu_4_png"
+		},
+		{
+			"url": "assets/cards/tian_wang_0.png",
+			"type": "image",
+			"name": "tian_wang_0_png"
+		},
+		{
+			"url": "assets/cards/tian_wang_1.png",
+			"type": "image",
+			"name": "tian_wang_1_png"
+		},
+		{
+			"url": "assets/cards/tian_wang_2.png",
+			"type": "image",
+			"name": "tian_wang_2_png"
+		},
+		{
+			"url": "assets/cards/tian_wang_3.png",
+			"type": "image",
+			"name": "tian_wang_3_png"
+		},
+		{
+			"url": "assets/cards/wu_jiang_0.png",
+			"type": "image",
+			"name": "wu_jiang_0_png"
+		},
+		{
+			"url": "assets/cards/wu_jiang_1.png",
+			"type": "image",
+			"name": "wu_jiang_1_png"
+		},
+		{
+			"url": "assets/cards/wu_jiang_2.png",
+			"type": "image",
+			"name": "wu_jiang_2_png"
+		},
+		{
+			"url": "assets/cards/wu_jiang_3.png",
+			"type": "image",
+			"name": "wu_jiang_3_png"
+		},
+		{
+			"url": "assets/cards/wu_jiang_4.png",
+			"type": "image",
+			"name": "wu_jiang_4_png"
+		},
+		{
+			"url": "assets/cards/xi_you_0.png",
+			"type": "image",
+			"name": "xi_you_0_png"
+		},
+		{
+			"url": "assets/cards/xi_you_1.png",
+			"type": "image",
+			"name": "xi_you_1_png"
+		},
+		{
+			"url": "assets/cards/xi_you_2.png",
+			"type": "image",
+			"name": "xi_you_2_png"
+		},
+		{
+			"url": "assets/cards/xi_you_3.png",
+			"type": "image",
+			"name": "xi_you_3_png"
+		},
+		{
+			"url": "assets/cards/xi_you_4.png",
+			"type": "image",
+			"name": "xi_you_4_png"
+		},
+		{
+			"url": "assets/cars/car_1.png",
+			"type": "image",
+			"name": "car_1_png"
+		},
+		{
+			"url": "assets/cars/car_10.png",
+			"type": "image",
+			"name": "car_10_png"
+		},
+		{
+			"url": "assets/cars/car_11.png",
+			"type": "image",
+			"name": "car_11_png"
+		},
+		{
+			"url": "assets/cars/car_12.png",
+			"type": "image",
+			"name": "car_12_png"
+		},
+		{
+			"url": "assets/cars/car_13.png",
+			"type": "image",
+			"name": "car_13_png"
+		},
+		{
+			"url": "assets/cars/car_14.png",
+			"type": "image",
+			"name": "car_14_png"
+		},
+		{
+			"url": "assets/cars/car_15.png",
+			"type": "image",
+			"name": "car_15_png"
+		},
+		{
+			"url": "assets/cars/car_16.png",
+			"type": "image",
+			"name": "car_16_png"
+		},
+		{
+			"url": "assets/cars/car_17.png",
+			"type": "image",
+			"name": "car_17_png"
+		},
+		{
+			"url": "assets/cars/car_18.png",
+			"type": "image",
+			"name": "car_18_png"
+		},
+		{
+			"url": "assets/cars/car_19.png",
+			"type": "image",
+			"name": "car_19_png"
+		},
+		{
+			"url": "assets/cars/car_2.png",
+			"type": "image",
+			"name": "car_2_png"
+		},
+		{
+			"url": "assets/cars/car_20.png",
+			"type": "image",
+			"name": "car_20_png"
+		},
+		{
+			"url": "assets/cars/car_21.png",
+			"type": "image",
+			"name": "car_21_png"
+		},
+		{
+			"url": "assets/cars/car_22.png",
+			"type": "image",
+			"name": "car_22_png"
+		},
+		{
+			"url": "assets/cars/car_23.png",
+			"type": "image",
+			"name": "car_23_png"
+		},
+		{
+			"url": "assets/cars/car_24.png",
+			"type": "image",
+			"name": "car_24_png"
+		},
+		{
+			"url": "assets/cars/car_25.png",
+			"type": "image",
+			"name": "car_25_png"
+		},
+		{
+			"url": "assets/cars/car_26.png",
+			"type": "image",
+			"name": "car_26_png"
+		},
+		{
+			"url": "assets/cars/car_27.png",
+			"type": "image",
+			"name": "car_27_png"
+		},
+		{
+			"url": "assets/cars/car_28.png",
+			"type": "image",
+			"name": "car_28_png"
+		},
+		{
+			"url": "assets/cars/car_29.png",
+			"type": "image",
+			"name": "car_29_png"
+		},
+		{
+			"url": "assets/cars/car_3.png",
+			"type": "image",
+			"name": "car_3_png"
+		},
+		{
+			"url": "assets/cars/car_30.png",
+			"type": "image",
+			"name": "car_30_png"
+		},
+		{
+			"url": "assets/cars/car_31.png",
+			"type": "image",
+			"name": "car_31_png"
+		},
+		{
+			"url": "assets/cars/car_32.png",
+			"type": "image",
+			"name": "car_32_png"
+		},
+		{
+			"url": "assets/cars/car_33.png",
+			"type": "image",
+			"name": "car_33_png"
+		},
+		{
+			"url": "assets/cars/car_34.png",
+			"type": "image",
+			"name": "car_34_png"
+		},
+		{
+			"url": "assets/cars/car_35.png",
+			"type": "image",
+			"name": "car_35_png"
+		},
+		{
+			"url": "assets/cars/car_36.png",
+			"type": "image",
+			"name": "car_36_png"
+		},
+		{
+			"url": "assets/cars/car_37.png",
+			"type": "image",
+			"name": "car_37_png"
+		},
+		{
+			"url": "assets/cars/car_38.png",
+			"type": "image",
+			"name": "car_38_png"
+		},
+		{
+			"url": "assets/cars/car_39.png",
+			"type": "image",
+			"name": "car_39_png"
+		},
+		{
+			"url": "assets/cars/car_4.png",
+			"type": "image",
+			"name": "car_4_png"
+		},
+		{
+			"url": "assets/cars/car_40.png",
+			"type": "image",
+			"name": "car_40_png"
+		},
+		{
+			"url": "assets/cars/car_5.png",
+			"type": "image",
+			"name": "car_5_png"
+		},
+		{
+			"url": "assets/cars/car_6.png",
+			"type": "image",
+			"name": "car_6_png"
+		},
+		{
+			"url": "assets/cars/car_7.png",
+			"type": "image",
+			"name": "car_7_png"
+		},
+		{
+			"url": "assets/cars/car_8.png",
+			"type": "image",
+			"name": "car_8_png"
+		},
+		{
+			"url": "assets/cars/car_9.png",
+			"type": "image",
+			"name": "car_9_png"
+		},
+		{
+			"url": "assets/characters/character_1.png",
+			"type": "image",
+			"name": "character_1_png"
+		},
+		{
+			"url": "assets/characters/character_10.png",
+			"type": "image",
+			"name": "character_10_png"
+		},
+		{
+			"url": "assets/characters/character_11.png",
+			"type": "image",
+			"name": "character_11_png"
+		},
+		{
+			"url": "assets/characters/character_12.png",
+			"type": "image",
+			"name": "character_12_png"
+		},
+		{
+			"url": "assets/characters/character_13.png",
+			"type": "image",
+			"name": "character_13_png"
+		},
+		{
+			"url": "assets/characters/character_14.png",
+			"type": "image",
+			"name": "character_14_png"
+		},
+		{
+			"url": "assets/characters/character_15.png",
+			"type": "image",
+			"name": "character_15_png"
+		},
+		{
+			"url": "assets/characters/character_16.png",
+			"type": "image",
+			"name": "character_16_png"
+		},
+		{
+			"url": "assets/characters/character_17.png",
+			"type": "image",
+			"name": "character_17_png"
+		},
+		{
+			"url": "assets/characters/character_18.png",
+			"type": "image",
+			"name": "character_18_png"
+		},
+		{
+			"url": "assets/characters/character_19.png",
+			"type": "image",
+			"name": "character_19_png"
+		},
+		{
+			"url": "assets/characters/character_2.png",
+			"type": "image",
+			"name": "character_2_png"
+		},
+		{
+			"url": "assets/characters/character_20.png",
+			"type": "image",
+			"name": "character_20_png"
+		},
+		{
+			"url": "assets/characters/character_21.png",
+			"type": "image",
+			"name": "character_21_png"
+		},
+		{
+			"url": "assets/characters/character_22.png",
+			"type": "image",
+			"name": "character_22_png"
+		},
+		{
+			"url": "assets/characters/character_3.png",
+			"type": "image",
+			"name": "character_3_png"
+		},
+		{
+			"url": "assets/characters/character_4.png",
+			"type": "image",
+			"name": "character_4_png"
+		},
+		{
+			"url": "assets/characters/character_5.png",
+			"type": "image",
+			"name": "character_5_png"
+		},
+		{
+			"url": "assets/characters/character_6.png",
+			"type": "image",
+			"name": "character_6_png"
+		},
+		{
+			"url": "assets/characters/character_7.png",
+			"type": "image",
+			"name": "character_7_png"
+		},
+		{
+			"url": "assets/characters/character_8.png",
+			"type": "image",
+			"name": "character_8_png"
+		},
+		{
+			"url": "assets/characters/character_9.png",
+			"type": "image",
+			"name": "character_9_png"
+		},
+		{
+			"url": "assets/game/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "assets/game/glvlbg.png",
+			"type": "image",
+			"name": "glvlbg_png"
+		},
+		{
+			"url": "assets/game/groundbg.png",
+			"type": "image",
+			"name": "groundbg_png"
+		},
+		{
+			"url": "assets/game/judgebg.png",
+			"type": "image",
+			"name": "judgebg_png"
+		},
+		{
+			"url": "assets/game/judgesky.png",
+			"type": "image",
+			"name": "judgesky_png"
+		},
+		{
+			"url": "assets/game/redeff.json",
+			"type": "sheet",
+			"name": "redeff_json",
+			"subkeys": "amazing,beastredbag,boxeff,circleeff,combo1,combo2,combo3,combo4,combo5,combo6,combo7,congratulate,cool,excellent,giveinvitetitle,good,guessredbag,light,light2,lightbox,lightcircle,lightwave,nice,openred,perfect,redbag,redpack,redpack_1,reward_title_0,star_0,successtitle,unbelievable,xlight,xstar"
+		},
+		{
+			"url": "assets/game/judgegame.json",
+			"type": "sheet",
+			"name": "judgegame_json",
+			"subkeys": "bigwordbg,bigwordwarnbg,janswerbg,jblackbg,jcoin,jmoonlight,jprogressbar,jprogressbg,jstar,jsuccess,jtitle,judgeperson,leftperson,rightperson,tguidebg,tpersonguide"
+		},
+		{
+			"url": "assets/game/menuover.json",
+			"type": "sheet",
+			"name": "menuover_json",
+			"subkeys": "addidiombtn,addtipimage,arrow_bg_0,board,bubblecoin,bubblelife,chanllengebtn,coin,cointipbg,countdown_bg,cybaike,down_icon,dtreebg,expbg,explainitembg,gettreemoney,ghomebtn,godbeastbg,goodbox,greenbtn,headimg,hnamebg,icon_bg_0,icon_bg_1,icontipbg,jrankbtn,jumpcoin,left_icon,levelup,lifeA,lifeB,lifeC,lookguessbtn,lvlbar,lvltipbg,mailbtn,millintop,mo_agree,mo_hulve,mo_thebg,more_btn,mredbag,mredbtn,mredtpbg,newrank,nextbtn,ninebtn,overtitlebg,overvideobtn,redpack_0,redpoint,right_btn,robotbg,scloud,smallbtn,soundbtn,taskbtn,tdbget,tipsbg,tnormalget,treetime,up_icon,zcloud"
+		},
+		{
+			"url": "assets/game/guessgame.json",
+			"type": "sheet",
+			"name": "guessgame_json",
+			"subkeys": "backbtn,clearbtn,deletebtn,gline,graybtn1,graybtn2,gtipbtn,guessbtn,headlocal,levellock,levelpass,levelunlock,magnifyglass,overidiombg,star,unlockguesslevel,video1,video2,video3,video4"
+		},
+		{
+			"url": "assets/game/puzzle.json",
+			"type": "sheet",
+			"name": "puzzle_json",
+			"subkeys": "puzzleArrow,puzzleBg,puzzleBtn,puzzleCoinIcon,puzzleColorDot,puzzle_1,puzzle_2,puzzle_3,puzzle_4,puzzle_5,puzzle_6,puzzle_7,puzzle_8,puzzle_9,rect6,totalPuzzleTxt"
+		},
+		{
+			"url": "assets/game/viewpage.json",
+			"type": "sheet",
+			"name": "viewpage_json",
+			"subkeys": "achieve_bg,arrow,beast,beastonly,beastresulttitle,beastruntitle,biglife,blackclosebtn,blankmail,boximg,btndisabled,btndoing,btnget,btnvideo,cardbg,cardbtn,cardeximg,close_btn,closebtn,coinbagicom,coins_icon,common_title_bg,commonbtn,commonclosebtn,correctadd,cypostip,down_arrow,expicon,fontbg,getsuccesstitle,housetitle,invite_reward_title,jcardkbg,jcoincard,labelA,labelB,lamb,leveluptitle,lightadded,mail_checkbox,mail_cur_tab_bg,mail_item_icon,mail_op_btn,mail_v_seperator,mocoin,myrankbg,notget,numberbg,pk_item_0,pk_item_1,pk_item_2,pk_item_3,pk_item_4,pk_item_coin,pk_item_help,rank_1,rank_2,rank_3,refresh_icon,right,rnotselected,rselected,soundbg,successnumber,successtitlejudge,titlecar,titlecharacter,titlehouse,titlepet,titletree,tjudgetitle,twothoundadd,up_arrow,usetipbg,videoimg,viewbg,viewsecondalphabg,xhighestbg"
+		},
+		{
+			"url": "assets/game/idiomcene.json",
+			"type": "sheet",
+			"name": "idiomcene_json",
+			"subkeys": "boxbtn,coinshader,howbtn,lookbtn,rect0,rect1,rect2,rect3,rect4,rect5,resetbtn,shareicon,tipbtn,yhome"
+		},
+		{
+			"url": "assets/houses/house_1.png",
+			"type": "image",
+			"name": "house_1_png"
+		},
+		{
+			"url": "assets/houses/house_10.png",
+			"type": "image",
+			"name": "house_10_png"
+		},
+		{
+			"url": "assets/houses/house_11.png",
+			"type": "image",
+			"name": "house_11_png"
+		},
+		{
+			"url": "assets/houses/house_12.png",
+			"type": "image",
+			"name": "house_12_png"
+		},
+		{
+			"url": "assets/houses/house_13.png",
+			"type": "image",
+			"name": "house_13_png"
+		},
+		{
+			"url": "assets/houses/house_14.png",
+			"type": "image",
+			"name": "house_14_png"
+		},
+		{
+			"url": "assets/houses/house_15.png",
+			"type": "image",
+			"name": "house_15_png"
+		},
+		{
+			"url": "assets/houses/house_16.png",
+			"type": "image",
+			"name": "house_16_png"
+		},
+		{
+			"url": "assets/houses/house_17.png",
+			"type": "image",
+			"name": "house_17_png"
+		},
+		{
+			"url": "assets/houses/house_18.png",
+			"type": "image",
+			"name": "house_18_png"
+		},
+		{
+			"url": "assets/houses/house_19.png",
+			"type": "image",
+			"name": "house_19_png"
+		},
+		{
+			"url": "assets/houses/house_2.png",
+			"type": "image",
+			"name": "house_2_png"
+		},
+		{
+			"url": "assets/houses/house_20.png",
+			"type": "image",
+			"name": "house_20_png"
+		},
+		{
+			"url": "assets/houses/house_21.png",
+			"type": "image",
+			"name": "house_21_png"
+		},
+		{
+			"url": "assets/houses/house_22.png",
+			"type": "image",
+			"name": "house_22_png"
+		},
+		{
+			"url": "assets/houses/house_23.png",
+			"type": "image",
+			"name": "house_23_png"
+		},
+		{
+			"url": "assets/houses/house_24.png",
+			"type": "image",
+			"name": "house_24_png"
+		},
+		{
+			"url": "assets/houses/house_25.png",
+			"type": "image",
+			"name": "house_25_png"
+		},
+		{
+			"url": "assets/houses/house_26.png",
+			"type": "image",
+			"name": "house_26_png"
+		},
+		{
+			"url": "assets/houses/house_27.png",
+			"type": "image",
+			"name": "house_27_png"
+		},
+		{
+			"url": "assets/houses/house_28.png",
+			"type": "image",
+			"name": "house_28_png"
+		},
+		{
+			"url": "assets/houses/house_29.png",
+			"type": "image",
+			"name": "house_29_png"
+		},
+		{
+			"url": "assets/houses/house_3.png",
+			"type": "image",
+			"name": "house_3_png"
+		},
+		{
+			"url": "assets/houses/house_30.png",
+			"type": "image",
+			"name": "house_30_png"
+		},
+		{
+			"url": "assets/houses/house_31.png",
+			"type": "image",
+			"name": "house_31_png"
+		},
+		{
+			"url": "assets/houses/house_32.png",
+			"type": "image",
+			"name": "house_32_png"
+		},
+		{
+			"url": "assets/houses/house_33.png",
+			"type": "image",
+			"name": "house_33_png"
+		},
+		{
+			"url": "assets/houses/house_34.png",
+			"type": "image",
+			"name": "house_34_png"
+		},
+		{
+			"url": "assets/houses/house_35.png",
+			"type": "image",
+			"name": "house_35_png"
+		},
+		{
+			"url": "assets/houses/house_36.png",
+			"type": "image",
+			"name": "house_36_png"
+		},
+		{
+			"url": "assets/houses/house_37.png",
+			"type": "image",
+			"name": "house_37_png"
+		},
+		{
+			"url": "assets/houses/house_38.png",
+			"type": "image",
+			"name": "house_38_png"
+		},
+		{
+			"url": "assets/houses/house_39.png",
+			"type": "image",
+			"name": "house_39_png"
+		},
+		{
+			"url": "assets/houses/house_4.png",
+			"type": "image",
+			"name": "house_4_png"
+		},
+		{
+			"url": "assets/houses/house_40.png",
+			"type": "image",
+			"name": "house_40_png"
+		},
+		{
+			"url": "assets/houses/house_41.png",
+			"type": "image",
+			"name": "house_41_png"
+		},
+		{
+			"url": "assets/houses/house_5.png",
+			"type": "image",
+			"name": "house_5_png"
+		},
+		{
+			"url": "assets/houses/house_6.png",
+			"type": "image",
+			"name": "house_6_png"
+		},
+		{
+			"url": "assets/houses/house_7.png",
+			"type": "image",
+			"name": "house_7_png"
+		},
+		{
+			"url": "assets/houses/house_8.png",
+			"type": "image",
+			"name": "house_8_png"
+		},
+		{
+			"url": "assets/houses/house_9.png",
+			"type": "image",
+			"name": "house_9_png"
+		},
+		{
+			"url": "assets/pets/dog_1.png",
+			"type": "image",
+			"name": "dog_1_png"
+		},
+		{
+			"url": "assets/pets/dog_10.png",
+			"type": "image",
+			"name": "dog_10_png"
+		},
+		{
+			"url": "assets/pets/dog_11.png",
+			"type": "image",
+			"name": "dog_11_png"
+		},
+		{
+			"url": "assets/pets/dog_12.png",
+			"type": "image",
+			"name": "dog_12_png"
+		},
+		{
+			"url": "assets/pets/dog_13.png",
+			"type": "image",
+			"name": "dog_13_png"
+		},
+		{
+			"url": "assets/pets/dog_14.png",
+			"type": "image",
+			"name": "dog_14_png"
+		},
+		{
+			"url": "assets/pets/dog_15.png",
+			"type": "image",
+			"name": "dog_15_png"
+		},
+		{
+			"url": "assets/pets/dog_16.png",
+			"type": "image",
+			"name": "dog_16_png"
+		},
+		{
+			"url": "assets/pets/dog_17.png",
+			"type": "image",
+			"name": "dog_17_png"
+		},
+		{
+			"url": "assets/pets/dog_18.png",
+			"type": "image",
+			"name": "dog_18_png"
+		},
+		{
+			"url": "assets/pets/dog_19.png",
+			"type": "image",
+			"name": "dog_19_png"
+		},
+		{
+			"url": "assets/pets/dog_2.png",
+			"type": "image",
+			"name": "dog_2_png"
+		},
+		{
+			"url": "assets/pets/dog_20.png",
+			"type": "image",
+			"name": "dog_20_png"
+		},
+		{
+			"url": "assets/pets/dog_21.png",
+			"type": "image",
+			"name": "dog_21_png"
+		},
+		{
+			"url": "assets/pets/dog_22.png",
+			"type": "image",
+			"name": "dog_22_png"
+		},
+		{
+			"url": "assets/pets/dog_23.png",
+			"type": "image",
+			"name": "dog_23_png"
+		},
+		{
+			"url": "assets/pets/dog_24.png",
+			"type": "image",
+			"name": "dog_24_png"
+		},
+		{
+			"url": "assets/pets/dog_25.png",
+			"type": "image",
+			"name": "dog_25_png"
+		},
+		{
+			"url": "assets/pets/dog_26.png",
+			"type": "image",
+			"name": "dog_26_png"
+		},
+		{
+			"url": "assets/pets/dog_27.png",
+			"type": "image",
+			"name": "dog_27_png"
+		},
+		{
+			"url": "assets/pets/dog_28.png",
+			"type": "image",
+			"name": "dog_28_png"
+		},
+		{
+			"url": "assets/pets/dog_29.png",
+			"type": "image",
+			"name": "dog_29_png"
+		},
+		{
+			"url": "assets/pets/dog_3.png",
+			"type": "image",
+			"name": "dog_3_png"
+		},
+		{
+			"url": "assets/pets/dog_30.png",
+			"type": "image",
+			"name": "dog_30_png"
+		},
+		{
+			"url": "assets/pets/dog_31.png",
+			"type": "image",
+			"name": "dog_31_png"
+		},
+		{
+			"url": "assets/pets/dog_32.png",
+			"type": "image",
+			"name": "dog_32_png"
+		},
+		{
+			"url": "assets/pets/dog_33.png",
+			"type": "image",
+			"name": "dog_33_png"
+		},
+		{
+			"url": "assets/pets/dog_34.png",
+			"type": "image",
+			"name": "dog_34_png"
+		},
+		{
+			"url": "assets/pets/dog_35.png",
+			"type": "image",
+			"name": "dog_35_png"
+		},
+		{
+			"url": "assets/pets/dog_36.png",
+			"type": "image",
+			"name": "dog_36_png"
+		},
+		{
+			"url": "assets/pets/dog_37.png",
+			"type": "image",
+			"name": "dog_37_png"
+		},
+		{
+			"url": "assets/pets/dog_38.png",
+			"type": "image",
+			"name": "dog_38_png"
+		},
+		{
+			"url": "assets/pets/dog_39.png",
+			"type": "image",
+			"name": "dog_39_png"
+		},
+		{
+			"url": "assets/pets/dog_4.png",
+			"type": "image",
+			"name": "dog_4_png"
+		},
+		{
+			"url": "assets/pets/dog_40.png",
+			"type": "image",
+			"name": "dog_40_png"
+		},
+		{
+			"url": "assets/pets/dog_41.png",
+			"type": "image",
+			"name": "dog_41_png"
+		},
+		{
+			"url": "assets/pets/dog_5.png",
+			"type": "image",
+			"name": "dog_5_png"
+		},
+		{
+			"url": "assets/pets/dog_6.png",
+			"type": "image",
+			"name": "dog_6_png"
+		},
+		{
+			"url": "assets/pets/dog_7.png",
+			"type": "image",
+			"name": "dog_7_png"
+		},
+		{
+			"url": "assets/pets/dog_8.png",
+			"type": "image",
+			"name": "dog_8_png"
+		},
+		{
+			"url": "assets/pets/dog_9.png",
+			"type": "image",
+			"name": "dog_9_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/trees/tree_1.png",
+			"type": "image",
+			"name": "tree_1_png"
+		},
+		{
+			"url": "assets/trees/tree_10.png",
+			"type": "image",
+			"name": "tree_10_png"
+		},
+		{
+			"url": "assets/trees/tree_11.png",
+			"type": "image",
+			"name": "tree_11_png"
+		},
+		{
+			"url": "assets/trees/tree_12.png",
+			"type": "image",
+			"name": "tree_12_png"
+		},
+		{
+			"url": "assets/trees/tree_13.png",
+			"type": "image",
+			"name": "tree_13_png"
+		},
+		{
+			"url": "assets/trees/tree_14.png",
+			"type": "image",
+			"name": "tree_14_png"
+		},
+		{
+			"url": "assets/trees/tree_15.png",
+			"type": "image",
+			"name": "tree_15_png"
+		},
+		{
+			"url": "assets/trees/tree_16.png",
+			"type": "image",
+			"name": "tree_16_png"
+		},
+		{
+			"url": "assets/trees/tree_17.png",
+			"type": "image",
+			"name": "tree_17_png"
+		},
+		{
+			"url": "assets/trees/tree_18.png",
+			"type": "image",
+			"name": "tree_18_png"
+		},
+		{
+			"url": "assets/trees/tree_19.png",
+			"type": "image",
+			"name": "tree_19_png"
+		},
+		{
+			"url": "assets/trees/tree_2.png",
+			"type": "image",
+			"name": "tree_2_png"
+		},
+		{
+			"url": "assets/trees/tree_20.png",
+			"type": "image",
+			"name": "tree_20_png"
+		},
+		{
+			"url": "assets/trees/tree_21.png",
+			"type": "image",
+			"name": "tree_21_png"
+		},
+		{
+			"url": "assets/trees/tree_22.png",
+			"type": "image",
+			"name": "tree_22_png"
+		},
+		{
+			"url": "assets/trees/tree_23.png",
+			"type": "image",
+			"name": "tree_23_png"
+		},
+		{
+			"url": "assets/trees/tree_24.png",
+			"type": "image",
+			"name": "tree_24_png"
+		},
+		{
+			"url": "assets/trees/tree_25.png",
+			"type": "image",
+			"name": "tree_25_png"
+		},
+		{
+			"url": "assets/trees/tree_26.png",
+			"type": "image",
+			"name": "tree_26_png"
+		},
+		{
+			"url": "assets/trees/tree_27.png",
+			"type": "image",
+			"name": "tree_27_png"
+		},
+		{
+			"url": "assets/trees/tree_28.png",
+			"type": "image",
+			"name": "tree_28_png"
+		},
+		{
+			"url": "assets/trees/tree_29.png",
+			"type": "image",
+			"name": "tree_29_png"
+		},
+		{
+			"url": "assets/trees/tree_3.png",
+			"type": "image",
+			"name": "tree_3_png"
+		},
+		{
+			"url": "assets/trees/tree_30.png",
+			"type": "image",
+			"name": "tree_30_png"
+		},
+		{
+			"url": "assets/trees/tree_31.png",
+			"type": "image",
+			"name": "tree_31_png"
+		},
+		{
+			"url": "assets/trees/tree_32.png",
+			"type": "image",
+			"name": "tree_32_png"
+		},
+		{
+			"url": "assets/trees/tree_33.png",
+			"type": "image",
+			"name": "tree_33_png"
+		},
+		{
+			"url": "assets/trees/tree_34.png",
+			"type": "image",
+			"name": "tree_34_png"
+		},
+		{
+			"url": "assets/trees/tree_35.png",
+			"type": "image",
+			"name": "tree_35_png"
+		},
+		{
+			"url": "assets/trees/tree_36.png",
+			"type": "image",
+			"name": "tree_36_png"
+		},
+		{
+			"url": "assets/trees/tree_37.png",
+			"type": "image",
+			"name": "tree_37_png"
+		},
+		{
+			"url": "assets/trees/tree_38.png",
+			"type": "image",
+			"name": "tree_38_png"
+		},
+		{
+			"url": "assets/trees/tree_39.png",
+			"type": "image",
+			"name": "tree_39_png"
+		},
+		{
+			"url": "assets/trees/tree_4.png",
+			"type": "image",
+			"name": "tree_4_png"
+		},
+		{
+			"url": "assets/trees/tree_40.png",
+			"type": "image",
+			"name": "tree_40_png"
+		},
+		{
+			"url": "assets/trees/tree_41.png",
+			"type": "image",
+			"name": "tree_41_png"
+		},
+		{
+			"url": "assets/trees/tree_5.png",
+			"type": "image",
+			"name": "tree_5_png"
+		},
+		{
+			"url": "assets/trees/tree_6.png",
+			"type": "image",
+			"name": "tree_6_png"
+		},
+		{
+			"url": "assets/trees/tree_7.png",
+			"type": "image",
+			"name": "tree_7_png"
+		},
+		{
+			"url": "assets/trees/tree_8.png",
+			"type": "image",
+			"name": "tree_8_png"
+		},
+		{
+			"url": "assets/trees/tree_9.png",
+			"type": "image",
+			"name": "tree_9_png"
+		},
+		{
+			"url": "assets/game/dispelPk.json",
+			"type": "sheet",
+			"name": "dispelPk_json",
+			"subkeys": "dpk_VS,dpk_addbtn,dpk_addbtngray,dpk_addfriend,dpk_agree,dpk_alphabg,dpk_answerbg,dpk_arrowframe,dpk_arrowtip,dpk_arrowtip1,dpk_bg_0,dpk_bigglass,dpk_blankhy,dpk_bonus_title,dpk_btn_0,dpk_btn_1,dpk_btn_2,dpk_cancel,dpk_cancelbtn,dpk_cdlgbg,dpk_chatbg,dpk_chatbtn,dpk_close_btn,dpk_coin,dpk_commonbg,dpk_confirmbtn,dpk_cover,dpk_creward,dpk_delconfirm,dpk_deletebtn,dpk_deletenow,dpk_dlg_0,dpk_doubleflag,dpk_enemybg,dpk_fcancelbtn,dpk_figure_0,dpk_fleftbg,dpk_friend,dpk_friendpk,dpk_friendtitle,dpk_frightbg,dpk_giveupbtn,dpk_headcircle,dpk_help,dpk_help_title,dpk_homebtn,dpk_hydetailbg,dpk_hysbg,dpk_idiombg,dpk_ink,dpk_inkbg,dpk_invitebtn,dpk_invitepk,dpk_isready,dpk_item,dpk_itemctime,dpk_layerbg,dpk_leftbg,dpk_listbg,dpk_menuhbg,dpk_menutitle,dpk_mget,dpk_mnotget,dpk_mticket,dpk_muchreward,dpk_mybg,dpk_new_addfriend,dpk_newactivity,dpk_notselected,dpk_oil,dpk_pbhk,dpk_pcp,dpk_pfdj,dpk_pgr1,dpk_pgr2,dpk_pgrbg,dpk_pkbg,dpk_pmz,dpk_ppsbtn,dpk_progress,dpk_progress_bg,dpk_progress_split,dpk_protect,dpk_protectbg,dpk_quan,dpk_refresh,dpk_refuse,dpk_reset,dpk_rightbg,dpk_search,dpk_searchhy,dpk_secondbg,dpk_selected,dpk_shengli,dpk_shenglv,dpk_shibai,dpk_singlechat,dpk_textbg,dpk_tipbg,dpk_tipbubblebg,dpk_titledouble,dpk_tlistbg,dpk_toastbg,dpk_txl,dpk_txtbg,dpk_video_0,dpk_vshy,dpk_vstitle,dpk_whitecircle,dpk_winner_icon,dpk_wordbg,dpk_wordbg1,dpk_wordbg2,dpk_xlistbg,dpk_yqwxhy,dpk_zhanji,dpk_zyslight"
+		},
+		{
+			"url": "assets/game/dpkvsbg.jpg",
+			"type": "image",
+			"name": "dpkvsbg_jpg"
+		},
+		{
+			"url": "assets/game/pkgamebg.jpg",
+			"type": "image",
+			"name": "pkgamebg_jpg"
+		},
+		{
+			"url": "assets/game/pkresultbg.jpg",
+			"type": "image",
+			"name": "pkresultbg_jpg"
+		},
+		{
+			"url": "assets/dragbones/bisai_tex.png",
+			"type": "image",
+			"name": "bisai_tex_png"
+		},
+		{
+			"url": "assets/dragbones/pingshou_tex.png",
+			"type": "image",
+			"name": "pingshou_tex_png"
+		},
+		{
+			"url": "assets/dragbones/shenglile_tex.png",
+			"type": "image",
+			"name": "shenglile_tex_png"
+		},
+		{
+			"url": "assets/dragbones/shibai_tex.png",
+			"type": "image",
+			"name": "shibai_tex_png"
+		},
+		{
+			"url": "assets/dragbones/bisai_ske.json",
+			"type": "json",
+			"name": "bisai_ske_json"
+		},
+		{
+			"url": "assets/dragbones/pingshou_tex.json",
+			"type": "json",
+			"name": "pingshou_tex_json"
+		},
+		{
+			"url": "assets/dragbones/pingshou_ske.json",
+			"type": "json",
+			"name": "pingshou_ske_json"
+		},
+		{
+			"url": "assets/dragbones/shenglile_tex.json",
+			"type": "json",
+			"name": "shenglile_tex_json"
+		},
+		{
+			"url": "assets/dragbones/shibai_tex.json",
+			"type": "json",
+			"name": "shibai_tex_json"
+		},
+		{
+			"url": "assets/dragbones/shenglile_ske.json",
+			"type": "json",
+			"name": "shenglile_ske_json"
+		},
+		{
+			"url": "assets/dragbones/shibai_ske.json",
+			"type": "json",
+			"name": "shibai_ske_json"
+		},
+		{
+			"url": "assets/dragbones/bisai_tex.json",
+			"type": "json",
+			"name": "bisai_tex_json"
+		},
+		{
+			"url": "assets/dragbones/baohuzhao_tex.png",
+			"type": "image",
+			"name": "baohuzhao_tex_png"
+		},
+		{
+			"url": "assets/dragbones/baohuzhao_ske.json",
+			"type": "json",
+			"name": "baohuzhao_ske_json"
+		},
+		{
+			"url": "assets/dragbones/baohuzhao_tex.json",
+			"type": "json",
+			"name": "baohuzhao_tex_json"
+		},
+		{
+			"url": "assets/dragbones/dabaohuzhao_tex.png",
+			"type": "image",
+			"name": "dabaohuzhao_tex_png"
+		},
+		{
+			"url": "assets/dragbones/dabaohuzhao_tex.json",
+			"type": "json",
+			"name": "dabaohuzhao_tex_json"
+		},
+		{
+			"url": "assets/dragbones/dabaohuzhao_ske.json",
+			"type": "json",
+			"name": "dabaohuzhao_ske_json"
+		},
+		{
+			"url": "assets/game/achieve.json",
+			"type": "sheet",
+			"name": "achieve_json",
+			"subkeys": "achieve_15,achieve_16,achieve_17,achieve_18,achieve_19,achieve_28,achieve_29,achieve_30,achieve_31,achieve_32,achieve_33,achieve_34,achieve_35,achieve_36,achieve_37,achieve_38,achieve_39,achieve_40,achieve_41,achieve_42,achieve_43,achieve_44,achieve_45,achieve_46,achieve_47,achieve_48,achieve_49,achieve_50,achieve_54,achieve_55,achieve_56,achieve_57,achieve_58,achieve_59,achieve_60,achieve_61,achieve_62"
+		},
+		{
+			"url": "assets/dragbones/qiaogu_tex.png",
+			"type": "image",
+			"name": "qiaogu_tex_png"
+		},
+		{
+			"url": "assets/dragbones/qiaogu_tex.json",
+			"type": "json",
+			"name": "qiaogu_tex_json"
+		},
+		{
+			"url": "assets/dragbones/qiaogu_ske.json",
+			"type": "json",
+			"name": "qiaogu_ske_json"
+		},
+		{
+			"url": "assets/dragbones/paoguang_tex.png",
+			"type": "image",
+			"name": "paoguang_tex_png"
+		},
+		{
+			"url": "assets/dragbones/paoguang_tex.json",
+			"type": "json",
+			"name": "paoguang_tex_json"
+		},
+		{
+			"url": "assets/dragbones/paoguang_ske.json",
+			"type": "json",
+			"name": "paoguang_ske_json"
+		},
+		{
+			"url": "assets/dragbones/anniutiaodong3_tex.png",
+			"type": "image",
+			"name": "anniutiaodong3_tex_png"
+		},
+		{
+			"url": "assets/dragbones/anniutiaodong3_tex.json",
+			"type": "json",
+			"name": "anniutiaodong3_tex_json"
+		},
+		{
+			"url": "assets/dragbones/anniutiaodong3_ske.json",
+			"type": "json",
+			"name": "anniutiaodong3_ske_json"
+		},
+		{
+			"url": "assets/animations/yibai.json",
+			"type": "json",
+			"name": "yibai_json"
+		},
+		{
+			"url": "assets/animations/yibai.png",
+			"type": "image",
+			"name": "yibai_png"
+		},
+		{
+			"url": "assets/animations/kaibtn.png",
+			"type": "image",
+			"name": "kaibtn_png"
+		},
+		{
+			"url": "assets/animations/kaibtn.json",
+			"type": "json",
+			"name": "kaibtn_json"
+		},
+		{
+			"url": "assets/game/new_box.json",
+			"type": "sheet",
+			"name": "new_box_json",
+			"subkeys": "newbox_0_0,newbox_0_1,newbox_0_2,newbox_0_3,newbox_1_0,newbox_1_1,newbox_1_2,newbox_1_3,newbox_2_0,newbox_2_1,newbox_2_2,newbox_2_3"
+		},
+		{
+			"url": "assets/game/newredeff.json",
+			"type": "sheet",
+			"name": "newredeff_json",
+			"subkeys": "new_lighteff,new_redbag,new_redbag1,new_redbag_close,new_redbag_collectbg"
+		}
+	]
+}
