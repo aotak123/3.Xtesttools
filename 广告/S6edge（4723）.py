@@ -109,7 +109,7 @@ def panguan(mobile):
         time.sleep(8)
         TouchAction(driver).tap(x=671, y=1734).perform()  # 点击查看广告
         time.sleep(8)
-        BB = "  \033[1;31mNO.\033[0m " + str(a) + " 次广告"
+        BB = "  \033[1;31m第\033[0m " + str(a) + " 次广告中"
         print(BB)
         # os.popen("adb -s 02157df2c8865716 shell am start -n com.kamitu.drawsth.standalone.free.android/com.qsmy.busniess.welcome.WelcomeActivity")
         time.sleep(42)
