@@ -44,7 +44,7 @@ def panguan(mobile):
             "com.kamitu.drawsth.standalone.free.android:id/iv_mobile_login")  # 选择手机号登录
     except NoSuchElementException:
         print("当前为自动登录模式...正在退出账号重新进行登录")
-        time.sleep(8)  # 等待加载进入首页
+        time.sleep(10)  # 等待加载进入首页
         TouchAction(driver).tap(x=422, y=120).perform()  # 返回进入个人中心
         time.sleep(2)
         TouchAction(driver).tap(x=960, y=186).perform()  # 点击设置
@@ -52,7 +52,7 @@ def panguan(mobile):
         TouchAction(driver).tap(x=492, y=1777).perform()  # 点击退出
         time.sleep(2)
         TouchAction(driver).tap(x=712, y=1014).perform()  # 弹窗确定退出
-        time.sleep(3)
+        time.sleep(2)
         TouchAction(driver).tap(x=391, y=1591).perform()  # 点击手机号登录
         time.sleep(2)
         # 选择手机号输入框
@@ -98,7 +98,7 @@ def panguan(mobile):
         time.sleep(2)
         TouchAction(driver).tap(x=530, y=844).perform()  # 确定按钮登录
         print("账号登录成功")
-    time.sleep(15)  # 等待加载进入首页
+    time.sleep(10)  # 等待加载进入首页
     # 进入判官进行刷广告
     TouchAction(driver).tap(x=321, y=1665).perform()  # 选择进入判官
     time.sleep(3)
@@ -130,7 +130,7 @@ def panguan(mobile):
         #     driver.back()  # GDTsdk广告按钮
         a += 1
     # 退出广告循环
-    time.sleep(10)
+    time.sleep(8)
     driver.back()  # 判官回到首页
     time.sleep(2)
     # 退出账号
