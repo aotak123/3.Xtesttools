@@ -716,7 +716,7 @@
 					"logicType": "0",
 					"numbers": "1",
 					"tagid": "8040893524052557",
-					"weights": "90000"
+					"weights": "0"
 				}, {
 					"adtype": "o",
 					"appid": "5042951",
@@ -736,7 +736,7 @@
 					"logicType": "0",
 					"numbers": "1",
 					"tagid": "945247197",
-					"weights": "390000"
+					"weights": "0"
 				}, {
 					"adtype": "4",
 					"appid": "100012",
@@ -746,46 +746,6 @@
 					"logicType": "0",
 					"numbers": "1",
 					"tagid": "101",
-					"weights": "10000"
-				}, {
-					"adtype": "A",
-					"appid": "1110151220",
-					"child_adtype": "sdk",
-					"group": "def",
-					"level": "3",
-					"logicType": "0",
-					"numbers": "1",
-					"tagid": "8040893524052557",
-					"weights": "50000"
-				}, {
-					"adtype": "o",
-					"appid": "5042951",
-					"child_adtype": "sdk",
-					"group": "def",
-					"level": "3",
-					"logicType": "0",
-					"numbers": "1",
-					"tagid": "945254313",
-					"weights": "10000"
-				}, {
-					"adtype": "4",
-					"appid": "100012",
-					"child_adtype": "api",
-					"group": "def",
-					"level": "3",
-					"logicType": "0",
-					"numbers": "1",
-					"tagid": "10202",
-					"weights": "200000"
-				}, {
-					"adtype": "o",
-					"appid": "5042951",
-					"child_adtype": "sdk",
-					"group": "def",
-					"level": "3",
-					"logicType": "0",
-					"numbers": "1",
-					"tagid": "945049157",
 					"weights": "0"
 				}, {
 					"adtype": "A",
@@ -795,8 +755,48 @@
 					"level": "3",
 					"logicType": "0",
 					"numbers": "1",
+					"tagid": "8040893524052557",
+					"weights": "0"
+				}, {
+					"adtype": "o",
+					"appid": "5042951",
+					"child_adtype": "sdk",
+					"group": "def",
+					"level": "3",
+					"logicType": "0",
+					"numbers": "1",
+					"tagid": "945254313",
+					"weights": "0"
+				}, {
+					"adtype": "4",
+					"appid": "100012",
+					"child_adtype": "api",
+					"group": "def",
+					"level": "3",
+					"logicType": "0",
+					"numbers": "1",
+					"tagid": "10202",
+					"weights": "0"
+				}, {
+					"adtype": "o",
+					"appid": "5042951",
+					"child_adtype": "sdk",
+					"group": "def",
+					"level": "3",
+					"logicType": "0",
+					"numbers": "1",
+					"tagid": "945049157",
+					"weights": "10"
+				}, {
+					"adtype": "A",
+					"appid": "1110151220",
+					"child_adtype": "sdk",
+					"group": "def",
+					"level": "3",
+					"logicType": "0",
+					"numbers": "1",
 					"tagid": "1000797939624016",
-					"weights": "250000"
+					"weights": "0"
 				}]
 			},
 			"b05b3610d6c2ac3f": {
@@ -1901,7 +1901,7 @@
 					"logicType": "0",
 					"numbers": "1",
 					"tagid": "945247227",
-					"weights": "10"
+					"weights": "0"
 				}, {
 					"adtype": "A",
 					"appid": "1110151220",
@@ -1930,7 +1930,7 @@
 					"level": "3",
 					"logicType": "0",
 					"numbers": "1",
-					"tagid": "945740879",
+					"tagid": "945049157",
 					"weights": "10"
 				}, {
 					"adtype": "A",
