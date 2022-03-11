@@ -163,12 +163,12 @@ if __name__ == '__main__':
     b = 1
     while b <= 2:
         # tun
-        panguan(14190006235)
-        panguan(13666088700)
-        panguan(13161057550)
-        panguan(13062803788)
-        panguan(19099990000)
-        panguan(19088881111)
+        # panguan(14190006235)
+        # panguan(13666088700)
+        # panguan(13161057550)
+        # panguan(13062803788)
+        # panguan(19099990000)
+        # panguan(19088881111)
         panguan(19088882020)
         panguan(19088885672)
         panguan(17729152205)
