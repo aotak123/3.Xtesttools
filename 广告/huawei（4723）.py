@@ -176,6 +176,7 @@ if __name__ == '__main__':
         panguan(13763333333)
         panguan(13698521470)
         panguan(13760000001)
+        panguan(18011100111) # 已实名
         # tun
         # tak
         panguan(18508071757)
