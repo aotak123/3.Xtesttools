@@ -14,7 +14,7 @@ import time
 # window获取安装包的地址:文件右键属性 - 安全 一栏对象名称即为包地址路径。需要自行将路径的分隔号修改为『/』!!!
 apk = "/Users/aotak/Desktop/waterBaby_v1.0.9_2020-08-07-2055_Product_vivopppppp.apk"  # 配置安装包地址，请使用『/』分隔符!!!
 
-# 抖你
+# douni
 appPackage = "com.shakeyou.app"
 appActivity = "com.shakeyou.app.welcome.WelcomeActivity"
 

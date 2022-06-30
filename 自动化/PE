@@ -1,35 +1,35 @@
-# 章鱼输入法
+# zhangyuushurufa
 appPackage = "com.komoxo.octopusime"
 appActivity = "com.komoxo.chocolateime.splash.WelcomeActivity"
 
-# 抖你
+# douni
 appPackage = "com.shakeyou.app"
 appActivity = "com.shakeyou.app.welcome.WelcomeActivity"
 
-# 疯狂猜成语
+# fengkuangcaichengyu
 appPackage = "com.kamitu.drawsth.standalone.free.android"
 appActivity = "com.qsmy.busniess.welcome.WelcomeActivity"
 
-# 这个我看过
+# zhegewokanguo
 appPackage = "com.xiaoxian.isawit"
 appActivity = "com.qsmy.busniess.welcome.WelcomeActivity"
 
-# 欢乐小秀才
+# huanlexiaoxiucai
 appPackage = "com.shmj.xiaoxiucai"
 appActivity = "com.qsmy.busniess.welcome.WelcomeActivity"
 
-# 步多多
+# buduoduo
 appPackage = "com.qsmy.walkmonkey"
 appActivity = "com.qsmy.busniess.main.view.activity.MainActivity"
 
-# 她星球
+# taxingqiu
 appPackage = "com.qsmm.taxingqiu"
 appActivity = "com.songmeng.busniess.main.view.activity.MainActivity"
 
-# 多多守护
+# duoduoshouhu
 appPackage = "com.xiaoxian.guardian.everyday"
 appActivity = "com.qsmy.busniess.ktccy.activity.MainActivity"
 
-# 水宝宝
+# shuibaobao
 appPackage = "com.songmeng.shuibaobao"
 appActivity = "com.songmeng.busniess.welcome.WelcomeActivity"

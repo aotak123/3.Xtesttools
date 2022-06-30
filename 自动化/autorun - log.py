@@ -24,7 +24,7 @@ import time
 # window获取安装包的地址:文件右键属性 - 安全 一栏对象名称即为包地址路径。需要自行将路径的分隔号修改为『/』!!!
 apk = "/Users/aotak/Desktop/haveSeen_v1.0.0_2020-09-14-1355_Test.apk"  # 配置安装包地址，请使用『/』分隔符!!!
 
-# 抖你
+# douni
 appPackage = "com.shakeyou.app"
 appActivity = "com.shakeyou.app.welcome.WelcomeActivity"
 
