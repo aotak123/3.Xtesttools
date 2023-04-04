@@ -11,7 +11,7 @@ context = ssl._create_unverified_context()  # ssl证书免验证，python3需要
 while True:
     accid = input("\033[30m \n 请输入用户accid：\n")
     # 3仅支持input输入，不支持raw_input输入
-    url = "https://test-u-douni.tt.cn/index/Edit_shiming/edit"
+    url = "http://test-u-douni.tt.cn/index/Edit_shiming/edit"
     fullurl = url + "?accid=" + accid# 拼接完整请求url
     request = urllib.request.Request(fullurl)  # 构建请求url
     response = urllib.request.urlopen(request, context=context)  # ssl证书免验证加入,context = context
