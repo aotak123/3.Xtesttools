@@ -36,7 +36,7 @@ winSur.fill((0, 0, 0))
 #
 # #  字母版
 letter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v'
-          ,'w', 'x', 'y', 'z']
+    , 'w', 'x', 'y', 'z']
 
 texts = [
     font.render(str(letter[i]), True, (0, 255, 0)) for i in range(20)
