@@ -10,7 +10,7 @@ capabilities['platformName'] = 'Android'  # Android平台测试
 capabilities['platformVersion'] = '11.0.0'
 capabilities['deviceName'] = 'EVA-AL10'
 capabilities['appPackage'] = 'cn.com.livelab'  # 系统手机中的联系人app的包名
-capabilities['appActivity'] = 'cn.com.livelab.WelcomeActivity'  # 系统手机中的联系人app的主入口activity
+capabilities['appActivity'] = 'cn.com.livelab.MainActivity'  # 系统手机中的联系人app的主入口activity
 capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
@@ -29,7 +29,7 @@ el2 = driver.find_element_by_xpath(
 el2.send_keys(演唱会名称)
 el3 = driver.find_element_by_xpath("(//android.view.View[@content-desc=\"" + 演唱会名称 + "\"])[2]")
 time.sleep(1)
-TouchAction(driver).tap(x=500, y=458).perform()  # 光标定位搜索
+TouchAction(driver).tap(x=500, y=458).perform()  # 选择演唱会
 
 
 def task():
