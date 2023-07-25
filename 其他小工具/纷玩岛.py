@@ -27,6 +27,7 @@ time.sleep(1)
 el2 = driver.find_element_by_xpath(
     "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.EditText")
 el2.send_keys(演唱会名称)
+time.sleep(1)
 el3 = driver.find_element_by_xpath("(//android.view.View[@content-desc=\"" + 演唱会名称 + "\"])[2]")
 time.sleep(1)
 TouchAction(driver).tap(x=500, y=458).perform()  # 选择演唱会
