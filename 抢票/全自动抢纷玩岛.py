@@ -2,7 +2,6 @@
 
 from appium import webdriver
 from appium.webdriver.common.touch_action import TouchAction
-from selenium.common.exceptions import NoSuchElementException
 import time
 
 capabilities = {}
