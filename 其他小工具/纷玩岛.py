@@ -14,23 +14,27 @@ capabilities['appActivity'] = 'cn.com.livelab.MainActivity'  # 系统手机中�
 capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
+capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
-演唱会开始时间 = 1690278576  # 请设置需要开抢的演唱会时间戳
+# 配置
+演唱会开始时间 = 1690336207  # 请设置需要开抢的演唱会时间戳1690340100
 演唱会名称 = "【南京】2023MAYDAY五月天「好好好想见到你」巡回演唱会-南京站"
 
 time.sleep(15)  # 等待app启动
 TouchAction(driver).tap(x=429, y=152).perform()  # 进入搜索页面
-time.sleep(1)
+time.sleep(2)
 TouchAction(driver).tap(x=429, y=152).perform()  # 光标定位搜索
-time.sleep(1)
-el2 = driver.find_element_by_xpath(
+time.sleep(2)
+选择输入 = driver.find_element_by_xpath(
     "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.EditText")
-el2.send_keys(演唱会名称)
-time.sleep(1)
-el3 = driver.find_element_by_xpath("(//android.view.View[@content-desc=\"" + 演唱会名称 + "\"])[2]")
-time.sleep(1)
+选择输入.send_keys(演唱会名称)
+time.sleep(2)
+选择演唱会 = driver.find_element_by_xpath("(//android.view.View[@content-desc=\"" + 演唱会名称 + "\"])[2]")
+选择演唱会.click()
+time.sleep(2)
 TouchAction(driver).tap(x=500, y=458).perform()  # 选择演唱会
+time.sleep(4)
 
 
 def task():
@@ -42,12 +46,7 @@ def task():
         # print(当前时间)
         if 当前时间 >= 演唱会开始时间:
             print('开始抢票')
-            try:
-                立即购买 = driver.find_element_by_accessibility_id("立即购买")
-            except NoSuchElementException:
-                driver.back()
-            else:
-                立即购买.click()
+            TouchAction(driver).tap(x=537, y=2081).perform()  # 选择演唱会
             time.sleep(1)
             try:
                 确认下单 = driver.find_element_by_accessibility_id("确认下单")
