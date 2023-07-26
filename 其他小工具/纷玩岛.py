@@ -23,18 +23,22 @@ driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连�
 
 # 执行代码
 time.sleep(15)  # 等待app启动
-TouchAction(driver).tap(x=429, y=152).perform()  # 进入搜索页面
+# TouchAction(driver).tap(x=429, y=152).perform()  # 进入搜索页面
+driver.tap([(176, 133), (925, 177)])  # 进入搜索页面
 time.sleep(2)
-TouchAction(driver).tap(x=429, y=152).perform()  # 光标定位搜索
+# TouchAction(driver).tap(x=429, y=152).perform()  # 光标定位搜索
+driver.tap([(158, 109), (858, 189)])  # 进入搜索页面
 time.sleep(2)
 选择输入 = driver.find_element_by_xpath(
     "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.EditText")
 选择输入.send_keys(演唱会名称)
 time.sleep(2)
-选择演唱会 = driver.find_element_by_xpath("(//android.view.View[@content-desc=\"" + 演唱会名称 + "\"])[2]")
-选择演唱会.click()
+# 选择演唱会 = driver.find_element_by_xpath("(//android.view.View[@content-desc=\"" + 演唱会名称 + "\"])[2]")
+# 选择演唱会.click()
+driver.tap([(58, 227), (1022, 371)])  # 选择演唱会
 time.sleep(2)
-TouchAction(driver).tap(x=500, y=458).perform()  # 选择演唱会
+# TouchAction(driver).tap(x=500, y=458).perform()  # 选择演唱会
+driver.tap([(58, 218), (1022, 636)])  # 选择演唱会
 time.sleep(4)
 
 
@@ -48,18 +52,24 @@ def task():
         # print(当前时间)
         if 当前时间 >= 演唱会开始时间:
             print('开始抢票')
-            TouchAction(driver).tap(x=698, y=2116).perform()  # 进入抢票
+            # TouchAction(driver).tap(x=698, y=2116).perform()  # 进入抢票
+            driver.tap([(86, 2020), (994, 2152)])  # 进入抢票
             time.sleep(0.3)
-            TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
+            # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
+            driver.tap([(636, 2066), (1022, 2181)])  # 确认订单
             time.sleep(0.3)
-            TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
+            # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
+            driver.tap([(636, 2066), (1022, 2181)])  # 立即支付
             time.sleep(1)
             while True:
-                TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
+                # TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
+                driver.tap([(227, 1525), (805, 1601)])  # 选择重试
                 time.sleep(0.3)
-                TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
+                # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
+                driver.tap([(636, 2066), (1022, 2181)])  # 确认订单
                 time.sleep(0.3)
-                TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
+                # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
+                driver.tap([(636, 2066), (1022, 2181)])  # 立即支付
                 time.sleep(0.3)
             # return
         elif 当前时间 < 演唱会开始时间:
