@@ -35,10 +35,10 @@ time.sleep(2)
 time.sleep(2)
 # 选择演唱会 = driver.find_element_by_xpath("(//android.view.View[@content-desc=\"" + 演唱会名称 + "\"])[2]")
 # 选择演唱会.click()
-driver.tap([(63, 256), (925, 347)])  # 选择演唱会
+driver.tap([(95, 287), (872, 316)])  # 选择演唱会
 time.sleep(2)
 # TouchAction(driver).tap(x=500, y=458).perform()  # 选择演唱会
-driver.tap([(63, 278), (998, 622)])  # 选中演唱会
+driver.tap([(95, 313), (935, 597)])  # 选中演唱会
 time.sleep(4)
 
 
@@ -53,7 +53,7 @@ def task():
         if 当前时间 >= 演唱会开始时间:
             print('开始抢票')
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
-            driver.tap([(208, 2024), (903, 2119)])  # 入口立即购买
+            driver.tap([(215, 2040), (834, 2119)])  # 入口立即购买
             time.sleep(0.3)
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
             driver.tap([(673, 2081), (973, 2151)])  # 确认订单
