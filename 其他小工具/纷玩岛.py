@@ -18,7 +18,7 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-演唱会开始时间 = 1690426800  # 请设置需要开抢的演唱会时间戳1690340100
+演唱会开始时间 = 1690426800  # 请设置需要开抢的演唱会时间戳   2023-07-27 11:00:00
 演唱会名称 = "【上海】Amber刘逸云2023“No More Sad Songs”巡演-上海站"  # 输入演唱会全名
 
 # 执行代码
