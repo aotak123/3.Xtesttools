@@ -18,9 +18,10 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-演唱会开始时间 = 1690344000  # 请设置需要开抢的演唱会时间戳1690340100
-演唱会名称 = "【广州】刘雨昕2023仙那度巡回演唱会-广州站"  # 输入演唱会全名
+演唱会开始时间 = 1690426800  # 请设置需要开抢的演唱会时间戳1690340100
+演唱会名称 = "【上海】Amber刘逸云2023“No More Sad Songs”巡演-上海站"  # 输入演唱会全名
 
+# 执行代码
 time.sleep(15)  # 等待app启动
 TouchAction(driver).tap(x=429, y=152).perform()  # 进入搜索页面
 time.sleep(2)
@@ -37,6 +38,7 @@ TouchAction(driver).tap(x=500, y=458).perform()  # 选择演唱会
 time.sleep(4)
 
 
+# 等待抢票
 def task():
     while True:
         当前时间戳 = time.time()
