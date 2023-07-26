@@ -18,8 +18,8 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-演唱会开始时间 = 1690336207  # 请设置需要开抢的演唱会时间戳1690340100
-演唱会名称 = "【南京】2023MAYDAY五月天「好好好想见到你」巡回演唱会-南京站"
+演唱会开始时间 = 1690344000  # 请设置需要开抢的演唱会时间戳1690340100
+演唱会名称 = "【广州】刘雨昕2023仙那度巡回演唱会-广州站"  # 输入演唱会全名
 
 time.sleep(15)  # 等待app启动
 TouchAction(driver).tap(x=429, y=152).perform()  # 进入搜索页面
@@ -46,21 +46,19 @@ def task():
         # print(当前时间)
         if 当前时间 >= 演唱会开始时间:
             print('开始抢票')
-            TouchAction(driver).tap(x=537, y=2081).perform()  # 选择演唱会
+            TouchAction(driver).tap(x=698, y=2116).perform()  # 进入抢票
+            time.sleep(0.3)
+            TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
+            time.sleep(0.3)
+            TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
             time.sleep(1)
-            try:
-                确认下单 = driver.find_element_by_accessibility_id("确认下单")
-            except NoSuchElementException:
-                driver.back()
-            else:
-                确认下单.click()
-            time.sleep(1)
-            try:
-                立即支付 = driver.find_element_by_accessibility_id("立即支付")
-            except NoSuchElementException:
-                driver.back()
-            else:
-                立即支付.click()
+            while True:
+                TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
+                time.sleep(0.3)
+                TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
+                time.sleep(0.3)
+                TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
+                time.sleep(0.3)
             # return
         elif 当前时间 < 演唱会开始时间:
             print("未到抢票时间")
