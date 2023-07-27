@@ -45,7 +45,6 @@ time.sleep(4)
 # 等待抢票
 def task():
     while True:
-        TouchAction(driver).tap(x=44, y=1989).perform()  # 点亮屏幕
         当前时间戳 = time.time()
         当前时间 = int(当前时间戳)
         需要等待时间 = 演唱会开始时间 - 当前时间

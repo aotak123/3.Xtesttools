@@ -21,7 +21,6 @@ starttime = 1690434000  # 请设置需要开抢的演唱会时间戳   2023-07-2
 # 等待抢票
 def task():
     while True:
-        driver.tap(44, 1989)  # 点亮屏幕
         nowtimestamp = time.time()  # 当前时间戳
         nowtime = int(nowtimestamp)  # 时间戳转换int格式
         waitingtime = starttime - nowtime  # 需要等待的时间 = 开始时间 - 现在时间
