@@ -1,6 +1,7 @@
 # coding=utf-8
 
 from appium import webdriver
+from appium.webdriver.common.touch_action import TouchAction
 import time
 
 capabilities = {}
@@ -21,6 +22,8 @@ starttime = 1690430400  # 请设置需要开抢的演唱会时间戳   2023-07-2
 # 等待抢票
 def task():
     while True:
+        TouchAction(driver).tap(x=44, y=1989).perform()  # 点亮屏幕
+        time.sleep(5)
         nowtimestamp = time.time()  # 当前时间戳
         nowtime = int(nowtimestamp)  # 时间戳转换int格式
         waitingtime = starttime - nowtime  # 需要等待的时间 = 开始时间 - 现在时间
@@ -50,7 +53,7 @@ def task():
             # return
         elif nowtime < starttime:  # 如果现在时间＜开始时间
             print("未到抢票时间,需要等待：" + str(waitingtime))
-            time.sleep(waitingtime)
+            time.sleep(waitingtime - 5)
 
 
 task()
