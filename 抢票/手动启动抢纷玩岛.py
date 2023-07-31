@@ -30,21 +30,27 @@ def task():
             print('开始抢票')
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
             driver.tap([(215, 2040), (834, 2119)])  # 入口立即购买
+            driver.tap([(215, 2040), (834, 2119)])  # 入口立即购买
             time.sleep(0.1)
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
             driver.tap([(673, 2081), (973, 2151)])  # 确认订单
+            driver.tap([(673, 2081), (973, 2151)])  # 确认订单
             time.sleep(0.1)
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
+            driver.tap([(673, 2081), (973, 2151)])  # 立即支付
             driver.tap([(673, 2081), (973, 2151)])  # 立即支付
             time.sleep(0.2)
             while True:
                 # TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
                 driver.tap([(227, 1525), (805, 1601)])  # 选择重试
+                driver.tap([(227, 1525), (805, 1601)])  # 选择重试
                 time.sleep(0.1)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                 driver.tap([(673, 2081), (973, 2151)])  # 确认订单
+                driver.tap([(673, 2081), (973, 2151)])  # 确认订单
                 time.sleep(0.1)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
+                driver.tap([(673, 2081), (973, 2151)])  # 立即支付
                 driver.tap([(673, 2081), (973, 2151)])  # 立即支付
                 time.sleep(0.1)
             # return
@@ -59,21 +65,27 @@ def task():
                 print('开始抢票')
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
                 driver.tap([(215, 2040), (834, 2119)])  # 入口立即购买
+                driver.tap([(215, 2040), (834, 2119)])  # 入口立即购买
                 time.sleep(0.1)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                 driver.tap([(673, 2081), (973, 2151)])  # 确认订单
+                driver.tap([(673, 2081), (973, 2151)])  # 确认订单
                 time.sleep(0.1)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
+                driver.tap([(673, 2081), (973, 2151)])  # 立即支付
                 driver.tap([(673, 2081), (973, 2151)])  # 立即支付
                 time.sleep(0.2)
                 while True:
                     # TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
                     driver.tap([(227, 1525), (805, 1601)])  # 选择重试
+                    driver.tap([(227, 1525), (805, 1601)])  # 选择重试
                     time.sleep(0.1)
                     # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                     driver.tap([(673, 2081), (973, 2151)])  # 确认订单
+                    driver.tap([(673, 2081), (973, 2151)])  # 确认订单
                     time.sleep(0.1)
                     # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
+                    driver.tap([(673, 2081), (973, 2151)])  # 立即支付
                     driver.tap([(673, 2081), (973, 2151)])  # 立即支付
                     time.sleep(0.1)
 
