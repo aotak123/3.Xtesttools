@@ -14,7 +14,7 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-starttime = 1690783200  # 请设置需要开抢的演唱会时间戳   2023-07-31 14:00:00
+starttime = 1690786680  # 请设置需要开抢的演唱会时间戳   2023-07-31 14:58:00
 """请手动启动大麦app进入演唱会待抢页面并填写预约抢票后启动代码"""
 
 
