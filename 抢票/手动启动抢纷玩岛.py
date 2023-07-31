@@ -14,7 +14,7 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-starttime = 1690437600  # 请设置需要开抢的演唱会时间戳   2023-07-27 14:00:00
+starttime = 1690773480  # 请设置需要开抢的演唱会时间戳   2023-07-31 11:18:00
 """请手动启动纷玩岛app进入代抢页面并填写预约抢票后启动代码"""
 
 
