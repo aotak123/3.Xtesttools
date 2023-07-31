@@ -59,6 +59,7 @@ def task():
                 print("未到抢票时间,需要等待：" + str(waitingtime))
                 print("3分钟后重新判断")
                 time.sleep(180)  # 等待3分钟后重新判断防止进程卡死
+                driver.tap([(79, 2277), (101, 2264)])  # 点击屏幕
             elif waitingtime <= 180:  # 是否等待时间小于3分钟
                 print("未到抢票时间,需要等待：" + str(waitingtime))
                 time.sleep(waitingtime)
