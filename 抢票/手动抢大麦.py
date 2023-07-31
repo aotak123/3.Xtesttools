@@ -43,7 +43,7 @@ def task():
                 driver.tap([(297, 1456), (774, 1519)])  # 选择重试
                 time.sleep(0.1)
                 driver.tap([(79, 951), (477, 1355)])  # 选择档位
-                time.sleep(0.1)
+                time.sleep(0.05)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                 driver.tap([(591, 2087), (960, 2154)])  # 确认订单
                 time.sleep(0.1)
@@ -74,7 +74,7 @@ def task():
                     driver.tap([(297, 1456), (774, 1519)])  # 选择重试
                     time.sleep(0.1)
                     driver.tap([(79, 951), (477, 1355)])  # 选择档位
-                    time.sleep(0.1)
+                    time.sleep(0.05)
                     # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                     driver.tap([(591, 2087), (960, 2154)])  # 确认订单
                     time.sleep(0.1)
