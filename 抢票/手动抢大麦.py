@@ -14,7 +14,7 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-starttime = 1690776000   # 请设置需要开抢的演唱会时间戳   2023-07-31 12:00:00  TFboys
+starttime = 1690783200  # 请设置需要开抢的演唱会时间戳   2023-07-31 14:00:00
 """请手动启动大麦app进入演唱会待抢页面并填写预约抢票后启动代码"""
 
 
@@ -39,7 +39,7 @@ def task():
             time.sleep(0.2)
             while True:
                 # TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
-                driver.tap([(227, 1525), (805, 1601)])  # 选择重试
+                driver.tap([(297, 1456), (774, 1519)])  # 选择重试
                 time.sleep(0.1)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                 driver.tap([(591, 2087), (960, 2154)])  # 确认订单
@@ -49,11 +49,11 @@ def task():
                 time.sleep(0.1)
             # return
         elif nowtime < starttime:  # 如果现在时间＜开始时间
-            if waitingtime > 180:  # 是否等待时间大于3分钟
+            if waitingtime > 180:  # 是否等待时间大于1分钟
                 print("未到抢票时间,需要等待：" + str(waitingtime))
-                print("3分钟后重新判断")
-                time.sleep(180)  # 等待3分钟后重新判断防止进程卡死
-            elif waitingtime <= 180:  # 是否等待时间小于3分钟
+                print("1分钟后重新判断")
+                time.sleep(60)  # 等待3分钟后重新判断防止进程卡死
+            elif waitingtime <= 60:  # 是否等待时间小于3分钟
                 print("未到抢票时间,需要等待：" + str(waitingtime))
                 time.sleep(waitingtime)
                 print('开始抢票')
@@ -68,7 +68,7 @@ def task():
                 time.sleep(0.2)
                 while True:
                     # TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
-                    driver.tap([(227, 1525), (805, 1601)])  # 选择重试
+                    driver.tap([(297, 1456), (774, 1519)])  # 选择重试
                     time.sleep(0.1)
                     # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                     driver.tap([(591, 2087), (960, 2154)])  # 确认订单
