@@ -61,7 +61,7 @@ def task():
         elif nowtime < starttime:  # 如果现在时间＜开始时间
             if waitingtime > 180:  # 是否等待时间大于3分钟
                 print("未到抢票时间,需要等待：" + str(waitingtime))
-                print("1分钟后重新判断")
+                print("60秒后重新判断")
                 time.sleep(60)  # 等待1分钟后重新判断防止进程卡死
                 driver.tap([(79, 2277), (101, 2264)])  # 点击屏幕
             elif waitingtime <= 60:  # 是否等待时间小于1分钟
