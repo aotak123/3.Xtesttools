@@ -60,12 +60,12 @@ def task():
                 time.sleep(0.1)
             # return
         elif nowtime < starttime:  # 如果现在时间＜开始时间
-            if waitingtime > 180:  # 是否等待时间大于3分钟
+            if waitingtime > 120:  # 是否等待时间大于2分钟
                 print("未到抢票时间,需要等待：" + str(waitingtime))
-                print("60秒后重新判断")
-                time.sleep(60)  # 等待1分钟后重新判断防止进程卡死
+                print("120秒后重新判断")
+                time.sleep(120)  # 等待2分钟后重新判断防止进程卡死
                 # driver.tap([(44, 1977), (161, 1974)])  # 点击屏幕
-            elif waitingtime <= 60:  # 是否等待时间小于1分钟
+            elif waitingtime <= 120:  # 是否等待时间小于2分钟
                 print("未到抢票时间,需要等待：" + str(waitingtime))
                 time.sleep(waitingtime)
                 TouchAction(driver).press(x=549, y=581).move_to(x=549, y=1140).release().perform()
