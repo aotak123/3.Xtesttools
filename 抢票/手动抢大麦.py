@@ -14,7 +14,7 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-starttime = 1690794000  # 请设置需要开抢的演唱会时间戳  2023-07-31 17:00:00
+starttime = 1690860600  # 请设置需要开抢的演唱会时间戳  2023-08-01 11:30:00
 
 """请手动启动大麦app进入演唱会待抢页面并填写预约抢票后启动代码"""
 
@@ -66,7 +66,7 @@ def task():
                 # driver.tap([(44, 1977), (161, 1974)])  # 点击屏幕
             elif waitingtime <= 60:  # 是否等待时间小于1分钟
                 print("未到抢票时间,需要等待：" + str(waitingtime))
-                time.sleep(waitingtime - 0.5)
+                time.sleep(waitingtime - 1)
                 print('开始抢票')
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
                 driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
