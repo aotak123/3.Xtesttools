@@ -34,31 +34,31 @@ def task():
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
             driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
             # driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
-            time.sleep(0.1)
+            time.sleep(0.09)
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
             driver.tap([(591, 2087), (960, 2154)])  # 确认订单
             # driver.tap([(591, 2087), (960, 2154)])  # 确认订单
-            time.sleep(0.1)
+            time.sleep(0.09)
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
             driver.tap([(780, 2084), (982, 2151)])  # 立即支付
             # driver.tap([(780, 2084), (982, 2151)])  # 立即支付
-            time.sleep(0.1)
+            time.sleep(0.09)
             while True:
                 # TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
                 driver.tap([(297, 1456), (774, 1519)])  # 选择重试
                 # driver.tap([(297, 1456), (774, 1519)])  # 选择重试
-                time.sleep(0.1)
+                time.sleep(0.09)
                 driver.tap([(79, 951), (477, 1355)])  # 选择档位
                 # driver.tap([(79, 951), (477, 1355)])  # 选择档位
                 time.sleep(0.05)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                 driver.tap([(591, 2087), (960, 2154)])  # 确认订单
                 # driver.tap([(591, 2087), (960, 2154)])  # 确认订单
-                time.sleep(0.1)
+                time.sleep(0.09)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
                 driver.tap([(780, 2084), (982, 2151)])  # 立即支付
                 # driver.tap([(780, 2084), (982, 2151)])  # 立即支付
-                time.sleep(0.1)
+                time.sleep(0.09)
             # return
         elif nowtime < starttime:  # 如果现在时间＜开始时间
             if waitingtime > 120:  # 是否等待时间大于2分钟
@@ -75,31 +75,31 @@ def task():
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
                 driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
                 # driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
-                time.sleep(0.1)
+                time.sleep(0.09)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                 driver.tap([(591, 2087), (960, 2154)])  # 确认订单
                 # driver.tap([(591, 2087), (960, 2154)])  # 确认订单
-                time.sleep(0.1)
+                time.sleep(0.09)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
                 driver.tap([(780, 2084), (982, 2151)])  # 立即支付
                 # driver.tap([(780, 2084), (982, 2151)])  # 立即支付
-                time.sleep(0.1)
+                time.sleep(0.09)
                 while True:
                     # TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
                     driver.tap([(297, 1456), (774, 1519)])  # 选择重试
                     # driver.tap([(297, 1456), (774, 1519)])  # 选择重试
-                    time.sleep(0.1)
+                    time.sleep(0.09)
                     driver.tap([(79, 951), (477, 1355)])  # 选择档位
                     # driver.tap([(79, 951), (477, 1355)])  # 选择档位
                     time.sleep(0.05)
                     # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                     driver.tap([(591, 2087), (960, 2154)])  # 确认订单
                     # driver.tap([(591, 2087), (960, 2154)])  # 确认订单
-                    time.sleep(0.1)
+                    time.sleep(0.09)
                     # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
                     driver.tap([(780, 2084), (982, 2151)])  # 立即支付
                     # driver.tap([(780, 2084), (982, 2151)])  # 立即支付
-                    time.sleep(0.1)
+                    time.sleep(0.09)
 
 
 task()
