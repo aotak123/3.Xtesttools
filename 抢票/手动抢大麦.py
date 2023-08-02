@@ -15,7 +15,7 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-starttime = 1690948800  # 请设置需要开抢的演唱会时间戳  2023-08-02 12:00:00 大麦 【成都】刘雨昕 1690948800
+starttime = 1690953240  # 请设置需要开抢的演唱会时间戳  2023-08-02 13:14:00 大麦 【苏州】郁可唯 1690953240
 
 """请手动启动大麦app进入演唱会待抢页面并填写预约抢票"""
 """请在抢票倒计时前5分钟左右开启,保证屏幕亮着"""
@@ -34,31 +34,31 @@ def task():
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
             driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
             # driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
-            time.sleep(0.1)
+            time.sleep(0.08)
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
             driver.tap([(591, 2087), (960, 2154)])  # 确认订单
             # driver.tap([(591, 2087), (960, 2154)])  # 确认订单
-            time.sleep(0.1)
+            time.sleep(0.08)
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
             driver.tap([(780, 2084), (982, 2151)])  # 立即支付
             # driver.tap([(780, 2084), (982, 2151)])  # 立即支付
-            time.sleep(0.2)
+            time.sleep(0.1)
             while True:
                 # TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
                 driver.tap([(297, 1456), (774, 1519)])  # 选择重试
                 # driver.tap([(297, 1456), (774, 1519)])  # 选择重试
-                time.sleep(0.1)
+                time.sleep(0.08)
                 driver.tap([(79, 951), (477, 1355)])  # 选择档位
                 # driver.tap([(79, 951), (477, 1355)])  # 选择档位
                 time.sleep(0.05)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                 driver.tap([(591, 2087), (960, 2154)])  # 确认订单
                 # driver.tap([(591, 2087), (960, 2154)])  # 确认订单
-                time.sleep(0.1)
+                time.sleep(0.08)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
                 driver.tap([(780, 2084), (982, 2151)])  # 立即支付
                 # driver.tap([(780, 2084), (982, 2151)])  # 立即支付
-                time.sleep(0.1)
+                time.sleep(0.08)
             # return
         elif nowtime < starttime:  # 如果现在时间＜开始时间
             if waitingtime > 120:  # 是否等待时间大于2分钟
@@ -75,15 +75,15 @@ def task():
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
                 driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
                 # driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
-                time.sleep(0.1)
+                time.sleep(0.05)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                 driver.tap([(591, 2087), (960, 2154)])  # 确认订单
                 # driver.tap([(591, 2087), (960, 2154)])  # 确认订单
-                time.sleep(0.1)
+                time.sleep(0.05)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
                 driver.tap([(780, 2084), (982, 2151)])  # 立即支付
                 # driver.tap([(780, 2084), (982, 2151)])  # 立即支付
-                time.sleep(0.2)
+                time.sleep(0.05)
                 while True:
                     # TouchAction(driver).tap(x=531, y=1558).perform()  # 选择重试
                     driver.tap([(297, 1456), (774, 1519)])  # 选择重试
@@ -95,11 +95,11 @@ def task():
                     # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                     driver.tap([(591, 2087), (960, 2154)])  # 确认订单
                     # driver.tap([(591, 2087), (960, 2154)])  # 确认订单
-                    time.sleep(0.1)
+                    time.sleep(0.05)
                     # TouchAction(driver).tap(x=698, y=2116).perform()  # 立即支付
                     driver.tap([(780, 2084), (982, 2151)])  # 立即支付
                     # driver.tap([(780, 2084), (982, 2151)])  # 立即支付
-                    time.sleep(0.1)
+                    time.sleep(0.08)
 
 
 task()
