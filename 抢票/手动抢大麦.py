@@ -32,7 +32,7 @@ def task():
         if nowtime >= starttime:  # 如果 现在时间 ≥ 开始时间
             print('开始抢票')
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
-            driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
+            driver.tap([(780, 2084), (982, 2151)])  # 入口立即购买
             # driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
             time.sleep(0.09)
             # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
@@ -73,7 +73,7 @@ def task():
                 print('开始抢票')
                 # time.sleep(0.1)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
-                driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
+                driver.tap([(780, 2084), (982, 2151)])  # 入口立即购买
                 # driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
                 time.sleep(0.09)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
