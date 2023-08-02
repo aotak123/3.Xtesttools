@@ -15,7 +15,7 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-starttime = 1690858800  # 请设置需要开抢的演唱会时间戳   2023-08-01 11:00:00
+starttime = 1690949220  # 请设置需要开抢的演唱会时间戳   2023-08-02 12:47:00 纷玩岛 【武汉】鹿晗 1690949220
 """请手动启动纷玩岛app进入代抢页面并填写预约抢票后启动代码"""
 
 
