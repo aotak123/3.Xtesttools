@@ -64,6 +64,7 @@ def task():
             elif waitingtime <= 120:  # 是否等待时间小于2分钟
                 print("未到抢票时间,需要等待：" + str(waitingtime))
                 time.sleep(waitingtime)
+                driver.swipe(549, 581, 549, 1140)  # 刷新页面
                 # TouchAction(driver).press(x=549, y=581).move_to(x=549, y=1140).release().perform()  # 刷新页面
                 print('开始抢票')
                 # time.sleep(0.1)

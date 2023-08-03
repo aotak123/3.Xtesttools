@@ -87,6 +87,7 @@ def task():
             elif 需要等待时间 <= 180:  # 是否等待时间小于3分钟
                 print("未到抢票时间,需要等待：" + str(需要等待时间))
                 time.sleep(需要等待时间)
+                driver.swipe(549, 581, 549, 1140)  # 刷新页面
                 print('开始抢票')
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
                 driver.tap([(215, 2040), (834, 2119)])  # 入口立即购买
