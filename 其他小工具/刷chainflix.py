@@ -14,13 +14,15 @@ browser.set_window_size(1320, 1000)
 time.sleep(5)
 print("等待加载完成")
 ActionChains(browser).move_by_offset(920, 613).click().perform()  # 点击进入视频页
-# ActionChains(browser).move_by_offset(-1038, -516).perform()  # 将鼠标位置恢复到移动前
+# ActionChains(browser).move_by_offset(392, 614).click().perform()  # 点击进入视频页
+
 time.sleep(5)
 print("进入播放页成功，可进行手动登录操作")
 """登录成功后请点击视频进行播放，后续则自动进入托管"""
 a = 1
 while a > 0:
-    print(" \033[1;31mNO.\033[0m " + str(a) + " 个视频")
-    time.sleep(random.randint(150, 600))
+    b = random.randint(200, 500)
+    print(" \033[1;31mNO.\033[0m " + str(a) + " 个视频,需要等待 " + str(b) + "秒进入下一个视频")
+    time.sleep(b)
     ActionChains(browser).move_by_offset(0, 0).click().perform()  # 点击进入视频页
     a += 1
