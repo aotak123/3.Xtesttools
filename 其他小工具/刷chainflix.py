@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 import time
+import random
 
 # 在这里先打开一个浏览器的范围地址，设置为自动化打开模式。
 # 打开ChromeDriver下载地址：http://chromedriver.storage.googleapis.com/index.html
@@ -20,7 +21,7 @@ print("进入播放页成功，可进行手动登录操作")
 a = 1
 while a > 0:
     print(" \033[1;31mNO.\033[0m "+ str(a) + " 个视频")
-    time.sleep(300)
+    time.sleep(random.randint(150,600))
     ActionChains(browser).move_by_offset(0, 0).click().perform()  # 点击进入视频页
     a += 1
 
