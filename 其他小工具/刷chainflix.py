@@ -15,7 +15,8 @@ print("等待加载完成")
 ActionChains(browser).move_by_offset(1038, 516).click().perform()  # 鼠标左键点击
 ActionChains(browser).move_by_offset(-1038, -516).perform()  # 将鼠标位置恢复到移动前
 time.sleep(5)
-print("进入播放页")
+print("可进行登录操作进入播放页")
+"""手动登录"""
 while True:
     time.sleep(300)
     ActionChains(browser).move_by_offset(939, 734).click().perform()  # 鼠标左键点击
