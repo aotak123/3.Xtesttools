@@ -20,9 +20,7 @@ print("进入播放页成功，可进行手动登录操作")
 """登录成功后请点击视频进行播放，后续则自动进入托管"""
 a = 1
 while a > 0:
-    print(" \033[1;31mNO.\033[0m "+ str(a) + " 个视频")
-    time.sleep(random.randint(150,600))
+    print(" \033[1;31mNO.\033[0m " + str(a) + " 个视频")
+    time.sleep(random.randint(150, 600))
     ActionChains(browser).move_by_offset(0, 0).click().perform()  # 点击进入视频页
     a += 1
-
-# driver.find_element(By.XPATH, '//a[@class="ma-0 v-icon v-icon notranslate v-icon--is-component theme--light my-icon videoNext"]').click()
