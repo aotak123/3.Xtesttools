@@ -3,7 +3,7 @@ import os
 
 Tool = "/Users/aotak/PycharmProjects/3.Xtesttools/气泡资源文件点9图转换/dian9zhuanhuan"  # 工具路径地址
 
-png_path = "/Users/aotak/Downloads/聊天气泡.9.png"  # 图片路径地址
+png_path = "/Users/aotak/Desktop/气泡/气泡.9.png"  # 图片路径地址
 png_rename = "run.png"  # 转换后文件命名
 
 cmd = 'ls -a'  # 前置cmd指令
