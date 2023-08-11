@@ -15,8 +15,8 @@ print("等待加载完成")
 ActionChains(browser).move_by_offset(1038, 516).click().perform()  # 鼠标左键点击
 ActionChains(browser).move_by_offset(-1038, -516).perform()  # 将鼠标位置恢复到移动前
 time.sleep(5)
-print("可进行登录操作进入播放页")
-"""手动登录"""
+print("进入播放页成功，可进行手动登录操作")
+"""登录成功后请点击视频进行播放，后续则自动进入托管"""
 a = 1
 while a > 0:
     print(" \033[1;31m当前NO.\033[0m " + str(a) + " 个视频")
