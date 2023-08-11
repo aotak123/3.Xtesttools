@@ -19,7 +19,7 @@ print("可进行登录操作进入播放页")
 """手动登录"""
 a = 1
 while a > 0:
-    print("  \033[1;31mNO.\033[0m " + str(a) + " 个视频")
+    print(" \033[1;31m当前NO.\033[0m " + str(a) + " 个视频")
     time.sleep(300)
     ActionChains(browser).move_by_offset(939, 734).click().perform()  # 鼠标左键点击
     ActionChains(browser).move_by_offset(-939, -734).perform()  # 将鼠标位置恢复到移动前
