@@ -7,7 +7,7 @@ import time
 
 ####################——————tak制作  vol.201102——————####################
 
-key = "sLQq2_jaKLknsqAwZ"  # 后台使用的key
+key = "SCq2_jaKLknsqAwZ"  # 后台使用的key
 # testmobile = '测试手机号名单.xlsx'  # 测试记录文件的地址
 # realmobile = '正式手机号名单.xlsx'  # 正式记录文件的地址
 context = ssl._create_unverified_context()  # ssl证书免验证，python3需要验证https证书
