@@ -75,7 +75,7 @@ def task():
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 入口立即购买
                 driver.tap([(780, 2084), (982, 2151)])  # 入口立即购买
                 # driver.tap([(357, 2091), (951, 2154)])  # 入口立即购买
-                time.sleep(0.1)
+                time.sleep(0.15)
                 # TouchAction(driver).tap(x=698, y=2116).perform()  # 确认订单
                 driver.tap([(780, 2084), (982, 2151)])  # 确认订单
                 # driver.tap([(591, 2087), (960, 2154)])  # 确认订单
