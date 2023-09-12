@@ -8,7 +8,7 @@ capabilities = {}
 capabilities['platformName'] = 'Android'  # Android平台测试
 capabilities['platformVersion'] = '11.0.0'
 capabilities['deviceName'] = 'DLT-A0'
-capabilities['UUID'] = '33eb2a70-1e8d-4bca-bfd1-6ea29786c4ec'
+capabilities['udid'] = '12954255'
 capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
@@ -16,7 +16,7 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-starttime = 1694491177  # 请设置需要开抢的演唱会时间戳  2023-09-12 18:00:00
+starttime = 1694512800  # 请设置需要开抢的演唱会时间戳  2023-09-12 18:00:00
 
 """请手动启动大麦app进入演唱会待抢页面并填写预约抢票"""
 """请在抢票倒计时前5分钟左右开启,保证屏幕亮着"""
