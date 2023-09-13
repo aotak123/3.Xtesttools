@@ -13,7 +13,7 @@ capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
 capabilities['newCommandTimeout'] = '600'
-driver = webdriver.Remote('http://127.0.0.1:4725/wd/hub', capabilities)  # 连接测试所在服务器
+driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
 starttime = 1694491177  # 请设置需要开抢的演唱会时间戳  2023-09-12 18:00:00
