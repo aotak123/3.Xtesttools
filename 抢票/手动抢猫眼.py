@@ -21,9 +21,9 @@ dt = parser.parse(date_str)
 timestamp = dt.timestamp()
 fixtime = str(timestamp).split('.')[0]
 starttime = int(fixtime)  # 将str格式转成int格式
-print("时间：", date_str)
-print("时间戳：", starttime)
-starttime = 1691563020  # 请设置需要开抢的演唱会时间戳  2023-08-09 14:37:00
+print("场次开抢时间：", date_str)
+# print("转换时间戳：", starttime)
+# starttime = 1691563020  # 请设置需要开抢的演唱会时间戳  2023-08-09 14:37:00
 
 """请手动启动大麦app进入演唱会待抢页面并填写预约抢票"""
 """请在抢票倒计时前5分钟左右开启,保证屏幕亮着"""

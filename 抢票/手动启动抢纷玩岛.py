@@ -3,6 +3,7 @@
 from appium import webdriver
 from appium.webdriver.common.touch_action import TouchAction
 import time
+from dateutil import parser
 
 capabilities = {}
 capabilities['platformName'] = 'Android'  # Android平台测试
@@ -15,7 +16,14 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-starttime = 1691031600  # 请设置需要开抢的演唱会时间戳   2023-08-03 11:00:00 纷玩岛【上海】杨千嬅 1691031600
+date_str = "2023-09-25 14:07:00"  # 请设置需要开抢的演唱会时间
+dt = parser.parse(date_str)
+timestamp = dt.timestamp()
+fixtime = str(timestamp).split('.')[0]
+starttime = int(fixtime)  # 将str格式转成int格式
+print("场次开抢时间：", date_str)
+# print("转换时间戳：", starttime)
+# starttime = 1691031600  # 请设置需要开抢的演唱会时间戳   2023-08-03 11:00:00 纷玩岛【上海】杨千嬅 1691031600
 """请手动启动纷玩岛app进入代抢页面并填写预约抢票后启动代码"""
 
 
