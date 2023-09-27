@@ -16,7 +16,7 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-date_str = "2023-09-27 17:49:00"  # 请设置需要开抢的演唱会时间
+date_str = "2023-09-27 17:54:00"  # 请设置需要开抢的演唱会时间
 dt = parser.parse(date_str)
 timestamp = dt.timestamp()
 fixtime = str(timestamp).split('.')[0]
