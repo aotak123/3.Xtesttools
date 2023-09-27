@@ -16,7 +16,7 @@ capabilities['newCommandTimeout'] = '600'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
-date_str = "2023-09-27 18:00:00"  # 请设置需要开抢的演唱会时间
+date_str = "2023-09-27 17:49:00"  # 请设置需要开抢的演唱会时间
 dt = parser.parse(date_str)
 timestamp = dt.timestamp()
 fixtime = str(timestamp).split('.')[0]
@@ -39,8 +39,9 @@ def task():
         # print(当前时间)
         if nowtime >= starttime:  # 如果 现在时间 ≥ 开始时间
             print('开始抢票')
+            driver.tap([(796, 2002), (965, 2075)])  # 立即抢票
             while True:
-                driver.tap([(297, 1456), (774, 1519)])  # 选择重试
+                driver.tap([(788, 2111), (957, 2155)])  # 选择重试
                 time.sleep(0.1)
             # return
         elif nowtime < starttime:  # 如果现在时间＜开始时间
@@ -52,8 +53,9 @@ def task():
                 print("未到抢票时间,需要等待：" + str(waitingtime))
                 time.sleep(waitingtime)
                 print('开始抢票')
+                driver.tap([(796, 2002), (965, 2075)])  # 立即抢票
                 while True:
-                    driver.tap([(780, 2079), (949, 2079)])
+                    driver.tap([(788, 2111), (957, 2155)])  # 选择重试
                     time.sleep(0.1)
 
 
