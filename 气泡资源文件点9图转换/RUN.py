@@ -3,8 +3,8 @@ import os
 
 Tool = "/Users/aotak/PycharmProjects/3.Xtesttools/气泡资源文件点9图转换/dian9zhuanhuan"  # 工具路径地址
 
-png_path = "/Users/aotak/Downloads/X.9.png"  # 图片路径地址
-png_rename = "run.png"  # 转换后文件命名
+png_path = "/Users/aotak/Downloads/x.9.png"  # 图片路径地址
+png_rename = "Convert.9.png"  # 转换后文件命名
 
 cmd = 'ls -a'  # 前置cmd指令
 CallCMD = os.popen("cd " + Tool + "&& aapt s -i " + png_path + " -o /Users/aotak/Desktop/" + png_rename)  # cmd指令执行
