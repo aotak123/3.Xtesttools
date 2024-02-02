@@ -13,7 +13,7 @@ capabilities['udid'] = '12954255'
 capabilities['noReset'] = 'true'  # 不重置app
 capabilities['autoAcceptAlerts'] = 'true'
 capabilities['autoWebview'] = 'false'
-capabilities['newCommandTimeout'] = '600'
+capabilities['newCommandTimeout'] = '9999'
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', capabilities)  # 连接测试所在服务器
 
 # 配置
